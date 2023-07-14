@@ -1,10 +1,22 @@
-import React from 'react';
+import React, { useEffect, useState } from 'react';
 import { Zoom } from 'react-slideshow-image';
 import 'react-slideshow-image/dist/styles.css'
 import styles from '@/styles/home/header.module.css';
 import Image from 'next/image';
 
 function Header() {
+
+    const [isFixed, setIsFixed] = useState(false);
+
+    useEffect(() => {
+      function handleScroll() {
+        const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        setIsFixed(scrollTop > 35);
+      }
+  
+      window.addEventListener('scroll', handleScroll);
+      return () => window.removeEventListener('scroll', handleScroll);
+    }, []);
 
     const bannerContent = [
         {
@@ -30,7 +42,7 @@ function Header() {
     ]
 
     return (
-        <div className={styles.SectionWrap} id='home'>
+        <div className={styles.SectionWrap} style={{marginTop : isFixed ? '73.5px': '0px' }}>
             <Zoom scale={1.01} arrows={false} autoplay duration={3500} transitionDuration={1500}>
                 {bannerContent.map((item, index) => (
                     <div key={index} className={styles.banner}>

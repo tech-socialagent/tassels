@@ -33,6 +33,17 @@
     padding: 1% 2%;
 }
 
+.fixedNavbar{
+    position: fixed;
+    top:0;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 30% auto;
+    background-color: var(--primary-color);
+    padding: 1% 2%;
+    z-index: 10;
+}
+
 .logo{
     object-fit: contain;
     width: 150px;

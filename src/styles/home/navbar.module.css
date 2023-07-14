@@ -1,0 +1,55 @@
+.NavbarConainer{
+    display: flex;
+    flex-direction: column;
+}
+
+.NavbarTop{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    font-size: 11px;
+    padding: 10px 0px;
+}
+
+.Element{
+    display: flex;
+    gap: 5px;
+}
+
+.Type{
+    color: var(--primary-color);
+}
+
+.Content{
+    color: var(--secondary-color);
+    text-decoration: underline;  
+}
+
+.NavbarBottom{
+    display: grid;
+    grid-template-columns: 30% auto;
+    background-color: var(--primary-color);
+    padding: 1% 2%;
+}
+
+.logo{
+    object-fit: contain;
+    width: 150px;
+    height: 100%;
+}
+
+.Menus{
+    display: flex;
+    align-items: center;
+    gap: 3%;
+}
+
+
+.Menus li{
+    color: #fff;
+    font-size: 15px;
+    list-style: none;
+    font-weight: 400;
+    cursor: pointer;
+}

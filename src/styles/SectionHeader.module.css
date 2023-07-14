@@ -1,0 +1,15 @@
+.OurProductsHeader{
+    display: flex;
+    flex-direction: column;
+    gap: .5rem;
+    text-align: center;
+}
+
+.OurProductsHeader h1{
+    font-size: var(--font-size-header);
+}
+
+.OurProductsHeader p{
+    font-size: var(--font-size-desc);
+    color: var(--desc-color);
+}

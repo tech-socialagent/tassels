@@ -1,0 +1,123 @@
+.footerContainer{
+
+}
+
+.footerTop{
+    background-color: var(--primary-color);
+    color: #fff;
+    padding:4% 6%;
+}
+
+.footerLogo{
+    object-fit: contain;
+    width: 150px;
+    height: 100%;
+}
+
+.footerContent{
+    display: flex;
+    justify-content: space-between;
+}
+
+.footerLeft{
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.footerLeft p{
+    font-size: 13px;
+    font-weight: 300;
+    margin-top: 3%;
+}
+
+.socialIcons{
+    display: flex;
+    gap: 10px;
+}
+
+.socialIcons li{
+    list-style: none;
+    font-size: 25px;
+}
+
+.footerMiddle{
+    width: 35%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footerMiddleContainer{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footerTitle{
+    font-size: 18px;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+
+.footerMiddle ul{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.footerMiddle ul li{
+    font-size: 12px;
+    font-weight: 300;
+}
+
+.footerRight{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    gap: 20px;
+}
+
+.footerForm{
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.footerForm input{
+    background-color: transparent;
+    outline: none;
+    border: 1px solid #fff;
+    font-size: 13px;
+    color: #fff;
+    padding: 7px 15px;
+    border-radius: 5px;
+}
+
+.footerForm input::placeholder {
+    color: #fff;
+  }
+  
+
+.footerForm button{
+    width: max-content;
+    outline: none;
+    border: 2px solid var(--secondary-color);
+    background-color: var(--secondary-color);
+    color: #fff;
+    font-size: 12px;
+    font-weight: 600;
+    padding: 5px 27px;
+    border-radius: 5px;
+    letter-spacing: 1px;
+}
+
+.footerBottom{
+    padding: 10px 6%;
+    display: flex;
+    justify-content: space-between;
+    font-size: 12px;
+}

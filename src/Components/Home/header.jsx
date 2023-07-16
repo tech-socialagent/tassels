@@ -43,7 +43,7 @@ function Header() {
 
     return (
         <div className={styles.SectionWrap} style={{marginTop : isFixed ? '73.5px': '0px' }}>
-            <Zoom scale={1.01} arrows={false} autoplay duration={3500} transitionDuration={1500}>
+            <Zoom scale={1.01} arrows={false} autoplay duration={3500} transitionDuration={1500} pauseOnHover={false}>
                 {bannerContent.map((item, index) => (
                     <div key={index} className={styles.banner}>
                         <Image width={1000} height={1000} className={styles.bannerImage} src={item.img} alt="image" />

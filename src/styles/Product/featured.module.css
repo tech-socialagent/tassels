@@ -1,0 +1,61 @@
+.featuredWrap{
+}
+
+.featuredContainer{
+    margin: 4% 0%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 1.3rem;
+}
+
+.featuredImageContainer{
+    position: relative;
+    width: 230px;
+    height: 275px;
+    border-radius: 10px;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.featuredImage{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #0000006e;
+    z-index: 2;
+    transition: all 0.4s ease-in-out;
+}
+
+.featuredText{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: #fff;
+    text-transform: uppercase;
+    position: absolute;
+    bottom: 15%;
+    z-index: 3;
+    transition: all 0.4s ease-in-out;
+}
+
+.featuredText h4{
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.featuredText p{
+    font-size: 11px;
+    text-decoration: underline;
+}

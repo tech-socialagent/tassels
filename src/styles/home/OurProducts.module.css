@@ -45,7 +45,7 @@
 }
 
 .explore {
-    display: none;
+    opacity: 0;
     color: #fff;
     text-transform: uppercase;
     position: absolute;
@@ -57,25 +57,25 @@
     font-weight: 600;
     border-bottom: 2px solid #fff;
     padding-bottom: 2px;
-    transition: all 1s ease-in-out;
+    transition: all 0.4s ease-in-out;
 }
 
 .SingleProductImageContainer:hover .explore {
-    display: block;
+    opacity: 1;
 }
 
 .overlay{
-    display: none;
+    opacity: 0;
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: #0000007e;
+    background-color: #0000004e;
     z-index: 2;
-    transition: all 1s ease-in-out;
+    transition: all 0.4s ease-in-out;
 }
 
 .SingleProductImageContainer:hover .overlay {
-    display: block;
+    opacity: 1;
 }

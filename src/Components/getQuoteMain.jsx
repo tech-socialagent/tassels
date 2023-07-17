@@ -1,6 +1,6 @@
 import React, { useContext, useEffect, useRef, useState } from 'react';
 import styles from "@/styles/getQuoteMain.module.css";
-import { GetQuoteContext } from '@/Context';
+import { FormDataContext, GetQuoteContext } from '@/Context';
 import Image from 'next/image';
 import QuoteBG from '../../public/Assets/stage1BG.webp';
 import { AiOutlineClose } from 'react-icons/ai';
@@ -27,11 +27,7 @@ function GetQuoteMain() {
         return () => window.removeEventListener('scroll', handleScroll);
     }, []);
 
-    const [formData, setFormData] = useState({
-        name: '',
-        phone: '',
-        email: '',
-    });
+    const {formData, setFormData} = useContext(FormDataContext);
 
     const handleInputChange = (event) => {
         const { name, value } = event.target;
@@ -41,12 +37,6 @@ function GetQuoteMain() {
     const handleSubmit = (event) => {
         event.preventDefault();
         setGetQuote('stage3')
-
-        setFormData({
-            name: '',
-            email: '',
-            phone: '',
-        })
     }
     
 
@@ -76,10 +66,22 @@ function GetQuoteMain() {
           scrl.current.scrollTo(scrollOptions);
     };
 
+    const handleClose = (e) => {
+        e.preventDefault();
+        setGetQuote('stage1');
+        router.back();
+    }
+
+    const handleFinish = (e) => {
+        e.preventDefault();
+        setGetQuote('stage1');
+        router.push("/");
+    }
+
     return (
         <div className={styles.GetQuoteMainWrap} style={{ marginTop: isFixed ? '73.5px' : '0px' }}>
             <div className={styles.GetQuoteMainContainer}>
-                <span className={styles.CloseIcon}><AiOutlineClose /></span>
+                <span className={styles.CloseIcon} onClick={handleClose}><AiOutlineClose/></span>
                 {
                     getQuote === 'stage1' &&
                     <div className={styles.GetQuoteStage1}>
@@ -133,7 +135,7 @@ function GetQuoteMain() {
                     <div className={styles.GetQuoteStage1}>
                         <Image src={QuoteBG} className={styles.GetQuoteBackgroundImage} width={1000} height={1000} />
                         <h1>Thank you for All the inputs please check your email for the quotation.</h1>
-                        <button className={styles.quoteBtn} onClick={() => router.push('/')}>Home</button>
+                        <button className={styles.quoteBtn} onClick={handleFinish}>Home</button>
                     </div>
                 }
             </div>

@@ -5,10 +5,12 @@ import { AiOutlineArrowRight, AiOutlineLeft } from 'react-icons/ai';
 import { OurProductData } from '@/Components/content';
 import { ProductImages } from '@/Components/content';
 import Image from 'next/image';
+import { useRouter } from 'next/router.js';
 
 function SingleProduct() {
 
     const { product } = useContext(ProductContext);
+    const router = useRouter();
     const Element = OurProductData.find((element) => element.title === product);
     const ElementImages = ProductImages.filter((data) => data.title === Element?.title);
 
@@ -41,7 +43,7 @@ function SingleProduct() {
                 <div className={styles.ImageContainer}>
                     {
                         DisplayImage.map((item, index) => (
-                            <div className={styles.singleImageContainer} key={index}>
+                            <div className={styles.singleImageContainer} key={index} onClick={() => router.push('/getQuote')}>
                                 <Image src={item.img} width={1000} height={1000} className={styles.singleImage} alt="Image"/>
                                 <div className={styles.guoteBtn}>Get Quote <span><AiOutlineArrowRight /></span></div>
                                 <div className={styles.overlay}></div>

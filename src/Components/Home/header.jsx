@@ -3,9 +3,11 @@ import { Zoom } from 'react-slideshow-image';
 import 'react-slideshow-image/dist/styles.css'
 import styles from '@/styles/home/header.module.css';
 import Image from 'next/image';
+import { useRouter } from 'next/router';
 
 function Header() {
 
+    const router = useRouter();
     const [isFixed, setIsFixed] = useState(false);
 
     useEffect(() => {
@@ -51,7 +53,7 @@ function Header() {
                         <div className={styles.content}>
                             <h1>{item.title}</h1>
                             <p>{item.desc}</p>
-                            <button>Get Quote</button>
+                            <button onClick={() => router.push('/getQuote')}>Get Quote</button>
                         </div>
                     </div>
                 ))}

@@ -2,9 +2,11 @@ import React, { useEffect, useState } from 'react';
 import styles from "@/styles/home/navbar.module.css";
 import Image from 'next/image';
 import logo from '../../../public/Assets/images/logo.png';
+import { useRouter } from 'next/router';
 
 function Navbar() {
 
+    const router = useRouter();
     const [isFixed, setIsFixed] = useState(false);
 
     useEffect(() => {
@@ -45,11 +47,11 @@ function Navbar() {
             <div className={isFixed ? styles.fixedNavbar : styles.NavbarBottom}>
                     <Image src={logo} alt="logo image" className={styles.logo}/>
                     <div className={styles.Menus}>
-                            <li>Home</li>
-                            <li>Products</li>
+                            <li onClick={()=>router.push('/')}>Home</li>
+                            <li onClick={()=>router.push('/product')}>Products</li>
                             <li>Offers</li>
                             <li>FAQ's</li>
-                            <li>Contact Us</li>
+                            <li onClick={() => router.push('/ContactUs')}>Contact Us</li>
                             <li>Spacewood</li>
                     </div>
             </div>

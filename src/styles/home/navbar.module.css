@@ -63,4 +63,9 @@
     list-style: none;
     font-weight: 400;
     cursor: pointer;
+    transition: color 0.3s ease-in-out;
+}
+
+.Menus li:hover{
+    color: var(--secondary-color);
 }

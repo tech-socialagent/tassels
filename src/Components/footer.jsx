@@ -3,8 +3,12 @@ import styles from '@/styles/footer.module.css';
 import { FaFacebookSquare, FaInstagramSquare, FaTwitterSquare, FaLinkedin } from 'react-icons/fa';
 import Image from 'next/image';
 import logo from '../../public/Assets/images/logo.png';
+import { useRouter } from 'next/router';
 
 function TasselsFooter() {
+
+    const router = useRouter();
+
     return (
         <div className={styles.footerContainer}>
             <div className={styles.footerTop}>
@@ -25,11 +29,11 @@ function TasselsFooter() {
                         <div className={styles.footerMiddleContainer}>
                             <div className={styles.footerTitle}>Quick Links</div>
                             <ul>
-                                <li>Homepage</li>
+                                <li onClick={() => router.push('/')}>Homepage</li>
                                 <li>About Us</li>
-                                <li>Products</li>
+                                <li onClick={() => router.push('/product')}>Products</li>
                                 <li>Offers</li>
-                                <li>Contact Us</li>
+                                <li onClick={() => router.push('/ContactUs')}>Contact Us</li>
                             </ul>
                         </div>
                     </div>

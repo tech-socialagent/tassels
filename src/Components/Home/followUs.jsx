@@ -2,21 +2,22 @@ import React from 'react';
 import styles from "@/styles/home/followUs.module.css";
 import SectionHeader from '../SectionHeader';
 import Image from 'next/image';
-import franchises1 from '../../../public/Assets/franchises1.webp';
+import franchises1 from '../../../public/Assets/product/OurProduct2.webp';
+import franchises2 from '../../../public/Assets/product/OurProduct1.webp';
 
 function FollowUs() {
 
     const Images = [
         franchises1,
+        franchises2,
         franchises1,
+        franchises2,
         franchises1,
+        franchises2,
         franchises1,
+        franchises2,
         franchises1,
-        franchises1,
-        franchises1,
-        franchises1,
-        franchises1,
-        franchises1,
+        franchises2,
     ]
 
     return (
@@ -25,9 +26,9 @@ function FollowUs() {
             <div className={styles.wrapper}>
                 <div className={styles.topOval}></div>
                 <div className={styles.stripW}>
-                    {Images.map(() => (
+                    {Images.map((image) => (
                         <div className={styles.stripItem}>
-                            <Image src={franchises1} className={styles.CarouselImage} alt='Image' width={1000} height={1000} />
+                            <Image src={image} className={styles.CarouselImage} alt='Image' width={1000} height={1000} />
                         </div>
                     ))}
                 </div>

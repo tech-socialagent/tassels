@@ -5,7 +5,7 @@
 .quoteContainer{
     margin: 2% 0%;
     height: 85vh;
-    background-image: url('../../../public/Assets/quoteBg.webp');
+    background-image: url('../../../public/Assets/qouteBackground.webp');
     background-repeat: no-repeat;
     background-size: cover;
     display: flex;

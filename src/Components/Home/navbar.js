@@ -35,8 +35,8 @@ function Navbar() {
     return (
         <div className={styles.NavbarConainer}>
             <div className={styles.NavbarTop}>
-                {data.map((item) => (
-                    <div className={styles.Element}>
+                {data.map((item,index) => (
+                    <div className={styles.Element} key={index}>
                         <span className={styles.Type}>{item.type} : </span>
                         <span className={styles.Content}>{item.content}</span>
                     </div>

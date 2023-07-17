@@ -91,7 +91,7 @@ function Faq() {
     }
 
     return (
-        <div>
+        <div> 
             <SectionHeader title='FAQ”s' desc="Delve into our FAQ section, where you'll discover insightful responses that offer clarity and guidance for a seamless interior decor journey." />
             <FaqContainer> 
                 {items.map((item, index) => (
@@ -99,12 +99,12 @@ function Faq() {
                         <EachFaq>
                             <AccordionItem index={index} onClick={() => handleItemClick(index)}>
                                 {item.title}<AiOutlineRight style={activeIndices.includes(index) ? { transform: 'rotate(90deg)', transition: '0.4s' } : { transform: 'rotate(0deg)', transition: '0.4s',color:'var(--primary-color)' }} />
-                            </AccordionItem>
+                             </AccordionItem>
                             <AccordionContent isOpen={activeIndices.includes(index)}>
                                 {item.content}
                             </AccordionContent>
                         </EachFaq> 
-                    </AccordionContainer> 
+                    </AccordionContainer>
                 ))}
             </FaqContainer>
         </div>

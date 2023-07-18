@@ -2,10 +2,12 @@ import React from 'react';
 import styles from "@/styles/Product/story.module.css";
 import Image from 'next/image';
 import StoryBg from '../../../public/Assets/StoryImage.webp';
+import SectionHeader from '../SectionHeader';
 
 function Story() {
     return ( 
         <div className={styles.storyContainer}>
+            <h1 className={styles.storyTitle}>Our Story</h1>
             <Image src={StoryBg} alt="Image" width={1000} height={1000} className={styles.storyImage}/>
             <div className={styles.storyContent}>
                 <h1>Our Story</h1>

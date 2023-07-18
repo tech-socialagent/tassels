@@ -35,7 +35,6 @@
 
 .stripW {
     width: 100%;
-    min-width: 1200px;
     height: 100%;
     display: flex;
     flex-wrap: no-wrap;
@@ -59,4 +58,20 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+@media (max-width: 750px) {
+    .wrapper{
+        height: 200px;
+    }
+    .topOval{
+        height: 30px;
+    }
+    .bottomOval{
+        height: 30px;
+    }
+    .stripItem{
+        height: 195px;
+        min-width:170px ;
+    }
 }

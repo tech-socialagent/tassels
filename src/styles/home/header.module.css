@@ -66,3 +66,17 @@
     background-color: #0000004e;
     z-index: 2;
 }
+
+@media (max-width: 750px) {
+    .content h1{
+        font-size: 44px;
+    }
+    
+    .content p{
+        width: 80%;
+        font-size: 16px;
+    }
+    .content button{
+        font-size: 18px;
+    }
+}

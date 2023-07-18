@@ -14,19 +14,20 @@
 .SingleProduct {
     display: flex;
     flex-direction: column;
-    gap: 1rem;
+    justify-content: space-between;
+    gap: 2%;
 }
 
-.SingleProduct h3 {
+.ProductTitle h3 {
     font-size: 22px;
     font-weight: 600;
 }
 
-.SingleProduct p {
+.ProductTitle p {
     font-size: 14px;
     font-weight: 400;
     color: var(--desc-color);
-    margin: 2% 0%;
+    margin: 4% 0%;
 }
 
 .SingleProductImageContainer {
@@ -78,4 +79,10 @@
 
 .SingleProductImageContainer:hover .overlay {
     opacity: 1;
+}
+
+@media (max-width: 650px) {
+    .OurProductContainer{
+        grid-template-columns: 1fr;
+    }
 }

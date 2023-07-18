@@ -63,3 +63,14 @@
     font-size: 11px;
     text-decoration: underline;
 }
+
+@media (max-width: 550px) {
+    .featuredContainer{
+        gap: .7rem;
+    }
+    .featuredImageContainer{
+        position: relative;
+        max-width: 170px;
+        height: 200px;
+    }    
+}

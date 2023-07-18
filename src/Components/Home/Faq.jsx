@@ -11,6 +11,9 @@ flex-direction: column;
 gap: 1rem;
 padding: 5% 10%;
 background-color: #f3f5f6;
+@media screen and (max-width: 768px) {
+    padding: 5%; 
+}
 `
 const EachFaq = styled.div`
 background-color: #fff;
@@ -29,14 +32,14 @@ const AccordionItem = styled.div`
   justify-content: space-between;
   align-items: center;
   font-weight: 700;
-  font-size: 16px;
+  font-size: 16px; 
   padding: 10px;
     cursor: pointer;
   @media screen and (max-width: 768px) {
-        font-size: 1px !important;
+        font-size: 15px !important;
 }
 @media screen and (max-width: 500px) {
-    font-size: 16px !important;
+    font-size: 14px !important;
 }
 `;
 
@@ -50,7 +53,7 @@ const AccordionContent = styled.div`
   padding: 10px;
   padding-bottom : ${({ isOpen }) => (isOpen ? '10px' : '0')};
   @media screen and (max-width: 768px) {
-    font-size: 16px !important;
+    font-size: 15px !important;
     line-height:  ${({ isOpen }) => (isOpen ? '20px' : '0px')};
 }
 @media screen and (max-width: 500px) {
@@ -91,19 +94,19 @@ function Faq() {
     }
 
     return (
-        <div> 
+        <div>
             <SectionHeader title='FAQ”s' desc="Delve into our FAQ section, where you'll discover insightful responses that offer clarity and guidance for a seamless interior decor journey." />
-            <FaqContainer> 
+            <FaqContainer>
                 {items.map((item, index) => (
                     <AccordionContainer key={index}  >
                         <EachFaq>
                             <AccordionItem index={index} onClick={() => handleItemClick(index)}>
-                                {item.title}<AiOutlineRight style={activeIndices.includes(index) ? { transform: 'rotate(90deg)', transition: '0.4s' } : { transform: 'rotate(0deg)', transition: '0.4s',color:'var(--primary-color)' }} />
-                             </AccordionItem>
+                                {item.title}<AiOutlineRight style={activeIndices.includes(index) ? { transform: 'rotate(90deg)', transition: '0.4s' } : { transform: 'rotate(0deg)', transition: '0.4s', color: 'var(--primary-color)' }} />
+                            </AccordionItem>
                             <AccordionContent isOpen={activeIndices.includes(index)}>
                                 {item.content}
                             </AccordionContent>
-                        </EachFaq> 
+                        </EachFaq>
                     </AccordionContainer>
                 ))}
             </FaqContainer>

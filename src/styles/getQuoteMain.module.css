@@ -17,6 +17,8 @@
 }
 
 .GetQuoteMainContainer {
+    display: flex;
+    align-items: center;
     position: relative;
     margin-top: 2%;
     background-color: #fff;
@@ -198,4 +200,30 @@
 .slectedProduct span {
     display: inline-block;
     transform: rotate(10deg);
+}
+
+@media (max-width: 768px) {
+    .GetQuoteMainContainer {
+        margin-top: 7%;
+        width: 90%;
+    }
+    .GetQuoteStage1 h1 {
+        width: 80%;
+        font-size: 24px;
+    }
+    .quoteForm {
+        height: 80%;
+    }
+    .quoteMenu{
+        gap: 4px;
+    }
+    .quoteBtn {
+        font-size: 18px;
+    }
+    .GetQuoteStage3Content h3{
+        text-align: center;
+    }
+    .GetQuoteProducts {
+        gap: 5px;
+    }
 }

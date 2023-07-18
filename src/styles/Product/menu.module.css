@@ -45,3 +45,12 @@
     font-size: 11px;
 
 }
+
+@media (max-width: 750px) {
+    .menuContainer{
+        padding: 4% 10%;
+    }
+    .inputContainer{
+        width: 100%;
+    }
+}

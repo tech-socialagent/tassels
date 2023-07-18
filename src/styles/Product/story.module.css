@@ -6,6 +6,14 @@
     height: 55vh;
 }
 
+.storyTitle{
+    font-size:28px;
+    text-transform: capitalize;
+    font-size: var(--font-size-header);
+    text-align: center;
+    margin: 2% 0% 4%;
+}
+
 .storyImage{
     width: 100%;
     height: 55vh;
@@ -33,3 +41,40 @@
 .storyContent p span{
     font-weight: 800;
 }
+
+@media (max-width: 950px) {
+    .storyContainer{
+        grid-template-columns: 35% 65%;
+    }
+}
+
+@media (max-width: 780px) {
+    .storyContainer{
+        grid-template-columns: 30% 70%;
+    }
+}
+
+@media (max-width: 750px) {
+    .storyContainer{
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+        padding: 2%;
+    }
+    .storyContent p{
+        margin: 1% 0%;
+    }
+    .storyContent h1{
+        display: none;
+    }
+    .storyImage{
+        height: 30vh;
+    }
+}
+
+@media (min-width: 751px) {
+    .storyTitle{
+        display: none;
+    }
+}
+

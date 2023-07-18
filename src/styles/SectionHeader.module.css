@@ -18,3 +18,15 @@
     font-size: var(--font-size-desc);
     color: var(--desc-color);
 }
+
+@media (max-width: 750px) {
+    .OurProductsHeader{
+        gap: 0.3rem;
+    }
+    .OurProductsHeader p{
+        width: 80%;
+    }
+    .OurProductsHeader h1{
+        font-size: 34px;
+    }
+}

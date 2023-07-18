@@ -10,7 +10,7 @@ function Exclusive() {
                 <div className={styles.EachExclusive}>
                     Hassle Free Installation
                 </div>
-                <div className={styles.EachExclusive} style={{color:'#fff',backgroundColor:'#474747'}}>
+                <div className={styles.EachExclusiveCenter}>
                     Free Delivery
                 </div>
                 <div className={styles.EachExclusive}>

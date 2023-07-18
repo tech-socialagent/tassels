@@ -1,12 +1,14 @@
-.iconWrapper{
+.iconWrapper {
     display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     gap: 5%;
+    row-gap: 20px;
     margin: 5% 0%;
 
 }
 
-.singleIcon{
+.singleIcon {
     position: relative;
     min-height: 125px;
     min-width: 125px;
@@ -18,16 +20,16 @@
     cursor: pointer;
 }
 
-.Iconborder{
+.Iconborder {
     position: absolute;
     width: 100%;
     height: 100%;
     background-color: transparent !important;
     border: 1.5px solid black;
-    border-radius: 100% ;
+    border-radius: 100%;
 }
 
-.singleIcon:hover .Iconborder{
+.singleIcon:hover .Iconborder {
     border: 2px dotted var(--secondary-color);
     animation: rolling 10s linear infinite;
 }
@@ -35,19 +37,31 @@
 @keyframes rolling {
     from {
         transform: rotate(0deg);
-      }
-      to {
+    }
+    to {
         transform: rotate(360deg);
-      }
-  }
+    }
+}
 
-.icon{
+.icon {
     width: 50px;
     height: 50px;
     object-fit: contain;
 }
 
-.singleIcon span{
+.singleIcon span {
     font-size: 12px;
     font-weight: 500;
+}
+
+@media (max-width: 800px) {
+    .singleIcon{
+        min-height: 100px;
+        min-width: 100px;
+    }
+    .icon {
+        width: 40px;
+        height: 40px;
+        object-fit: contain;
+    }
 }

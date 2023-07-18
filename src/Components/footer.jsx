@@ -25,24 +25,26 @@ function TasselsFooter() {
                             <li><FaLinkedin /></li>
                         </div>
                     </div>
-                    <div className={styles.footerMiddle}>
-                        <div className={styles.footerMiddleContainer}>
-                            <div className={styles.footerTitle}>Quick Links</div>
-                            <ul>
-                                <li onClick={() => router.push('/')}>Homepage</li>
-                                <li>About Us</li>
-                                <li onClick={() => router.push('/product')}>Products</li>
-                                <li>Offers</li>
-                                <li onClick={() => router.push('/ContactUs')}>Contact Us</li>
-                            </ul>
+                    <div className={styles.footerPhone}>
+                        <div className={styles.footerMiddle}>
+                            <div className={styles.footerMiddleContainer}>
+                                <div className={styles.footerTitle}>Quick Links</div>
+                                <ul>
+                                    <li onClick={() => router.push('/')}>Homepage</li>
+                                    <li>About Us</li>
+                                    <li onClick={() => router.push('/product')}>Products</li>
+                                    <li>Offers</li>
+                                    <li onClick={() => router.push('/ContactUs')}>Contact Us</li>
+                                </ul>
+                            </div>
                         </div>
-                    </div>
-                    <div className={styles.footerRight}>
-                        <div className={styles.footerTitle}>News Letter</div>
-                        <form className={styles.footerForm} onSubmit=''>
-                            <input type='email' placeholder='Enter Your Email Address Here' requied />
-                            <button type='submit'>SUBSCRIBE</button>
-                        </form>
+                        <div className={styles.footerRight}>
+                            <div className={styles.footerTitle}>News Letter</div>
+                            <form className={styles.footerForm} onSubmit=''>
+                                <input type='email' placeholder='Enter Your Email Address Here' requied />
+                                <button type='submit'>SUBSCRIBE</button>
+                            </form>
+                        </div>
                     </div>
                 </div>
             </div>

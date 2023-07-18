@@ -27,6 +27,7 @@
 }
 
 .NavbarBottom{
+    position: relative;
     display: grid;
     grid-template-columns: 30% auto;
     background-color: var(--primary-color);
@@ -57,7 +58,7 @@
 }
 
 
-.Menus li{
+.Menus li, .PhoneMenus li{
     color: #fff;
     font-size: 15.5px;
     list-style: none;
@@ -66,6 +67,64 @@
     transition: color 0.3s ease-in-out;
 }
 
-.Menus li:hover{
+.Menus li:hover, .PhoneMenus li:hover{
     color: var(--secondary-color);
+}
+
+.PhoneMenus{
+    width: 30vh;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    padding-top: 4rem;
+    background-color: var(--primary-color);
+    z-index: 4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    transition: all 0.7s ease-in-out;
+}
+
+.PhoneMenus span{
+    position: absolute;
+    right: 2%;
+    top: 5%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+    font-size: 28px;
+    color: var(--secondary-color);
+    cursor: pointer;
+}
+
+.toggleBar{
+    position: absolute;
+    right: 5%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+    font-size: 22px;
+    color: var(--secondary-color);
+}
+
+.toggleBar span{
+    cursor: pointer;
+}
+
+@media (max-width: 750px) {
+    .NavbarTop{
+        display: none;
+    }
+    .Menus{
+        display: none;
+    }
+}
+
+@media (min-width: 751px) {
+    .PhoneMenus{
+        display: none;
+    }
+    .toggleBar{
+        display: none;
+    }
 }

@@ -65,3 +65,18 @@
     background-color: #fff;
     color:  #ff7004;
 } */
+
+@media (max-width: 750px) {
+    .quoteContainer{
+        height: 60vh;
+    }
+    .quoteForm{
+        width: 80%;
+    }
+    .quoteMenu{
+        gap: 5px;
+    }
+    .quoteForm button{
+        font-size: 18px;
+    }
+}

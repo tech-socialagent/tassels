@@ -11,7 +11,7 @@ function OurProducts() {
     const router = useRouter();
     const { setProduct } = useContext(ProductContext);
 
-    const handleClick = (e,title) => {
+    const handleClick = (e, title) => {
         e.preventDefault();
         setProduct(title);
 
@@ -24,10 +24,12 @@ function OurProducts() {
             <div className={styles.OurProductContainer}>
                 {OurProductData.map((item) => (
                     <div className={styles.SingleProduct}>
-                        <h3><li>{item.title}</li></h3>
-                        <p>{item.desc}</p>
-                        <div className={styles.SingleProductImageContainer} onClick={(e) => handleClick(e,item.title)}>
-                            <Image src={item.img} alt="image" width={1000} height={1000} className={styles.SingleProductImage}/>
+                        <div className={styles.ProductTitle}>
+                            <h3><li>{item.title}</li></h3>
+                            <p>{item.desc}</p>
+                        </div>
+                        <div className={styles.SingleProductImageContainer} onClick={(e) => handleClick(e, item.title)}>
+                            <Image src={item.img} alt="image" width={1000} height={1000} className={styles.SingleProductImage} />
                             <div className={styles.explore}>Explore more</div>
                             <div className={styles.overlay}></div>
                         </div>

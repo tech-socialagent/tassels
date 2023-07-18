@@ -112,3 +112,13 @@
 .socialIcon span{
     cursor: pointer;
 }
+
+@media (max-width: 750px) {
+    .GetInTouchWrap{
+        display: flex;
+        flex-direction: column;
+    }
+    .formMenus{
+        gap: 1rem;
+    }
+}

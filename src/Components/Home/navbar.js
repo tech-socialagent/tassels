@@ -3,11 +3,13 @@ import styles from "@/styles/home/navbar.module.css";
 import Image from 'next/image';
 import logo from '../../../public/Assets/images/logo.png';
 import { useRouter } from 'next/router';
+import { AiOutlineMenu, AiFillCloseCircle } from 'react-icons/ai';
 
 function Navbar() {
 
     const router = useRouter();
     const [isFixed, setIsFixed] = useState(false);
+    const [menuBar, setMenuBar] = useState(false);
 
     useEffect(() => {
       function handleScroll() {
@@ -18,6 +20,17 @@ function Navbar() {
       window.addEventListener('scroll', handleScroll);
       return () => window.removeEventListener('scroll', handleScroll);
     }, []);
+
+    const handleClick = (e) => {
+        e.preventDefault();
+        setMenuBar(!menuBar);
+    }
+
+    const handleNavigate = (e,page) => {
+        e.preventDefault();
+        setMenuBar(false);
+        router.push(`/${page}`)
+    }
 
     const data = [
         {
@@ -53,6 +66,16 @@ function Navbar() {
                             <li>FAQ's</li>
                             <li onClick={() => router.push('/ContactUs')}>Contact Us</li>
                             <li>Spacewood</li>
+                    </div>
+                    <div className={styles.toggleBar}><span onClick={handleClick}><AiOutlineMenu /></span></div>
+                    <div className={styles.PhoneMenus} style={{right: menuBar ? '0vh' : '-30vh'}}>
+                            <li onClick={(e)=>handleNavigate(e,'')}>Home</li>
+                            <li onClick={(e)=>handleNavigate(e,'product')}>Products</li>
+                            <li>Offers</li>
+                            <li>FAQ's</li>
+                            <li onClick={(e) =>handleNavigate(e,"ContactUs")}>Contact Us</li>
+                            <li>Spacewood</li>
+                            <span onClick={handleClick}><AiFillCloseCircle /></span>
                     </div>
             </div>
         </div>

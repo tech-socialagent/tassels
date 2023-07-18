@@ -41,6 +41,7 @@ export default function Home() {
       <Franchises />
       <FollowUs />
       <Faq />
+      <Review />
       <TasselsFooter />
     </>
   )

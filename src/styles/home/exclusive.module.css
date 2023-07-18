@@ -1,0 +1,52 @@
+.ExclusiveWrapper{
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    margin: 3% 0%;
+}
+
+.bannerTextImage{
+    width: 100%;
+    height: 60vh;
+    object-fit: fill;
+}
+
+.ExclusiveContent {
+    display: flex;
+    border: 1.5px solid #474747;
+}
+
+.EachExclusive{
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #474747;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 20px 0px;
+}
+
+.EachExclusiveCenter {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    background-color: #474747;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 20px 0px;
+}
+
+@media (max-width: 750px) {
+    .bannerTextImage{
+        height: 30vh;
+        object-fit: fill;
+    }
+    .EachExclusive{
+        font-size: 16px;
+    }
+}

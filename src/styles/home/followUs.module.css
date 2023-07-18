@@ -1,0 +1,77 @@
+.mySwiper {
+    margin: 3% 0%;
+}
+
+.wrapper {
+    width: 100%;
+    height: 320px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.topOval {
+    position: absolute;
+    top: 0;
+    height: 50px;
+    width: 100%;
+    background: white;
+    border-bottom-left-radius: 70%;
+    border-bottom-right-radius: 70%;
+}
+
+.bottomOval {
+    position: absolute;
+    bottom: 0;
+    height: 50px;
+    width: 100%;
+    border-top-left-radius: 50%;
+    border-top-right-radius: 50%;
+    background: white;
+}
+
+
+.stripW {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-wrap: no-wrap;
+    align-items: flex-start;
+    overflow-x: auto;
+}
+
+.stripW::-webkit-scrollbar{
+    display: none;
+}
+
+.stripItem {
+    height: 300px;
+    width: 100%;
+    min-width: 300px;
+    margin-right: 10px;
+    background-size: cover;
+}
+
+.CarouselImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+@media (max-width: 750px) {
+    .wrapper{
+        height: 200px;
+    }
+    .topOval{
+        height: 30px;
+    }
+    .bottomOval{
+        height: 30px;
+    }
+    .stripItem{
+        height: 195px;
+        min-width:170px ;
+    }
+}

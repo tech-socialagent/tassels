@@ -1,0 +1,77 @@
+.ContactHeaderWrap{
+    position: relative;
+    height: 50vh;
+    color: #fff;
+    background: url('../../../public/Assets/contactBG.webp');
+    background-size: cover;
+    background-repeat:no-repeat ;
+}
+
+.HeaderContent{
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+    z-index: 3;
+}
+
+.HeaderContent h1{
+    font-weight: 600;
+    font-size: 30px;
+}
+
+.HeaderContent h1 span{
+ color: var(--secondary-color);
+}
+
+.HeaderContent ul{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5%;
+    row-gap: 5px;
+}
+
+.HeaderContent ul li{
+    list-style: none;
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+}
+
+.HeaderContent ul li:before {
+    content: ""; 
+    display: inline-block;
+    width: 4px;
+    height: 4px;
+    border-radius: 50%; 
+    background-color: #fff; 
+    margin-right: 0.5em;
+}
+
+.overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #0000004e;
+    z-index: 2;
+}
+
+@media (max-width: 750px) {
+    .ContactHeaderWrap{
+        height: 35vh;
+    }
+    .HeaderContent h1{
+        text-align: center;
+        font-size: 24px;
+    }
+    .HeaderContent ul li{
+        font-size: 11px;
+    }
+}

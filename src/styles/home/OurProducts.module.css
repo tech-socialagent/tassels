@@ -1,0 +1,88 @@
+.OurProductsWrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.OurProductContainer {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+    margin: 1% 5% 2%;
+}
+
+.SingleProduct {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 2%;
+}
+
+.ProductTitle h3 {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.ProductTitle p {
+    font-size: 14px;
+    font-weight: 400;
+    color: var(--desc-color);
+    margin: 4% 0%;
+}
+
+.SingleProductImageContainer {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    height: 300px;
+    cursor: pointer;
+}
+
+.SingleProductImage {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: 1;
+}
+
+.explore {
+    opacity: 0;
+    color: #fff;
+    text-transform: uppercase;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+    font-size: 20px;
+    font-weight: 600;
+    border-bottom: 2px solid #fff;
+    padding-bottom: 2px;
+    transition: all 0.4s ease-in-out;
+}
+
+.SingleProductImageContainer:hover .explore {
+    opacity: 1;
+}
+
+.overlay{
+    opacity: 0;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #0000004e;
+    z-index: 2;
+    transition: all 0.4s ease-in-out;
+}
+
+.SingleProductImageContainer:hover .overlay {
+    opacity: 1;
+}
+
+@media (max-width: 650px) {
+    .OurProductContainer{
+        grid-template-columns: 1fr;
+    }
+}

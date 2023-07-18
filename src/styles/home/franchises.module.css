@@ -1,0 +1,62 @@
+.franchisesContainer{
+    position: relative;
+    height: 42vh;
+    margin: 3% 0%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.franchisesImage1{
+    width: 28%;
+    height: 30%;
+    object-fit: contain;
+    margin: 1% 3%;
+}
+
+.franchisesImage2{
+    width: 40%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.overlayText{
+    text-transform: capitalize;
+    position: absolute;
+    top: 50%;
+    background-color: #fbba00;
+    font-size: 4vh;
+    color: #fff;
+    font-weight: 700;
+    padding: 1.5% 10% 1.5% 13%;
+}
+
+@media (max-width: 1000px) {
+    .franchisesContainer{
+        height: 40vh;
+    }   
+    .overlayText{
+        font-size: 3vh;
+    }
+}
+
+@media (max-width: 750px) {
+    .franchisesContainer{
+        height: 35vh;
+    }
+    .overlayText{
+        font-size: 2vh;
+        padding: 1.5% 7% 1.5% 10%;
+    }
+    .franchisesImage2{
+        width: 50%;
+    }
+}
+
+@media (max-width: 500px) {
+    .franchisesContainer{
+        height: 25vh;
+    }
+    .overlayText{
+        font-size: 1.5vh;
+    }
+}

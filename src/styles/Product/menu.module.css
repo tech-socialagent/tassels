@@ -1,0 +1,56 @@
+.menuContainer{
+    display: flex;
+    gap: 12%;
+    padding: 1%;
+}
+
+.MenuIcon{
+    width: 8%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+    cursor: pointer;  
+}
+
+.MenuIcon span:nth-child(1){
+    font-size: 18px;
+}
+
+.MenuIcon span:nth-child(2){
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.inputContainer{
+    width: 65%;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    background-color: #eeeeee;
+    padding: 0px 15px;
+    border-radius: 20px;
+}
+
+.inputContainer span{
+    display: flex;
+    font-size: 15px;
+}
+
+.inputContainer input{
+    width: 100%;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    font-size: 11px;
+
+}
+
+@media (max-width: 750px) {
+    .menuContainer{
+        padding: 4% 10%;
+    }
+    .inputContainer{
+        width: 100%;
+    }
+}

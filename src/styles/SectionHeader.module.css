@@ -1,0 +1,32 @@
+.OurProductsHeader{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .5rem;
+    text-align: center;
+    margin: 1rem 0;
+}
+
+.OurProductsHeader h1{
+    text-transform: capitalize;
+    font-size: var(--font-size-header);
+}
+
+.OurProductsHeader p{
+    width: 50%;
+    line-height: 20px;
+    font-size: var(--font-size-desc);
+    color: var(--desc-color);
+}
+
+@media (max-width: 750px) {
+    .OurProductsHeader{
+        gap: 0.3rem;
+    }
+    .OurProductsHeader p{
+        width: 80%;
+    }
+    .OurProductsHeader h1{
+        font-size: 34px;
+    }
+}

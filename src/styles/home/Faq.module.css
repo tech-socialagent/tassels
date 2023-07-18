@@ -1,0 +1,15 @@
+.FaqContainer{
+    margin: 2% 2% 6%;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    padding: 5% 10%;
+    background-color: #f3f5f6;
+}
+
+.eachFaq{
+    background-color: #fff;
+    padding: 1%;
+    border-radius: 10px;
+}

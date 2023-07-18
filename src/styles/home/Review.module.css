@@ -1,0 +1,122 @@
+.ReviewWrap {}
+
+.ArrowContainer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 34px;
+    color: var(--secondary-color);
+}
+
+.ArrowContainer span {
+    cursor: pointer;
+}
+
+.ReviewWrap {
+    display: grid;
+    grid-template-columns: 10% 80% 10%;
+    align-items: center;
+    margin: 5% 0%;
+}
+
+.ReviewContainer {
+    display: flex;
+    gap: 7%;
+}
+
+.Center {
+    width: 100%;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px;
+    border: 2px solid var(--secondary-color);
+    gap: 10px;
+}
+
+.Center h3, .CenterMobile h3 {
+    font-size: 16px;
+}
+
+.Center p, .CenterMobile p {
+    text-align: center;
+    font-size: 12px;
+}
+
+.reviewImage {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+
+.reviewImageLeft {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+}
+
+.StarContainer {
+    display: flex;
+    gap: 5px;
+    color: var(--secondary-color);
+}
+
+.CenterMobile{
+    width: 100%;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 5%;
+    border-radius: 20px;
+    border: 2px solid var(--secondary-color);
+}
+
+.reviewImagePhone{
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+}
+
+@media (max-width: 750px) {
+    .Center {
+        height: 200px;
+    }
+
+    .Center h3 {
+        font-size: 14px;
+    }
+
+    .Center p {
+        font-size: 10px;
+    }
+
+    .reviewImage {
+        width: 60px;
+        height: 60px;
+    }
+
+    .reviewImageLeft {
+        width: 40px;
+        height: 40px;
+    }
+
+    .StarContainer {
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 550px) {
+    .Center {
+        display: none;
+    }
+}
+
+@media (min-width: 551px) {
+    .CenterMobile {
+        display: none;
+    }
+}

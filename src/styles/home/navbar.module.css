@@ -1,0 +1,130 @@
+.NavbarConainer{
+    display: flex;
+    flex-direction: column;
+}
+
+.NavbarTop{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    font-size: 11px;
+    padding: 10px 0px;
+}
+
+.Element{
+    display: flex;
+    gap: 5px;
+}
+
+.Type{
+    color: var(--primary-color);
+}
+
+.Content{
+    color: var(--secondary-color);
+    text-decoration: underline;  
+}
+
+.NavbarBottom{
+    position: relative;
+    display: grid;
+    grid-template-columns: 30% auto;
+    background-color: var(--primary-color);
+    padding: 1% 2%;
+}
+
+.fixedNavbar{
+    position: fixed;
+    top:0;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 30% auto;
+    background-color: var(--primary-color);
+    padding: 1% 2%;
+    z-index: 10;
+}
+
+.logo{
+    object-fit: contain;
+    width: 150px;
+    height: 100%;
+}
+
+.Menus{
+    display: flex;
+    align-items: center;
+    gap: 3%;
+}
+
+
+.Menus li, .PhoneMenus li{
+    color: #fff;
+    font-size: 15.5px;
+    list-style: none;
+    font-weight: 400;
+    cursor: pointer;
+    transition: color 0.3s ease-in-out;
+}
+
+.Menus li:hover, .PhoneMenus li:hover{
+    color: var(--secondary-color);
+}
+
+.PhoneMenus{
+    width: 30vh;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    padding-top: 4rem;
+    background-color: var(--primary-color);
+    z-index: 4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    transition: all 0.7s ease-in-out;
+}
+
+.PhoneMenus span{
+    position: absolute;
+    right: 2%;
+    top: 5%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+    font-size: 28px;
+    color: var(--secondary-color);
+    cursor: pointer;
+}
+
+.toggleBar{
+    position: absolute;
+    right: 5%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 3;
+    font-size: 22px;
+    color: var(--secondary-color);
+}
+
+.toggleBar span{
+    cursor: pointer;
+}
+
+@media (max-width: 750px) {
+    .NavbarTop{
+        display: none;
+    }
+    .Menus{
+        display: none;
+    }
+}
+
+@media (min-width: 751px) {
+    .PhoneMenus{
+        display: none;
+    }
+    .toggleBar{
+        display: none;
+    }
+}

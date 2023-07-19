@@ -75,8 +75,14 @@
 }
 
 .footerMiddle ul li{
+    color: #fff;
     font-size: 12px;
     font-weight: 300;
+    cursor: pointer;
+}
+
+.footerMiddle ul li:hover{
+    color: var(--secondary-color);
 }
 
 

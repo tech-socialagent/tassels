@@ -6,7 +6,7 @@ function Exclusive() {
     return (
         <div className={styles.ExclusiveWrapper}>
             <Image src="/Assets/images/bannerTxt.webp" width={2000} height={1000} className={styles.bannerTextImage} />
-            <div className={styles.ExclusiveContent}>
+            <div className={styles.ExclusiveContent}   id='products'>
                 <div className={styles.EachExclusive}>
                     Hassle Free Installation
                 </div>

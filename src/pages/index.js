@@ -11,6 +11,7 @@ import Navbar from '@/Components/Home/navbar'
 import TasselsFooter from '@/Components/footer'
 import Head from 'next/head'
 
+
 export default function Home() {
   return (
     <>

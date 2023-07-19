@@ -23,6 +23,6 @@ export default function App({ Component, pageProps }) {
           <Component {...pageProps} />
         </ProductContext.Provider>
       </GetQuoteContext.Provider>
-      </FormDataContext.Provider>
+    </FormDataContext.Provider>
   );
 }

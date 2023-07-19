@@ -88,7 +88,7 @@ function Faq() {
     const handleItemClick = (index) => {
         if (activeIndices.includes(index)) {
             setActiveIndices(activeIndices.filter((i) => i !== index)); // Close the clicked item if it's already open
-        } else {
+        } else { 
             setActiveIndices([...activeIndices, index]);
         }
     }
@@ -98,7 +98,7 @@ function Faq() {
             <SectionHeader title='FAQ”s' desc="Delve into our FAQ section, where you'll discover insightful responses that offer clarity and guidance for a seamless interior decor journey." />
             <FaqContainer>
                 {items.map((item, index) => (
-                    <AccordionContainer key={index}  >
+                    <AccordionContainer key={index}>
                         <EachFaq>
                             <AccordionItem index={index} onClick={() => handleItemClick(index)}>
                                 {item.title}<AiOutlineRight style={activeIndices.includes(index) ? { transform: 'rotate(90deg)', transition: '0.4s' } : { transform: 'rotate(0deg)', transition: '0.4s', color: 'var(--primary-color)' }} />

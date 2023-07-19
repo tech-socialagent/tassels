@@ -53,59 +53,369 @@ export const ProductImages = [
     //Interiors
     {
         title: 'Interiors',
-        img: '/Assets/product/OurProduct1.webp',
+        img: '/Assets/productImg/Interiors/Interior1.webp',
     },
     {
         title: 'Interiors',
-        img: '/Assets/product/OurProduct2.webp',
+        img: '/Assets/productImg/Interiors/Interior2.webp',
     },
     {
         title: 'Interiors',
-        img: '/Assets/product/OurProduct3.webp',
+        img: '/Assets/productImg/Interiors/Interior3.webp',
     },
     {
         title: 'Interiors',
-        img: '/Assets/product/OurProduct4.webp',
+        img: '/Assets/productImg/Interiors/Interior4.webp',
     },
     {
         title: 'Interiors',
-        img: '/Assets/product/OurProduct5.webp',
+        img: '/Assets/productImg/Interiors/Interior5.webp',
     },
     {
         title: 'Interiors',
-        img: '/Assets/product/OurProduct6.webp',
+        img: '/Assets/productImg/Interiors/Interior6.webp',
     },
     {
         title: 'Interiors',
-        img: '/Assets/product/OurProduct7.webp',
+        img: '/Assets/productImg/Interiors/Interior7.webp',
     },
     {
         title: 'Interiors',
-        img: '/Assets/product/OurProduct8.webp',
+        img: '/Assets/productImg/Interiors/Interior8.webp',
     },
-    {
-        title: 'Interiors',
-        img: '/Assets/banner/banner1.webp',
-    },
-    {
-        title: 'Interiors',
-        img: '/Assets/banner/banner2.webp',
-    },
-    {
-        title: 'Interiors',
-        img: '/Assets/banner/banner3.webp',
-    },
-    {
-        title: 'Interiors',
-        img: '/Assets/banner/banner4.webp',
-    },
-    //Blinks
+    //Blinds
     {
         title: 'Blinds',
-        img: '/Assets/product/OurProduct8.webp',
+        img: '/Assets/productImg/Blinds/BlindsM1.webp',
     },
     {
         title: 'Blinds',
-        img: '/Assets/banner/banner1.webp',
+        img: '/Assets/productImg/Blinds/BlindsM2.webp',
+    },
+    {
+        title: 'Blinds',
+        img: '/Assets/productImg/Blinds/BlindsM3.webp',
+    },
+    {
+        title: 'Blinds',
+        img: '/Assets/productImg/Blinds/BlindsM4.webp',
+    },
+    {
+        title: 'Blinds',
+        img: '/Assets/productImg/Blinds/BlindsM5.webp',
+    },
+    {
+        title: 'Blinds',
+        img: '/Assets/productImg/Blinds/BlindsM6.webp',
+    },
+    {
+        title: 'Blinds',
+        img: '/Assets/productImg/Blinds/BlindsM7.webp',
+    },
+    {
+        title: 'Blinds',
+        img: '/Assets/productImg/Blinds/BlindsM8.webp',
+    },
+    {
+        title: 'Blinds',
+        img: '/Assets/productImg/Blinds/BlindsM9.webp',
+    },
+    {
+        title: 'Blinds',
+        img: '/Assets/productImg/Blinds/BlindsM10.webp',
+    },
+    {
+        title: 'Blinds',
+        img: '/Assets/productImg/Blinds/Blinds1.webp',
+    },
+    {
+        title: 'Blinds',
+        img: '/Assets/productImg/Blinds/Blinds2.webp',
+    },
+    {
+        title: 'Blinds',
+        img: '/Assets/productImg/Blinds/Blinds3.webp',
+    },
+    {
+        title: 'Blinds',
+        img: '/Assets/productImg/Blinds/Blinds4.webp',
+    },
+    {
+        title: 'Blinds',
+        img: '/Assets/productImg/Blinds/Blinds5.webp',
+    },
+    {
+        title: 'Blinds',
+        img: '/Assets/productImg/Blinds/Blinds6.webp',
+    },
+    {
+        title: 'Blinds',
+        img: '/Assets/productImg/Blinds/Blinds7.webp',
+    },
+    {
+        title: 'Blinds',
+        img: '/Assets/productImg/Blinds/Blinds8.webp',
+    },
+    //Curtains
+    {
+        title: 'Curtains',
+        img: '/Assets/productImg/Curtains/CurtainM1.webp',
+    },
+    {
+        title: 'Curtains',
+        img: '/Assets/productImg/Curtains/CurtainM2.webp',
+    },
+    {
+        title: 'Curtains',
+        img: '/Assets/productImg/Curtains/CurtainM3.webp',
+    },
+    {
+        title: 'Curtains',
+        img: '/Assets/productImg/Curtains/CurtainM4.webp',
+    },
+    {
+        title: 'Curtains',
+        img: '/Assets/productImg/Curtains/CurtainM5.webp',
+    },
+    {
+        title: 'Curtains',
+        img: '/Assets/productImg/Curtains/Curtain1.webp',
+    },
+    {
+        title: 'Curtains',
+        img: '/Assets/productImg/Curtains/Curtain2.webp',
+    },
+    {
+        title: 'Curtains',
+        img: '/Assets/productImg/Curtains/Curtain3.webp',
+    },
+    {
+        title: 'Curtains',
+        img: '/Assets/productImg/Curtains/Curtain4.webp',
+    },
+    {
+        title: 'Curtains',
+        img: '/Assets/productImg/Curtains/Curtain5.webp',
+    },
+    {
+        title: 'Curtains',
+        img: '/Assets/productImg/Curtains/Curtain6.webp',
+    },
+    {
+        title: 'Curtains',
+        img: '/Assets/productImg/Curtains/Curtain7.webp',
+    },
+    {
+        title: 'Curtains',
+        img: '/Assets/productImg/Curtains/Curtain8.webp',
+    },
+    //Wallpaper
+    {
+        title: 'Wallpaper',
+        img: '/Assets/productImg/Wallpaper/WallpaperM1.webp',
+    },
+    {
+        title: 'Wallpaper',
+        img: '/Assets/productImg/Wallpaper/WallpaperM2.webp',
+    },
+    {
+        title: 'Wallpaper',
+        img: '/Assets/productImg/Wallpaper/WallpaperM3.webp',
+    },
+    {
+        title: 'Wallpaper',
+        img: '/Assets/productImg/Wallpaper/WallpaperM4.webp',
+    },
+    {
+        title: 'Wallpaper',
+        img: '/Assets/productImg/Wallpaper/WallpaperM5.webp',
+    },
+    {
+        title: 'Wallpaper',
+        img: '/Assets/productImg/Wallpaper/WallpaperM6.webp',
+    },
+    {
+        title: 'Wallpaper',
+        img: '/Assets/productImg/Wallpaper/Wallpaper1.webp',
+    },
+    {
+        title: 'Wallpaper',
+        img: '/Assets/productImg/Wallpaper/Wallpaper2.webp',
+    },
+    {
+        title: 'Wallpaper',
+        img: '/Assets/productImg/Wallpaper/Wallpaper3.webp',
+    },
+    {
+        title: 'Wallpaper',
+        img: '/Assets/productImg/Wallpaper/Wallpaper4.webp',
+    },
+    {
+        title: 'Wallpaper',
+        img: '/Assets/productImg/Wallpaper/Wallpaper5.webp',
+    },
+    {
+        title: 'Wallpaper',
+        img: '/Assets/productImg/Wallpaper/Wallpaper6.webp',
+    },
+    {
+        title: 'Wallpaper',
+        img: '/Assets/productImg/Wallpaper/Wallpaper7.webp',
+    },
+    {
+        title: 'Wallpaper',
+        img: '/Assets/productImg/Wallpaper/Wallpaper8.webp',
+    },
+    //Rods
+    {
+        title: 'Rods and Tracks',
+        img: '/Assets/productImg/Rods/RodsM1.webp',
+    },
+    {
+        title: 'Rods and Tracks',
+        img: '/Assets/productImg/Rods/RodsM2.webp',
+    },
+    {
+        title: 'Rods and Tracks',
+        img: '/Assets/productImg/Rods/Rods1.webp',
+    },
+    {
+        title: 'Rods and Tracks',
+        img: '/Assets/productImg/Rods/Rods2.webp',
+    },
+    {
+        title: 'Rods and Tracks',
+        img: '/Assets/productImg/Rods/Rods3.webp',
+    },
+    {
+        title: 'Rods and Tracks',
+        img: '/Assets/productImg/Rods/Rods4.webp',
+    },
+    {
+        title: 'Rods and Tracks',
+        img: '/Assets/productImg/Rods/Rods5.webp',
+    },
+    {
+        title: 'Rods and Tracks',
+        img: '/Assets/productImg/Rods/Rods6.webp',
+    },
+    {
+        title: 'Rods and Tracks',
+        img: '/Assets/productImg/Rods/Rods7.webp',
+    },
+    {
+        title: 'Rods and Tracks',
+        img: '/Assets/productImg/Rods/Rods8.webp',
+    },
+    //Flooring
+    {
+        title: 'Flooring',
+        img: '/Assets/productImg/Flooring/flooring1.webp',
+    },
+    {
+        title: 'Flooring',
+        img: '/Assets/productImg/Flooring/flooring2.webp',
+    },
+    {
+        title: 'Flooring',
+        img: '/Assets/productImg/Flooring/flooring3.webp',
+    },
+    {
+        title: 'Flooring',
+        img: '/Assets/productImg/Flooring/flooring4.webp',
+    },
+    {
+        title: 'Flooring',
+        img: '/Assets/productImg/Flooring/flooring5.webp',
+    },
+    {
+        title: 'Flooring',
+        img: '/Assets/productImg/Flooring/flooring6.webp',
+    },
+    {
+        title: 'Flooring',
+        img: '/Assets/productImg/Flooring/flooring7.webp',
+    },
+    {
+        title: 'Flooring',
+        img: '/Assets/productImg/Flooring/flooring8.webp',
+    },
+    //Furniture
+    {
+        title: 'Furniture',
+        img: '/Assets/productImg/Furniture/Furniture1.webp',
+    },
+    {
+        title: 'Furniture',
+        img: '/Assets/productImg/Furniture/Furniture2.webp',
+    },
+    {
+        title: 'Furniture',
+        img: '/Assets/productImg/Furniture/Furniture3.webp',
+    },
+    {
+        title: 'Furniture',
+        img: '/Assets/productImg/Furniture/Furniture4.webp',
+    },
+    {
+        title: 'Furniture',
+        img: '/Assets/productImg/Furniture/Furniture5.webp',
+    },
+    {
+        title: 'Furniture',
+        img: '/Assets/productImg/Furniture/Furniture6.webp',
+    },
+    {
+        title: 'Furniture',
+        img: '/Assets/productImg/Furniture/Furniture7.webp',
+    },
+    {
+        title: 'Furniture',
+        img: '/Assets/productImg/Furniture/Furniture8.webp',
+    },
+    //Upholstery
+    {
+        title: 'Upholstery',
+        img: '/Assets/productImg/Upholstery/Upholstery1.webp',
+    },
+    {
+        title: 'Upholstery',
+        img: '/Assets/productImg/Upholstery/Upholstery2.webp',
+    },
+    {
+        title: 'Upholstery',
+        img: '/Assets/productImg/Upholstery/Upholstery3.webp',
+    },
+    {
+        title: 'Upholstery',
+        img: '/Assets/productImg/Upholstery/Upholstery4.webp',
+    },
+    {
+        title: 'Upholstery',
+        img: '/Assets/productImg/Upholstery/Upholstery5.webp',
+    },
+]
+
+export const CushionImages = [
+    //Cushions
+    {
+        title: 'Cushions',
+        img: '/Assets/productImg/Cushions/Cushions1.webp',
+    },
+    {
+        title: 'Cushions',
+        img: '/Assets/productImg/Cushions/Cushions2.webp',
+    },
+    {
+        title: 'Cushions',
+        img: '/Assets/productImg/Cushions/Cushions3.webp',
+    },
+    {
+        title: 'Cushions',
+        img: '/Assets/productImg/Cushions/Cushions4.webp',
+    },
+    {
+        title: 'Cushions',
+        img: '/Assets/productImg/Cushions/Cushions5.webp',
     },
 ]

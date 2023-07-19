@@ -4,6 +4,7 @@ import { FaFacebookSquare, FaInstagramSquare, FaTwitterSquare, FaLinkedin } from
 import Image from 'next/image';
 import logo from '../../public/Assets/images/logo.png';
 import { useRouter } from 'next/router';
+import Link from 'next/link';
 
 function TasselsFooter() {
 
@@ -32,8 +33,12 @@ function TasselsFooter() {
                                 <ul>
                                     <li onClick={() => router.push('/')}>Homepage</li>
                                     <li>About Us</li>
-                                    <li onClick={() => router.push('/product')}>Products</li>
-                                    <li>Offers</li>
+                                    <Link href="/#products" style={{textDecoration:'none'}}>
+                                        <li>Products</li>
+                                    </Link>
+                                    <Link href="/#offers" style={{textDecoration:'none'}}>
+                                        <li>Offers</li>
+                                    </Link>
                                     <li onClick={() => router.push('/ContactUs')}>Contact Us</li>
                                 </ul>
                             </div>

@@ -14,7 +14,6 @@ function OurProducts() {
     const handleClick = (e, title) => {
         e.preventDefault();
         setProduct(title);
-
         router.push('/product')
     }
 

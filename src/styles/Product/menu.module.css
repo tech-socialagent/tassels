@@ -1,28 +1,29 @@
-.menuContainer{
+.menuContainer {
+    position: relative;
     display: flex;
     gap: 12%;
     padding: 1%;
 }
 
-.MenuIcon{
+.MenuIcon {
     width: 8%;
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 0;
-    cursor: pointer;  
+    cursor: pointer;
 }
 
-.MenuIcon span:nth-child(1){
+.MenuIcon span:nth-child(1) {
     font-size: 18px;
 }
 
-.MenuIcon span:nth-child(2){
+.MenuIcon span:nth-child(2) {
     font-size: 12px;
     font-weight: 600;
 }
 
-.inputContainer{
+.inputContainer {
     width: 65%;
     display: flex;
     align-items: center;
@@ -32,12 +33,12 @@
     border-radius: 20px;
 }
 
-.inputContainer span{
+.inputContainer span {
     display: flex;
     font-size: 15px;
 }
 
-.inputContainer input{
+.inputContainer input {
     width: 100%;
     border: none;
     outline: none;
@@ -46,11 +47,67 @@
 
 }
 
+.MenuOptions {
+    width: 70vh;
+    height: 90vh;
+    position: absolute;
+    top: 20%;
+    background-color: var(--primary-color);
+    display: flex;
+    flex-direction: column;
+    padding: 2% 7%;
+    gap: .5rem;
+    z-index: 3;
+    border-radius: 10px;
+    transition: all 0.4s ease-in-out;
+}
+
+.MenuOptions span {
+    padding: 2%;
+    color: #fff;
+    font-size: 20px;
+    cursor: pointer;
+    font-weight: 400;
+    transition: all 0.4s ease-in-out;
+}
+
+.MenuOptions span:hover {
+    transform: scale(1.05);
+}
+
+.MenuOptions p {
+    position: absolute;
+    left: 5%;
+    top: 5%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-size: 28px;
+    cursor: pointer;
+}
+
+.menuLogo {
+    height: 50px;
+    width: 150px;
+    object-fit: contain;
+    margin-bottom: 5%;
+}
+
 @media (max-width: 750px) {
-    .menuContainer{
+    .menuContainer {
         padding: 4% 10%;
     }
-    .inputContainer{
+
+    .inputContainer {
         width: 100%;
+    }
+
+    .MenuOptions {
+        width: 50vh;
+        padding: 2% 10%;
+    }
+
+    .MenuOptions p {
+        top: 5%;
+        left: 90%;
     }
 }

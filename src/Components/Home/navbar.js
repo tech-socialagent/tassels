@@ -4,6 +4,7 @@ import Image from 'next/image';
 import logo from '../../../public/Assets/images/logo.png';
 import { useRouter } from 'next/router';
 import { AiOutlineMenu, AiFillCloseCircle } from 'react-icons/ai';
+import Link from 'next/link';
 
 function Navbar() {
 
@@ -12,13 +13,13 @@ function Navbar() {
     const [menuBar, setMenuBar] = useState(false);
 
     useEffect(() => {
-      function handleScroll() {
-        const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-        setIsFixed(scrollTop > 35);
-      }
-  
-      window.addEventListener('scroll', handleScroll);
-      return () => window.removeEventListener('scroll', handleScroll);
+        function handleScroll() {
+            const scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            setIsFixed(scrollTop > 35);
+        }
+
+        window.addEventListener('scroll', handleScroll);
+        return () => window.removeEventListener('scroll', handleScroll);
     }, []);
 
     const handleClick = (e) => {
@@ -26,7 +27,7 @@ function Navbar() {
         setMenuBar(!menuBar);
     }
 
-    const handleNavigate = (e,page) => {
+    const handleNavigate = (e, page) => {
         e.preventDefault();
         setMenuBar(false);
         router.push(`/${page}`)
@@ -50,7 +51,7 @@ function Navbar() {
     return (
         <div className={styles.NavbarConainer}>
             <div className={styles.NavbarTop}>
-                {data.map((item,index) => (
+                {data.map((item, index) => (
                     <div className={styles.Element} key={index}>
                         <span className={styles.Type}>{item.type} : </span>
                         <span className={styles.Content}>{item.content}</span>
@@ -58,25 +59,37 @@ function Navbar() {
                 ))}
             </div>
             <div className={isFixed ? styles.fixedNavbar : styles.NavbarBottom}>
-                    <Image src={logo} alt="logo image" className={styles.logo}/>
-                    <div className={styles.Menus}>
-                            <li onClick={()=>router.push('/')}>Home</li>
-                            <li onClick={()=>router.push('/product')}>Products</li>
-                            <li>Offers</li>
-                            <li>FAQ's</li>
-                            <li onClick={() => router.push('/ContactUs')}>Contact Us</li>
-                            <li>Spacewood</li>
-                    </div>
-                    <div className={styles.toggleBar}><span onClick={handleClick}><AiOutlineMenu /></span></div>
-                    <div className={styles.PhoneMenus} style={{right: menuBar ? '0vh' : '-30vh'}}>
-                            <li onClick={(e)=>handleNavigate(e,'')}>Home</li>
-                            <li onClick={(e)=>handleNavigate(e,'product')}>Products</li>
-                            <li>Offers</li>
-                            <li>FAQ's</li>
-                            <li onClick={(e) =>handleNavigate(e,"ContactUs")}>Contact Us</li>
-                            <li>Spacewood</li>
-                            <span onClick={handleClick}><AiFillCloseCircle /></span>
-                    </div>
+                <Image src={logo} alt="logo image" className={styles.logo} />
+                <div className={styles.Menus}>
+                    <li onClick={(e) => handleNavigate(e, '')}>Home</li>
+                    <Link href="/#products" style={{ textDecoration: 'none' }}>
+                        <li>Products</li>
+                    </Link>
+                    <Link href="/#offers" style={{ textDecoration: 'none' }}>
+                        <li>Offers</li>
+                    </Link>
+                    <Link href="/#faq" style={{ textDecoration: 'none' }}>
+                        <li>FAQ's</li>
+                    </Link>
+                    <li onClick={(e) => handleNavigate(e, "ContactUs")}>Contact Us</li>
+                    <li>Spacewood</li>
+                </div>
+                <div className={styles.toggleBar}><span onClick={handleClick}><AiOutlineMenu /></span></div>
+                <div className={styles.PhoneMenus} style={{ right: menuBar ? '0vh' : '-30vh' }}>
+                    <li onClick={(e) => handleNavigate(e, '')}>Home</li>
+                    <Link href="/#products" style={{ textDecoration: 'none' }}>
+                        <li>Products</li>
+                    </Link>
+                    <Link href="/#offers" style={{ textDecoration: 'none' }}>
+                        <li>Offers</li>
+                    </Link>
+                    <Link href="/#faq" style={{ textDecoration: 'none' }}>
+                        <li>FAQ's</li>
+                    </Link>
+                    <li onClick={(e) => handleNavigate(e, "ContactUs")}>Contact Us</li>
+                    <li>Spacewood</li>
+                    <span onClick={handleClick}><AiFillCloseCircle /></span>
+                </div>
             </div>
         </div>
     );

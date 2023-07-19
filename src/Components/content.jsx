@@ -53,6 +53,10 @@ export const ProductImages = [
     //Interiors
     {
         title: 'Interiors',
+        img: '/Assets/productImg/Interiors/Interior.webp',
+    },
+    {
+        title: 'Interiors',
         img: '/Assets/productImg/Interiors/Interior1.webp',
     },
     {
@@ -126,6 +130,10 @@ export const ProductImages = [
     },
     {
         title: 'Blinds',
+        img: '/Assets/productImg/Blinds/Blinds.webp',
+    },
+    {
+        title: 'Blinds',
         img: '/Assets/productImg/Blinds/Blinds1.webp',
     },
     {
@@ -176,6 +184,10 @@ export const ProductImages = [
     {
         title: 'Curtains',
         img: '/Assets/productImg/Curtains/CurtainM5.webp',
+    },
+    {
+        title: 'Curtains',
+        img: '/Assets/productImg/Curtains/Curtain.webp',
     },
     {
         title: 'Curtains',
@@ -236,6 +248,10 @@ export const ProductImages = [
     },
     {
         title: 'Wallpaper',
+        img: '/Assets/productImg/Wallpaper/Wallpaper.webp',
+    },
+    {
+        title: 'Wallpaper',
         img: '/Assets/productImg/Wallpaper/Wallpaper1.webp',
     },
     {
@@ -277,6 +293,10 @@ export const ProductImages = [
     },
     {
         title: 'Rods and Tracks',
+        img: '/Assets/productImg/Rods/Rods.webp',
+    },
+    {
+        title: 'Rods and Tracks',
         img: '/Assets/productImg/Rods/Rods1.webp',
     },
     {
@@ -308,6 +328,10 @@ export const ProductImages = [
         img: '/Assets/productImg/Rods/Rods8.webp',
     },
     //Flooring
+    {
+        title: 'Flooring',
+        img: '/Assets/productImg/Flooring/flooring.webp',
+    },
     {
         title: 'Flooring',
         img: '/Assets/productImg/Flooring/flooring1.webp',
@@ -343,6 +367,10 @@ export const ProductImages = [
     //Furniture
     {
         title: 'Furniture',
+        img: '/Assets/productImg/Furniture/Furniture.webp',
+    },
+    {
+        title: 'Furniture',
         img: '/Assets/productImg/Furniture/Furniture1.webp',
     },
     {
@@ -374,6 +402,10 @@ export const ProductImages = [
         img: '/Assets/productImg/Furniture/Furniture8.webp',
     },
     //Upholstery
+    {
+        title: 'Upholstery',
+        img: '/Assets/productImg/Upholstery/Upholstery.webp',
+    },
     {
         title: 'Upholstery',
         img: '/Assets/productImg/Upholstery/Upholstery1.webp',

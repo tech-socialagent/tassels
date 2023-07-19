@@ -22,7 +22,7 @@ function Menu() {
   const rods = ['r','ro','rod','rods','t','tr','tra','trac','track', 'tracks','rods & tracks','rods & tracks','rods and tracks'];
   const flooring = ['f','fl','flo','floo','floor','floori','floorin','flooring'];
   const furniture = ['f','fu','fur','furn','furni','furnit','furnitu','furnitur','furniture']
-  const upholstery = ['u','up','uph','upho','uphol','uphols','uphols','upholst','upholste','upholster','upholstery','c','cu','cus','cush','cushi','cushio','cushion','cushions'];
+  const upholstery = ['u','up','uph','upho','uphol','uphols','uphols','upholst','upholste','upholster','upholstery','cus','cush','cushi','cushio','cushion','cushions'];
 
   const handleInputChange = (event) => {
     setSearched(event.target.value);

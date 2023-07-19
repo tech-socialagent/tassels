@@ -59,7 +59,7 @@ function Navbar() {
                 ))}
             </div>
             <div className={isFixed ? styles.fixedNavbar : styles.NavbarBottom}>
-                <Image src={logo} alt="logo image" className={styles.logo} />
+                <Image src={logo} alt="logo image" className={styles.logo} onClick={() => router.push('/')}/>
                 <div className={styles.Menus}>
                     <li onClick={(e) => handleNavigate(e, '')}>Home</li>
                     <Link href="/#products" style={{ textDecoration: 'none' }}>

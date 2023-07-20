@@ -33,7 +33,7 @@ function Icon() {
                 <div className={styles.singleIcon}>
                     <div className={styles.Iconborder}></div>
                     <Image src={item.img} alt="img" className={styles.icon} width={500} height={500}/>
-                    <span>{item.desc}</span>
+                    <span id='offers'>{item.desc}</span>
                 </div>
             ))
             }

@@ -8,16 +8,16 @@ import franchises2 from '../../../public/Assets/product/OurProduct1.webp';
 function FollowUs() {
 
     const Images = [
-        franchises1,
-        franchises2,
-        franchises1,
-        franchises2,
-        franchises1,
-        franchises2,
-        franchises1,
-        franchises2,
-        franchises1,
-        franchises2,
+        "/Assets/franchises1.webp",
+        "/Assets/product/OurProduct1.webp",
+        "/Assets/franchises1.webp",
+        "/Assets/product/OurProduct1.webp",
+        "/Assets/franchises1.webp",
+        "/Assets/product/OurProduct1.webp",
+        "/Assets/franchises1.webp",
+        "/Assets/product/OurProduct1.webp",
+        "/Assets/franchises1.webp",
+        "/Assets/product/OurProduct1.webp",
     ]
 
     return (
@@ -32,7 +32,7 @@ function FollowUs() {
                         </div>
                     ))}
                 </div>
-                <div className={styles.bottomOval}></div>
+                <div className={styles.bottomOval}  id='faq'></div>
             </div>
         </div>
     );

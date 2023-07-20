@@ -1,4 +1,5 @@
 import Faq from '@/Components/Home/Faq';
+import Review from '@/Components/Home/Review';
 import FollowUs from '@/Components/Home/followUs';
 import Franchises from '@/Components/Home/franchises';
 import GetQuote from '@/Components/Home/getQuote';
@@ -20,12 +21,13 @@ function product1() {
             <>
                 <Navbar />
                 <Menu />
-                <SingleProduct />
+                <SingleProduct/>
                 <Featured />
                 <Story />
                 <GetQuote />
                 <Franchises />
                 <FollowUs />
+                <Review />
                 <Faq/>
                 <TasselsFooter />
             </>

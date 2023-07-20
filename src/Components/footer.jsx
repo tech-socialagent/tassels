@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styles from '@/styles/footer.module.css';
 import { FaFacebookSquare, FaInstagramSquare, FaTwitterSquare, FaLinkedin } from 'react-icons/fa';
 import Image from 'next/image';
@@ -9,6 +9,14 @@ import Link from 'next/link';
 function TasselsFooter() {
 
     const router = useRouter();
+    const [email, setEmail ] = useState('');
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        console.log(email)
+        
+        setEmail('')
+    }
 
     return (
         <div className={styles.footerContainer}>
@@ -32,7 +40,9 @@ function TasselsFooter() {
                                 <div className={styles.footerTitle}>Quick Links</div>
                                 <ul>
                                     <li onClick={() => router.push('/')}>Homepage</li>
-                                    <li>About Us</li>
+                                    <Link href="/product#AboutUs" style={{textDecoration:'none'}}>
+                                        <li>About Us</li>
+                                    </Link>
                                     <Link href="/#products" style={{textDecoration:'none'}}>
                                         <li>Products</li>
                                     </Link>
@@ -45,8 +55,8 @@ function TasselsFooter() {
                         </div>
                         <div className={styles.footerRight}>
                             <div className={styles.footerTitle}>News Letter</div>
-                            <form className={styles.footerForm} onSubmit=''>
-                                <input type='email' placeholder='Enter Your Email Address Here' requied />
+                            <form className={styles.footerForm} onSubmit={handleSubmit}>
+                                <input type='email' placeholder='Enter Your Email Address Here' requied value={email.toString()} onChange={(e) => setEmail(e.target.value)}/>
                                 <button type='submit'>SUBSCRIBE</button>
                             </form>
                         </div>

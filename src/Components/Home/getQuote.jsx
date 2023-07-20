@@ -44,9 +44,7 @@ function GetQuote() {
         setSelectedProducts([...selectedProducts, productId]);
       }
     };
-    
-    console.log("Selected", selectedProducts);
-    
+        
     //Scrolling
 
     let scrl = useRef(null);
@@ -58,6 +56,18 @@ function GetQuote() {
           };
           scrl.current.scrollTo(scrollOptions);
     };
+
+    const handleDataSend = (event) => {
+        event.preventDefault();
+        if(selectedProducts.length > 0) {
+            setFormData({
+                ...formData,
+                selected: selectedProducts
+            })
+            console.log(formData)
+            setStage('stage3')
+        }
+    }
 
     return ( 
         <div className={styles.quoteWrapper}>
@@ -99,7 +109,7 @@ function GetQuote() {
                             <div className={styles.GetQuoteStage3Left} onClick={() => slide(+250)}><span><IoIosArrowDroprightCircle /></span></div>
                         </div>
                     </div>
-                    <button className={styles.quoteBtn} onClick={() => setStage('stage3')} >Get Quote</button>
+                    <button className={styles.quoteBtn} onClick={handleDataSend} >Get Quote</button>
                 </div>
             }
             {

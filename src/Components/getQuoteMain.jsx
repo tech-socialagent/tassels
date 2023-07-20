@@ -36,7 +36,18 @@ function GetQuoteMain() {
 
     const handleSubmit = (event) => {
         event.preventDefault();
-        setGetQuote('stage3')
+        if(formData.name !== '' && formData.email !== '' && formData.phone !== '') {
+            setGetQuote('stage3')
+        }
+    }
+
+    const handleDataSend = (event) => {
+        event.preventDefault();
+        if(selectedProducts.length > 0) {
+            console.log(formData)
+            console.log(selectedProducts);
+            setGetQuote('stage4')
+        }
     }
     
 
@@ -51,9 +62,7 @@ function GetQuoteMain() {
         setSelectedProducts([...selectedProducts, productId]);
       }
     };
-    
-    console.log("Selected", selectedProducts);
-    
+        
     //Scrolling
 
     let scrl = useRef(null);
@@ -105,7 +114,7 @@ function GetQuoteMain() {
                             <label>Phone Number</label>
                             <input type="text" placeholder='Enter Your Phone Number' required name='phone' value={formData.phone} onChange={handleInputChange} />
                         </div>
-                        <button className={styles.quoteBtn} onClick={() => setGetQuote('stage3')} style={{ marginTop: '3%' }}>Get Quote</button>
+                        <button className={styles.quoteBtn} type='submit' style={{ marginTop: '3%' }}>Get Quote</button>
                     </form>
                 }
                 {
@@ -127,7 +136,7 @@ function GetQuoteMain() {
                                 <div className={styles.GetQuoteStage3Left} onClick={() => slide(+250)}><span><IoIosArrowDroprightCircle /></span></div>
                             </div>
                         </div>
-                        <button className={styles.quoteBtn} onClick={() => setGetQuote('stage4')} >Get Quote</button>
+                        <button className={styles.quoteBtn} onClick={handleDataSend} >Get Quote</button>
                     </div>
                 }
                 {

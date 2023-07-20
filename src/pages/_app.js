@@ -1,6 +1,5 @@
 import { FormDataContext, GetQuoteContext, ProductContext } from '../Context.js';
 import '@/styles/globals.css'
-import Head from 'next/head.js';
 import Script from 'next/script.js';
 import { useState } from 'react';
 
@@ -15,8 +14,6 @@ export default function App({ Component, pageProps }) {
       phone: '',
     }
   )
-
-  console.log(formData);
 
   return (
     <>

@@ -187,6 +187,50 @@ export const ProductImages = [
     },
     {
         title: 'Curtains',
+        img: '/Assets/productImg/Curtains/CurtainM6.webp',
+    },
+    {
+        title: 'Curtains',
+        img: '/Assets/productImg/Curtains/CurtainM7.webp',
+    },
+    {
+        title: 'Curtains',
+        img: '/Assets/productImg/Curtains/CurtainM8.webp',
+    },
+    {
+        title: 'Curtains',
+        img: '/Assets/productImg/Curtains/CurtainM9.webp',
+    },
+    {
+        title: 'Curtains',
+        img: '/Assets/productImg/Curtains/CurtainM10.webp',
+    },
+    {
+        title: 'Curtains',
+        img: '/Assets/productImg/Curtains/CurtainM11.webp',
+    },
+    {
+        title: 'Curtains',
+        img: '/Assets/productImg/Curtains/CurtainM12.webp',
+    },
+    {
+        title: 'Curtains',
+        img: '/Assets/productImg/Curtains/CurtainM13.webp',
+    },
+    {
+        title: 'Curtains',
+        img: '/Assets/productImg/Curtains/CurtainM14.webp',
+    },
+    {
+        title: 'Curtains',
+        img: '/Assets/productImg/Curtains/CurtainM15.webp',
+    },
+    {
+        title: 'Curtains',
+        img: '/Assets/productImg/Curtains/CurtainM16.webp',
+    },
+    {
+        title: 'Curtains',
         img: '/Assets/productImg/Curtains/Curtain.webp',
     },
     {
@@ -290,6 +334,18 @@ export const ProductImages = [
     {
         title: 'Rods and Tracks',
         img: '/Assets/productImg/Rods/RodsM2.webp',
+    },
+    {
+        title: 'Rods and Tracks',
+        img: '/Assets/productImg/Rods/RodsM3.webp',
+    },
+    {
+        title: 'Rods and Tracks',
+        img: '/Assets/productImg/Rods/RodsM4.webp',
+    },
+    {
+        title: 'Rods and Tracks',
+        img: '/Assets/productImg/Rods/RodsM5.webp',
     },
     {
         title: 'Rods and Tracks',

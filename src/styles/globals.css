@@ -23,3 +23,7 @@ body {
   --font-size-header : 38px;
   --font-size-desc : 12px;
 }
+
+button {
+  cursor: pointer;
+}

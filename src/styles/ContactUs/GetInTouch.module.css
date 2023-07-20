@@ -37,8 +37,10 @@
     color: #757575;
 }
 
+
 .formMessage{
     min-height: 150px;
+    resize: none;
 }
 
 .getInTouchBtn{
@@ -111,6 +113,11 @@
 
 .socialIcon span{
     cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.socialIcon span:hover{
+    color: var(--secondary-color);
 }
 
 @media (max-width: 750px) {

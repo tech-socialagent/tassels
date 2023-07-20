@@ -1,8 +1,32 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styles from '@/styles/ContactUs/GetInTouch.module.css';
 import { SlSocialFacebook, SlSocialLinkedin, SlSocialYoutube, SlSocialTwitter } from 'react-icons/sl'
 
 function GetInTouch() {
+
+const [data, setData] = useState({
+        name: '',
+        email: '',
+        subject: '',
+        message: '',
+    })
+
+    const handleChange = (e) => {
+        const { name, value } = e.target;
+        setData({...data, [name] : value})
+    }
+
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        console.log(data);
+
+        setData({
+            name:'',
+            email: '',
+            subject: '',
+            message: '',
+        })
+    }
 
     const contactInfo = [
         {
@@ -27,15 +51,15 @@ function GetInTouch() {
     return (
         <div className={styles.GetInTouchWrap}>
             <div className={styles.GetInTouchLeft}>
-                <form className={styles.GetInTouchForm}>
+                <form className={styles.GetInTouchForm} onSubmit={handleSubmit}>
                     <h3>Get In Touch</h3>
                     <div className={styles.formMenus}>
-                        <input type="text" placeholder='Your name*' className={styles.formMenu} required />
-                        <input type="email" placeholder='Your email*' className={styles.formMenu} required />
+                        <input type="text" placeholder='Your name*' className={styles.formMenu} required name='name' value={data.name} onChange={handleChange}/>
+                        <input type="email" placeholder='Your email*' className={styles.formMenu} required name='email' value={data.email} onChange={handleChange}/>
                     </div>
-                    <input type="text" placeholder='Subject' className={styles.formMenu} required />
-                    <input type="text" className={styles.formMessage} />
-                    <button className={styles.getInTouchBtn}>Send</button>
+                    <input type="text" placeholder='Subject' className={styles.formMenu} required name='subject' value={data.subject} onChange={handleChange}/>
+                    <textarea type="text" className={styles.formMessage} style={{ width: '100%' }} name='message' value={data.message} onChange={handleChange}></textarea>
+                    <button className={styles.getInTouchBtn} type='submit'>Send</button>
                 </form>
             </div>
             <div className={styles.GetInTouchRight}>

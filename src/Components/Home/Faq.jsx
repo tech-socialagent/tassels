@@ -94,8 +94,8 @@ function Faq() {
     }
 
     return (
-        <div>
-            <SectionHeader title='FAQ”s' desc="Delve into our FAQ section, where you'll discover insightful responses that offer clarity and guidance for a seamless interior decor journey." />
+        <div style={{marginTop: '2rem'}}> 
+            <SectionHeader title='FAQ”s' desc="Delve into our FAQ section, where you'll discover insightful responses that offer clarity and guidance for a seamless interior decor journey."/>
             <FaqContainer>
                 {items.map((item, index) => (
                     <AccordionContainer key={index}>

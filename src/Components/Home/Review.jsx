@@ -1,69 +1,92 @@
-import React, { useState } from 'react';
+import React, { useRef, useState } from 'react';
 import styles from '@/styles/home/Review.module.css';
 import Image from 'next/image';
 import { BsFillStarFill } from 'react-icons/bs';
 import { IoIosArrowDroprightCircle, IoIosArrowDropleftCircle } from 'react-icons/io';
 import SectionHeader from '../SectionHeader';
+import Slider from "react-slick";
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
 
 function Review() {
-  const [startIndex, setStartIndex] = useState(0);
-  const [endIndex, setEndIndex] = useState(2);
+  const [slideIndex, setSlideIndex] = useState(0);
+
+  const settings = {
+    dots: false,
+    infinite: true,
+    speed: 500,
+    slidesToShow: 3,
+    slidesToScroll: 1,
+    className: styles.ReviewContainer,
+    beforeChange: (current, next) => setSlideIndex(next),
+    centerMode: true,
+    prevArrow: null,
+    nextArrow: null,
+    responsive: [
+      {
+        breakpoint: 650,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          dots: true,
+        }
+      }
+    ]
+  };
+
+  const sliderRef = useRef(null);
+
+  const handlePrev = () => {
+    if (sliderRef.current) {
+      sliderRef.current.slickPrev();
+    }
+  };
+
+  const handleNext = () => {
+    if (sliderRef.current) {
+      sliderRef.current.slickNext();
+    }
+  };
 
   const list = [
     {
-      id: 1,
+      id: 0,
       img: '/Assets/product/OurProduct1.webp',
       name: 'Arya',
       review: '“Good collection, supportive staff and value of words kept.”'
     },
     {
-      id: 2,
+      id: 1,
       img: '/Assets/product/OurProduct2.webp',
       name: 'Aakash',
       review: '“Good range of products at affordable prices”'
     },
     {
-      id: 3,
+      id: 2,
       img: '/Assets/product/OurProduct3.webp',
       name: 'Naheem',
       review: '“Good range of products at affordable prices”'
     },
     {
-      id: 4,
+      id: 3,
       img: '/Assets/product/OurProduct1.webp',
       name: 'Four',
       review: '“Good collection, supportive staff and value of words kept.”'
     },
     {
-      id: 5,
+      id: 4,
       img: '/Assets/product/OurProduct2.webp',
       name: 'Five',
       review: '“Good range of products at affordable prices”'
     },
     {
-      id: 6,
+      id: 5,
       img: '/Assets/product/OurProduct3.webp',
       name: 'Six',
       review: '“Good range of products at affordable prices”'
     }
   ];
-  
-  const lastIndex = list.length - 1;
-  const handleNextClick = () => {
-    if (endIndex === lastIndex) return;
 
-    setStartIndex(startIndex + 1);
-    setEndIndex(endIndex + 1);
-  };
-
-  const handlePreviousClick = () => {
-    if (startIndex === 0) return;
-
-    setStartIndex(startIndex - 1);
-    setEndIndex(endIndex - 1);
-  };
-
-  const show = list.slice(startIndex, endIndex + 1);
   return (
     <>
       <SectionHeader
@@ -71,58 +94,24 @@ function Review() {
         desc="Hear the reviews from our delighted clients, that illustrate the transformative impact of our interior decor expertise."
       />
       <div className={styles.ReviewWrap}>
-        <div className={styles.ArrowContainer}><span style={{opacity: startIndex === 0 ? '0.4' : '1'}} onClick={handlePreviousClick}><IoIosArrowDropleftCircle/></span></div>
-        <div className={styles.ReviewContainer}>
-          <div className={styles.Center}>
-            <Image src={show[0].img} width={1000} height={1000} className={styles.reviewImageLeft} />
-            <h3>{show[0].name}</h3>
-            <div className={styles.StarContainer}>
-              <span><BsFillStarFill /></span>
-              <span><BsFillStarFill /></span>
-              <span><BsFillStarFill /></span>
-              <span><BsFillStarFill /></span>
-              <span><BsFillStarFill /></span>
+        <div className={styles.ArrowContainer}><span onClick={handlePrev}><IoIosArrowDropleftCircle /></span></div>
+        <Slider {...settings} className={styles.ReviewContainer} ref={sliderRef}>
+          {list.map((show) => (
+            <div className={show.id === slideIndex ? styles.CenterActive : styles.Center}>
+              <Image src={show.img} width={1000} height={1000} className={styles.reviewImageLeft} />
+              <h3>{show.name}</h3>
+              <div className={styles.StarContainer}>
+                <span><BsFillStarFill /></span>
+                <span><BsFillStarFill /></span>
+                <span><BsFillStarFill /></span>
+                <span><BsFillStarFill /></span>
+                <span><BsFillStarFill /></span>
+              </div>
+              <p>{show.review}</p>
             </div>
-            <p>{show[0].review}</p>
-          </div>
-          <div className={styles.Center} style={{scale:'1.15'}}>
-            <Image src={show[1].img} width={1000} height={1000} className={styles.reviewImage} />
-            <h3>{show[1].name}</h3>
-            <div className={styles.StarContainer}>
-              <span><BsFillStarFill /></span>
-              <span><BsFillStarFill /></span>
-              <span><BsFillStarFill /></span>
-              <span><BsFillStarFill /></span>
-              <span><BsFillStarFill /></span>
-            </div>
-            <p>{show[1].review}</p>
-          </div>
-          <div className={styles.Center}>
-            <Image src={show[2].img} width={1000} height={1000} className={styles.reviewImageLeft} />
-            <h3>{show[2].name}</h3>
-            <div className={styles.StarContainer}>
-              <span><BsFillStarFill /></span>
-              <span><BsFillStarFill /></span>
-              <span><BsFillStarFill /></span>
-              <span><BsFillStarFill /></span>
-              <span><BsFillStarFill /></span>
-            </div>
-            <p>{show[2].review}</p>
-          </div>
-          <div className={styles.CenterMobile}>
-            <Image src={show[0].img} width={1000} height={1000} className={styles.reviewImagePhone} />
-            <h3>{show[0].name}</h3>
-            <div className={styles.StarContainer}>
-              <span><BsFillStarFill /></span>
-              <span><BsFillStarFill /></span>
-              <span><BsFillStarFill /></span>
-              <span><BsFillStarFill /></span>
-              <span><BsFillStarFill /></span>
-            </div>
-            <p>{show[0].review}</p>
-          </div>
-        </div>
-        <div className={styles.ArrowContainer}><span  style={{opacity: endIndex === lastIndex ? '0.4' : '1' }} onClick={handleNextClick}><IoIosArrowDroprightCircle/></span></div>
+          ))}
+        </Slider>
+        <div className={styles.ArrowContainer}><span onClick={handleNext}><IoIosArrowDroprightCircle /></span></div>
       </div>
     </>
   );

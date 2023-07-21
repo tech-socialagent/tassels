@@ -47,7 +47,14 @@ export const OurProductData = [
         img:'/Assets/product/OurProduct8.webp',
         content:`Elevate your living spaces with our exceptional selection of stylish and functional furniture. Crafted with unmatched quality and attention to detail, our pieces are designed to transform your home into a haven of comfort and beauty. From luxurious sofas and elegant dining sets to versatile storage solutions and statement-making accents, each item showcases impeccable craftsmanship and timeless design. With a variety of materials, finishes, and styles to choose from, you can find the perfect furniture that aligns with your personal taste and enhances your unique decor. Create a space that reflects your individuality and enjoy the unmatched quality and lasting beauty of our furniture.`,
     },
+    {
+        title: 'Rugs',
+        desc:'',
+        img:'/Assets/productImg/Rugs/rugsM1.webp',
+        content:`We have a wide variety of affordable and creative collection of ready-made with exceptional quality; available in a assortment of styles, influences and sizes. From evocative florals and graphic geometrics to stripes and elegant ombre in a multitude of shades and finishes - our gorgeous collections of decorative bedroom rugs and living room rugs add instant style and easy glamour to any room.`,
+    },
 ]
+
 
 export const ProductImages = [
     //Interiors
@@ -482,6 +489,19 @@ export const ProductImages = [
         title: 'Upholstery',
         img: '/Assets/productImg/Upholstery/Upholstery5.webp',
     },
+        //Rugs
+        {
+            title: 'Rugs',
+            img: '/Assets/productImg/Rugs/rugsM1.webp',
+        },
+        {
+            title: 'Rugs',
+            img: '/Assets/productImg/Rugs/rugsM2.webp',
+        },
+        {
+            title: 'Rugs',
+            img: '/Assets/productImg/Rugs/rugsM3.webp',
+        },
 ]
 
 export const CushionImages = [

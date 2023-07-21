@@ -111,7 +111,7 @@ function Review() {
             </div>
           ))}
         </Slider>
-        <div className={styles.ArrowContainer}><span onClick={handleNext}><IoIosArrowDroprightCircle /></span></div>
+        <div id='faq' className={styles.ArrowContainer}><span onClick={handleNext}><IoIosArrowDroprightCircle /></span></div>
       </div>
     </>
   );

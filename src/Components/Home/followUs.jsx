@@ -32,7 +32,7 @@ function FollowUs() {
                         </div>
                     ))}
                 </div>
-                <div className={styles.bottomOval}  id='faq'></div>
+                <div className={styles.bottomOval}></div>
             </div>
         </div>
     );

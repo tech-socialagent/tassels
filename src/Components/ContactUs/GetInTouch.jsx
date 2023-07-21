@@ -1,10 +1,11 @@
 import React, { useState } from 'react';
 import styles from '@/styles/ContactUs/GetInTouch.module.css';
-import { SlSocialFacebook, SlSocialLinkedin, SlSocialYoutube, SlSocialTwitter } from 'react-icons/sl'
+import { SlSocialFacebook, SlSocialLinkedin, SlSocialYoutube, SlSocialTwitter, SlSocialInstagram } from 'react-icons/sl'
+import Link from 'next/link';
 
 function GetInTouch() {
 
-const [data, setData] = useState({
+    const [data, setData] = useState({
         name: '',
         email: '',
         subject: '',
@@ -13,7 +14,7 @@ const [data, setData] = useState({
 
     const handleChange = (e) => {
         const { name, value } = e.target;
-        setData({...data, [name] : value})
+        setData({ ...data, [name]: value })
     }
 
     const handleSubmit = (e) => {
@@ -21,7 +22,7 @@ const [data, setData] = useState({
         console.log(data);
 
         setData({
-            name:'',
+            name: '',
             email: '',
             subject: '',
             message: '',
@@ -54,10 +55,10 @@ const [data, setData] = useState({
                 <form className={styles.GetInTouchForm} onSubmit={handleSubmit}>
                     <h3>Get In Touch</h3>
                     <div className={styles.formMenus}>
-                        <input type="text" placeholder='Your name*' className={styles.formMenu} required name='name' value={data.name} onChange={handleChange}/>
-                        <input type="email" placeholder='Your email*' className={styles.formMenu} required name='email' value={data.email} onChange={handleChange}/>
+                        <input type="text" placeholder='Your name*' className={styles.formMenu} required name='name' value={data.name} onChange={handleChange} />
+                        <input type="email" placeholder='Your email*' className={styles.formMenu} required name='email' value={data.email} onChange={handleChange} />
                     </div>
-                    <input type="text" placeholder='Subject' className={styles.formMenu} required name='subject' value={data.subject} onChange={handleChange}/>
+                    <input type="text" placeholder='Subject' className={styles.formMenu} required name='subject' value={data.subject} onChange={handleChange} />
                     <textarea type="text" className={styles.formMessage} style={{ width: '100%' }} name='message' value={data.message} onChange={handleChange}></textarea>
                     <button className={styles.getInTouchBtn} type='submit'>Send</button>
                 </form>
@@ -78,10 +79,18 @@ const [data, setData] = useState({
                         ))}
                     </div>
                     <div className={styles.socialIcon}>
-                        <span><SlSocialFacebook /></span>
-                        <span><SlSocialTwitter /></span>
-                        <span><SlSocialLinkedin /></span>
-                        <span><SlSocialYoutube /></span>
+                        <Link href='https://www.facebook.com/tasselsdecor/' target="_blank" style={{ textDecoration: 'none', color: 'black' }}>
+                            <span><SlSocialFacebook /></span>
+                        </Link>
+                        <Link href='https://twitter.com/TasselsHD' target="_blank" style={{ textDecoration: 'none', color: 'black' }}>
+                            <span><SlSocialTwitter /></span>
+                        </Link>
+                        <Link href='https://www.instagram.com/tasselsinterior/?hl=en' target="_blank" style={{ textDecoration: 'none', color: 'black' }}>
+                            <span><SlSocialInstagram /></span>
+                        </Link>
+                        <Link href='https://www.linkedin.com/company/tassels-interiors/' target="_blank" style={{ textDecoration: 'none', color: 'black' }}>
+                            <span><SlSocialLinkedin /></span>
+                        </Link>
                     </div>
                 </div>
             </div>

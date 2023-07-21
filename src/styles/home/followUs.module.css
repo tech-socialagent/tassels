@@ -1,5 +1,5 @@
-.mySwiper {
-    margin: 3% 0%;
+.followUsWrap {
+    margin: 0% 3%;
 }
 
 .wrapper {
@@ -50,14 +50,34 @@
     height: 300px;
     width: 100%;
     min-width: 300px;
-    margin-right: 10px;
+    margin-right: 15px;
     background-size: cover;
+    /* border: 1px solid var(--secondary-color); */
 }
 
 .CarouselImage {
     width: 100%;
     height: 100%;
     object-fit: cover;
+}
+
+.instaContent{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    gap: 2px;
+    color: #665244;
+}
+
+.instaContent span{
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+}
+
+.instaContent p{
+    font-size: 12px;
 }
 
 @media (max-width: 750px) {

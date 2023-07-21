@@ -2,22 +2,20 @@ import React from 'react';
 import styles from "@/styles/home/followUs.module.css";
 import SectionHeader from '../SectionHeader';
 import Image from 'next/image';
-import franchises1 from '../../../public/Assets/product/OurProduct2.webp';
-import franchises2 from '../../../public/Assets/product/OurProduct1.webp';
+import { AiFillInstagram } from 'react-icons/ai';
 
 function FollowUs() {
 
     const Images = [
-        "/Assets/franchises1.webp",
-        "/Assets/product/OurProduct1.webp",
-        "/Assets/franchises1.webp",
-        "/Assets/product/OurProduct1.webp",
-        "/Assets/franchises1.webp",
-        "/Assets/product/OurProduct1.webp",
-        "/Assets/franchises1.webp",
-        "/Assets/product/OurProduct1.webp",
-        "/Assets/franchises1.webp",
-        "/Assets/product/OurProduct1.webp",
+        "/Assets/Insta/img2.webp",
+        "/Assets/Insta/img1.webp",
+        "/Assets/Insta/img3.webp",
+        "/Assets/Insta/img4.webp",
+        "/Assets/Insta/img6.webp",
+        "/Assets/Insta/img7.webp",
+        "/Assets/Insta/img8.webp",
+        "/Assets/Insta/img9.webp",
+        "/Assets/Insta/img5.webp",
     ]
 
     return (
@@ -32,7 +30,12 @@ function FollowUs() {
                         </div>
                     ))}
                 </div>
-                <div className={styles.bottomOval}  id='faq'></div>
+                <div className={styles.bottomOval}>
+                        <div className={styles.instaContent}>
+                            <span><AiFillInstagram /></span>
+                            <p>@tasselsinterior</p>
+                        </div>
+                </div>
             </div>
         </div>
     );

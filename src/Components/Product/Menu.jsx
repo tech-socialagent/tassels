@@ -23,6 +23,7 @@ function Menu() {
   const flooring = ['f','fl','flo','floo','floor','floori','floorin','flooring'];
   const furniture = ['f','fu','fur','furn','furni','furnit','furnitu','furnitur','furniture']
   const upholstery = ['u','up','uph','upho','uphol','uphols','uphols','upholst','upholste','upholster','upholstery','cus','cush','cushi','cushio','cushion','cushions'];
+  const rugs = ['r','ru','rug','rugs']
 
   const handleInputChange = (event) => {
     setSearched(event.target.value);
@@ -57,6 +58,10 @@ function Menu() {
 
     else if (product !== 'Upholstery' && upholstery.includes(searched.toLowerCase())) {
       setProduct('Upholstery')
+    }
+
+    else if (product !== 'Rugs' && rugs.includes(searched.toLowerCase())) {
+      setProduct('Rugs')
     }
   };
 

@@ -72,22 +72,22 @@ function Navbar() {
                         <li>FAQ's</li>
                     </Link>
                     <li onClick={(e) => handleNavigate(e, "ContactUs")}>Contact Us</li>
-                    <li onClick={(e) => handleNavigate(e, "Spacewood")}>Spacewood</li>
+                    <li onClick={(e) => handleNavigate(e, "")}>Spacewood</li>
                 </div>
                 <div className={styles.toggleBar}><span onClick={handleClick}><AiOutlineMenu /></span></div>
                 <div className={styles.PhoneMenus} style={{ right: menuBar ? '0vh' : '-30vh' }}>
                     <li onClick={(e) => handleNavigate(e, '')}>Home</li>
-                    <Link href="/#products" style={{ textDecoration: 'none' }}>
+                    <Link href="/#products" onClick={() => setMenuBar(false)} style={{ textDecoration: 'none' }}>
                         <li>Products</li>
                     </Link>
-                    <Link href="/#offers" style={{ textDecoration: 'none' }}>
+                    <Link href="/#offers" onClick={() => setMenuBar(false)} style={{ textDecoration: 'none' }}>
                         <li>Offers</li>
                     </Link>
-                    <Link href="/#faq" style={{ textDecoration: 'none' }}>
+                    <Link href="/#faq" onClick={() => setMenuBar(false)} style={{ textDecoration: 'none' }}>
                         <li>FAQ's</li>
                     </Link>
                     <li onClick={(e) => handleNavigate(e, "ContactUs")}>Contact Us</li>
-                    <li onClick={(e) => handleNavigate(e, "Spacewood")}>Spacewood</li>
+                    <li onClick={(e) => handleNavigate(e, "")}>Spacewood</li>
                     <span onClick={handleClick}><AiFillCloseCircle /></span>
                 </div>
             </div>

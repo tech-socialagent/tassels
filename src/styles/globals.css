@@ -27,3 +27,8 @@ body {
 button {
   cursor: pointer;
 }
+
+body ::selection {
+  background-color: var(--secondary-color);
+  color: #fff;
+}

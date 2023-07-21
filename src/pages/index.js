@@ -29,8 +29,8 @@ export default function Home() {
       <GetQuote />
       <Franchises />
       <FollowUs />
-      <Faq />
       <Review />
+      <Faq />
       <TasselsFooter />
     </>
   )

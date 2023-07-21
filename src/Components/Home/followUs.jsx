@@ -2,6 +2,7 @@ import React from 'react';
 import styles from "@/styles/home/followUs.module.css";
 import SectionHeader from '../SectionHeader';
 import Image from 'next/image';
+import { AiFillInstagram } from 'react-icons/ai';
 
 function FollowUs() {
 
@@ -29,7 +30,12 @@ function FollowUs() {
                         </div>
                     ))}
                 </div>
-                <div className={styles.bottomOval}></div>
+                <div className={styles.bottomOval}>
+                        <div className={styles.instaContent}>
+                            <span><AiFillInstagram /></span>
+                            <p>@tasselsinterior</p>
+                        </div>
+                </div>
             </div>
         </div>
     );

@@ -8,16 +8,14 @@ import franchises2 from '../../../public/Assets/product/OurProduct1.webp';
 function FollowUs() {
 
     const Images = [
-        "/Assets/franchises1.webp",
         "/Assets/product/OurProduct1.webp",
-        "/Assets/franchises1.webp",
-        "/Assets/product/OurProduct1.webp",
-        "/Assets/franchises1.webp",
-        "/Assets/product/OurProduct1.webp",
-        "/Assets/franchises1.webp",
-        "/Assets/product/OurProduct1.webp",
-        "/Assets/franchises1.webp",
-        "/Assets/product/OurProduct1.webp",
+        "/Assets/product/OurProduct2.webp",
+        "/Assets/product/OurProduct3.webp",
+        "/Assets/product/OurProduct4.webp",
+        "/Assets/product/OurProduct5.webp",
+        "/Assets/product/OurProduct6.webp",
+        "/Assets/product/OurProduct7.webp",
+        "/Assets/product/OurProduct8.webp",
     ]
 
     return (

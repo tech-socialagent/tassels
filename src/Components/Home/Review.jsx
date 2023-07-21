@@ -51,39 +51,39 @@ function Review() {
   const list = [
     {
       id: 0,
-      img: '/Assets/product/OurProduct1.webp',
+      img: '/Assets/Review/review2.webp',
       name: 'Arya',
       review: '“Good collection, supportive staff and value of words kept.”'
     },
     {
       id: 1,
-      img: '/Assets/product/OurProduct2.webp',
+      img: '/Assets/Review/review3.webp',
       name: 'Aakash',
       review: '“Good range of products at affordable prices”'
     },
     {
       id: 2,
-      img: '/Assets/product/OurProduct3.webp',
+      img: '/Assets/Review/review1.webp',
       name: 'Naheem',
       review: '“Good range of products at affordable prices”'
     },
     {
       id: 3,
-      img: '/Assets/product/OurProduct1.webp',
-      name: 'Four',
-      review: '“Good collection, supportive staff and value of words kept.”'
+      img: '/Assets/Review/review4.png',
+      name: 'Darius',
+      review: '“Great service! They give you lots of attention, options and never pressure you to make any hasty decision!”'
     },
     {
       id: 4,
-      img: '/Assets/product/OurProduct2.webp',
-      name: 'Five',
-      review: '“Good range of products at affordable prices”'
+      img: '/Assets/Review/review5.png',
+      name: 'Suraj CR',
+      review: '“Tassels is an eminent name in the world of furnishing and decor.”'
     },
     {
       id: 5,
-      img: '/Assets/product/OurProduct3.webp',
-      name: 'Six',
-      review: '“Good range of products at affordable prices”'
+      img: '/Assets/Review/review6.png',
+      name: 'Ankit',
+      review: '“Amazing variety and quality”'
     }
   ];
 

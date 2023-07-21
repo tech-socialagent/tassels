@@ -49,7 +49,7 @@ export const OurProductData = [
     },
     {
         title: 'Rugs',
-        desc:'',
+        desc:'Timeless Elegance and Lasting Durability. Elevate Your Space to Extraordinary Levels. Indulge in Luxury Underfoot.',
         img:'/Assets/productImg/Rugs/rugsM1.webp',
         content:`We have a wide variety of affordable and creative collection of ready-made with exceptional quality; available in a assortment of styles, influences and sizes. From evocative florals and graphic geometrics to stripes and elegant ombre in a multitude of shades and finishes - our gorgeous collections of decorative bedroom rugs and living room rugs add instant style and easy glamour to any room.`,
     },

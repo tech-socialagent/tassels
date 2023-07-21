@@ -161,3 +161,22 @@
         gap: 1rem;
     }
 }
+
+/* Privacy And Policy*/
+
+.PPContainer{
+    margin: 1% 2%;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+}
+
+.PPContainer h1{
+    font-size: 22px;
+}
+.PPContainer h2{
+    font-size: 14px;
+}
+.PPContainer p, .PPContainer li{
+    font-size: 13px;
+}

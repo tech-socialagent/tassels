@@ -64,8 +64,12 @@ function TasselsFooter() {
                 </div>
             </div>
             <div className={styles.footerBottom}>
+            <Link href='/PrivacyPolicy' style={{textDecoration:'none',color:'#000'}}>
                 <span>Privacy Policy</span>
+            </Link>
+            <Link href='/TermsConditions' style={{textDecoration:'none',color:'#000'}}>
                 <span>Terms & Conditions</span>
+            </Link>
                 <span>Cookies & Policies</span>
                 <span>©2023, Tassels, all rights reserved </span>
             </div>

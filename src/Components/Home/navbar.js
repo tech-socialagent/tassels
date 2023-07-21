@@ -72,7 +72,7 @@ function Navbar() {
                         <li>FAQ's</li>
                     </Link>
                     <li onClick={(e) => handleNavigate(e, "ContactUs")}>Contact Us</li>
-                    <li onClick={(e) => handleNavigate(e, "Spacewood")}>Spacewood</li>
+                    <li onClick={(e) => handleNavigate(e, "")}>Spacewood</li>
                 </div>
                 <div className={styles.toggleBar}><span onClick={handleClick}><AiOutlineMenu /></span></div>
                 <div className={styles.PhoneMenus} style={{ right: menuBar ? '0vh' : '-30vh' }}>
@@ -87,7 +87,7 @@ function Navbar() {
                         <li>FAQ's</li>
                     </Link>
                     <li onClick={(e) => handleNavigate(e, "ContactUs")}>Contact Us</li>
-                    <li onClick={(e) => handleNavigate(e, "Spacewood")}>Spacewood</li>
+                    <li onClick={(e) => handleNavigate(e, "")}>Spacewood</li>
                     <span onClick={handleClick}><AiFillCloseCircle /></span>
                 </div>
             </div>

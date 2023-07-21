@@ -50,8 +50,9 @@
     height: 300px;
     width: 100%;
     min-width: 300px;
-    margin-right: 10px;
+    margin-right: 15px;
     background-size: cover;
+    /* border: 1px solid var(--secondary-color); */
 }
 
 .CarouselImage {

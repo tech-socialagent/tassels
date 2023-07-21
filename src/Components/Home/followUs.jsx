@@ -2,20 +2,19 @@ import React from 'react';
 import styles from "@/styles/home/followUs.module.css";
 import SectionHeader from '../SectionHeader';
 import Image from 'next/image';
-import franchises1 from '../../../public/Assets/product/OurProduct2.webp';
-import franchises2 from '../../../public/Assets/product/OurProduct1.webp';
 
 function FollowUs() {
 
     const Images = [
-        "/Assets/product/OurProduct1.webp",
-        "/Assets/product/OurProduct2.webp",
-        "/Assets/product/OurProduct3.webp",
-        "/Assets/product/OurProduct4.webp",
-        "/Assets/product/OurProduct5.webp",
-        "/Assets/product/OurProduct6.webp",
-        "/Assets/product/OurProduct7.webp",
-        "/Assets/product/OurProduct8.webp",
+        "/Assets/Insta/img2.webp",
+        "/Assets/Insta/img1.webp",
+        "/Assets/Insta/img3.webp",
+        "/Assets/Insta/img4.webp",
+        "/Assets/Insta/img6.webp",
+        "/Assets/Insta/img7.webp",
+        "/Assets/Insta/img8.webp",
+        "/Assets/Insta/img9.webp",
+        "/Assets/Insta/img5.webp",
     ]
 
     return (

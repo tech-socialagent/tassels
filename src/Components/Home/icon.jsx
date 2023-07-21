@@ -1,8 +1,14 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import styles from "@/styles/home/icon.module.css"
 import Image from 'next/image';
+import { ProductContext } from '@/Context';
+import { useRouter } from 'next/router';
+
 
 function Icon() {
+
+    const { setProduct } = useContext(ProductContext);
+    const router = useRouter();
 
     const data = [
         {
@@ -18,8 +24,8 @@ function Icon() {
             desc: 'Blinds',
         },
         {
-            img: '/Assets/images/icon4.png',
-            desc: 'Mattress',
+            img: '/Assets/images/icon6.png',
+            desc: 'Furniture',
         },
         {
             img: '/Assets/images/icon5.png',
@@ -27,10 +33,17 @@ function Icon() {
         },
     ]
 
+    const handleClick = (e, title) => {
+        e.preventDefault();
+
+        setProduct(title);
+        router.push('/product');
+    }
+
     return (
         <div className={styles.iconWrapper}>
-            {data.map((item) => (
-                <div className={styles.singleIcon}>
+            {data.map((item,id) => (
+                <div className={styles.singleIcon} key={id} onClick={(e) => handleClick(e,item.desc)}>
                     <div className={styles.Iconborder}></div>
                     <Image src={item.img} alt="img" className={styles.icon} width={500} height={500}/>
                     <span id='offers'>{item.desc}</span>

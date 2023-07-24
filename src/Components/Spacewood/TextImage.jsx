@@ -1,5 +1,5 @@
 import React from 'react';
-import styles from '@/Styles/spacewood/TextImage.module.css';
+import styles from '@/styles/spacewood/TextImage.module.css';
 import Image from 'next/image';
 import ImageBg from '../../../public/Assets/spacewood/export.png';
 

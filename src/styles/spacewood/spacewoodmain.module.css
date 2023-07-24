@@ -1,0 +1,75 @@
+.spacewoodWrap{
+    margin: 0%;
+}
+
+.eachElement{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.eachElement h4{
+    font-size: 15px;
+    text-transform: uppercase;
+    text-align: center;
+    width: max-content;
+    border-bottom: 1px solid #cfa147;
+    padding-bottom: 2px;
+    margin-top: 2%;
+    color:  #5e5e5e;
+}
+
+.eachElement h1{
+    font-size: 26px;
+    color:  #ffc000;
+}
+
+.eachElement p{
+    margin: 0% 0% 1%;
+    font-size: 13px;
+    width: 55%;
+    text-align: center;
+    font-weight: 400;
+    color:  #5e5e5e;
+}
+
+.ThreeImage{
+    margin: 0% 1%;
+    display: flex;
+    gap: 10px;
+    height: 50vh;
+}
+
+.SingleImageContianer{
+    width: 100%;
+    height: 100%;
+}
+
+.SingleImage{
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+
+@media (max-width:1000px) {
+    .eachElement p{
+        width: 70%;
+    }
+    .ThreeImage{
+        height: 30vh;
+    }
+}
+
+@media (max-width:750px) {
+    .eachElement p{
+        width: 80%;
+    }
+}
+
+@media (max-width:500px) {
+    .ThreeImage{
+        height: 100%;
+        flex-direction: column;
+    }
+}

@@ -27,7 +27,7 @@
 }
 
 .footerLeft p{
-    font-size: 13px;
+    font-size: 14px;
     font-weight: 300;
     margin-top: 3%;
 }
@@ -82,7 +82,7 @@
 
 .footerMiddle ul li{
     color: #fff;
-    font-size: 12px;
+    font-size: 13px;
     font-weight: 300;
     cursor: pointer;
 }
@@ -165,7 +165,7 @@
 /* Privacy And Policy*/
 
 .PPContainer{
-    margin: 1% 3% 3%;
+    margin: 1% 3%;
     display: flex;
     flex-direction: column;
     gap: 5px;

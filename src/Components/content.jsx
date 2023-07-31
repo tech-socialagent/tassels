@@ -15,13 +15,40 @@ export const OurProductData = [
         title: 'Curtains',
         desc: 'Luxurious draperies that exude timeless charm, adding grace and warmth to any space with their flowing fabric and exquisite patterns.',
         img: '/Assets/product/OurProduct3.webp',
-        content: `Luxurious draperies at the heart of exquisite interiors exude timeless charm, adding an aura of grace and warmth to any space they embrace. Like poetry in motion, their flowing fabric gracefully dances with the gentle breeze, creating a symphony of elegance. Each thread is intricately woven, capturing stories of craftsmanship and artistry that stand the test of time. From rich velvets that embrace opulence to delicate lace patterns that exude sophistication, these draperies are an epitome of refined taste and refined living.Transform your surroundings with their allure, as they adorn your windows and unveil a world of beauty within your home.`,
+        content: <>Spruce up your home with lavishness and opulence of luxe drapes from Tassels, to never
+            miss being in trend. With an impressive catalogue of home decor curtains on
+            display, that regularly gets updated following the latest trends and forecast. Tassels
+            offers a plethora of colour palette and patterns that include plains, textures,
+            stripes, checks, classic, damasks, florals, abstract, geometric, paisley,
+            traditional, and the likes.
+
+            <br />
+            <br />
+
+            We have two main types of main and sheer curtain fabrics.<b> Curtains fabrics can be made to
+            stitch differently as per taste and need of the customers.</b> Curtain fabrics come
+            in varied composition few of which are polyester, cotton, linen, poly-cotton,
+            poly-linen, silk etc.
+
+            <br />
+            <br />
+
+            We also provide options for blackout, dim out curtains. In addition, we offer customizations based on customers' preferences and designs, as long as they are feasible.
+
+            <ul style={{margin: '1.5%',display:'flex',flexDirection:'column',gap:'.5rem',fontWeight:'600'}}>
+                <li>Eyelet</li>
+                <li>American pleats</li>
+                <li>Ripple Stitching</li>
+                <li>Box Pleats</li>
+                <li>Honey Comb Pleats</li>
+            </ul>
+        </>,
     },
     {
         title: 'Wallpaper',
-        desc: 'Artistic wall adornments, breathing life into interiors with their captivating designs, textures, and hues, turning walls into stunning works of art.',
+        desc: 'We have a substantial collection of wallpapers, from traditional to contemporary patterns. We also have options for children bedroom. ',
         img: '/Assets/product/OurProduct4.webp',
-        content: `Artistic wall adornments, breathing life into interiors with their captivating designs, textures, and hues, turn walls into stunning works of art. These exquisite pieces not only elevate the aesthetic appeal of any space but also narrate stories of creativity and inspiration. Every stroke, every pattern, and every color blend together to create an immersive visual experience that leaves a lasting impression on all who behold them. From elegant murals that add sophistication to the ambiance to vibrant tapestries that infuse energy into the room, these artful adornments are a testament to the power of artistic expression in transforming living and workspaces into a haven of beauty and wonder.`,
+        content: `We have a substantial collection of wallpapers, ranging from classic to modern designs, catering to diverse tastes and preferences. Our wide selection includes a delightful array of traditional patterns that exude timeless elegance, as well as contemporary styles that embrace the latest trends in interior decor. Moreover, we take great pride in offering options specifically tailored for children's bedrooms, featuring playful and imaginative designs that create a perfect ambiance for the little ones. Whether you seek to infuse your space with sophistication or add a touch of whimsy to your child's room, our diverse wallpaper collection is sure to inspire and elevate your home decor to new heights.`,
     },
     {
         title: 'Upholstery',
@@ -186,14 +213,6 @@ export const ProductImages = [
     },
     {
         title: 'Curtains',
-        img: '/Assets/productImg/Curtains/CurtainM4.webp',
-    },
-    {
-        title: 'Curtains',
-        img: '/Assets/productImg/Curtains/CurtainM5.webp',
-    },
-    {
-        title: 'Curtains',
         img: '/Assets/productImg/Curtains/CurtainM6.webp',
     },
     {
@@ -236,42 +255,42 @@ export const ProductImages = [
         title: 'Curtains',
         img: '/Assets/productImg/Curtains/CurtainM16.webp',
     },
-    {
-        title: 'Curtains',
-        img: '/Assets/productImg/Curtains/Curtain.webp',
-    },
-    {
-        title: 'Curtains',
-        img: '/Assets/productImg/Curtains/Curtain1.webp',
-    },
-    {
-        title: 'Curtains',
-        img: '/Assets/productImg/Curtains/Curtain2.webp',
-    },
+    // {
+    //     title: 'Curtains',
+    //     img: '/Assets/productImg/Curtains/Curtain.webp',
+    // },
+    // {
+    //     title: 'Curtains',
+    //     img: '/Assets/productImg/Curtains/Curtain1.webp',
+    // },
+    // {
+    //     title: 'Curtains',
+    //     img: '/Assets/productImg/Curtains/Curtain2.webp',
+    // },
     {
         title: 'Curtains',
         img: '/Assets/productImg/Curtains/Curtain3.webp',
     },
-    {
-        title: 'Curtains',
-        img: '/Assets/productImg/Curtains/Curtain4.webp',
-    },
-    {
-        title: 'Curtains',
-        img: '/Assets/productImg/Curtains/Curtain5.webp',
-    },
-    {
-        title: 'Curtains',
-        img: '/Assets/productImg/Curtains/Curtain6.webp',
-    },
-    {
-        title: 'Curtains',
-        img: '/Assets/productImg/Curtains/Curtain7.webp',
-    },
-    {
-        title: 'Curtains',
-        img: '/Assets/productImg/Curtains/Curtain8.webp',
-    },
+    // {
+    //     title: 'Curtains',
+    //     img: '/Assets/productImg/Curtains/Curtain4.webp',
+    // },
+    // {
+    //     title: 'Curtains',
+    //     img: '/Assets/productImg/Curtains/Curtain5.webp',
+    // },
+    // {
+    //     title: 'Curtains',
+    //     img: '/Assets/productImg/Curtains/Curtain6.webp',
+    // },
+    // {
+    //     title: 'Curtains',
+    //     img: '/Assets/productImg/Curtains/Curtain7.webp',
+    // },
+    // {
+    //     title: 'Curtains',
+    //     img: '/Assets/productImg/Curtains/Curtain8.webp',
+    // },
     //Wallpaper
     {
         title: 'Wallpaper',
@@ -525,5 +544,20 @@ export const CushionImages = [
     {
         title: 'Cushions',
         img: '/Assets/productImg/Cushions/Cushions5.webp',
+    },
+]
+
+export const sheerImages = [
+    {
+        title: 'Curtains',
+        img: '/Assets/productImg/Curtains/CurtainM4.webp',
+    },
+    {
+        title: 'Curtains',
+        img: '/Assets/productImg/Curtains/CurtainM5.webp',
+    },
+    {
+        title: 'Curtains',
+        img: '/Assets/productImg/Curtains/Curtain9.webp',
     },
 ]

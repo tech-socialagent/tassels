@@ -5,6 +5,7 @@ import Franchises from '@/Components/Home/franchises';
 import Navbar from '@/Components/Home/navbar';
 import SpacewoodMain from '@/Components/Spacewood/SpacewoodMain';
 import TextImage from '@/Components/Spacewood/TextImage';
+import SpaceQuote from '@/Components/Spacewood/spaceQuote';
 import TasselsFooter from '@/Components/footer';
 import React from 'react';
 
@@ -12,6 +13,7 @@ function Spacewood() {
     return ( 
         <>
             <Navbar />
+            <SpaceQuote />
             <TextImage />
             <SpacewoodMain />
             <Franchises />

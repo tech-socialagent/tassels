@@ -1,0 +1,179 @@
+.SpaceQuoteContainer{
+    background-color: #f1f1f1;
+}
+
+.SpaceQuoteTop{
+    background-color: #2b2a28;
+}
+
+.LogoImage{
+    margin: 0.5% 0%;
+    height: 90px;
+    width: 100%;
+    object-fit: contain;
+}
+
+.SpaceQuoteBottomContainer{
+    padding: 2%;
+}
+
+.SpaceQuoteBottom{
+    display: grid;
+    grid-template-columns: auto 470px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.QuoteForm{
+    background-color: #fff;
+    padding: 2%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.QuoteForm h2{
+    font-size: 20px;
+    font-weight: 600;
+    padding-bottom: 3%;
+}
+
+.QuoteForm label{
+    padding: 2% 0%;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.QuoteForm select{
+    padding: 1.5% 0.5%;
+    outline: none;
+    cursor: pointer;
+}
+
+.QuoteForm option{
+    /* text-align: center; */
+    font-weight: 500;
+}
+
+.QuoteForm button, .stage3Button{
+    margin: 1% 0%;
+    border: none;
+    background-color: #fbba00;
+    width: max-content;
+    align-self: center;
+    color: #fff;
+    font-size: 18px;
+    font-weight: 600;
+    padding: 10px 70px;
+    border-radius: 5px;
+}
+
+.formImageContainer{
+    height: 100%;
+    overflow: hidden;
+}
+
+.FormImage{
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+}
+
+.menu{
+    display: flex;
+    gap: 10px;
+    padding: 0% 1%;
+    transform: all  0.4s ease;
+}
+
+.menu label{
+    padding: 1% 0%;
+    font-size: 14px;
+    font-weight: 400;
+    cursor: pointer;    
+}
+
+/* Stage 2 */
+
+.stage2Menu{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.stage2Menu label{
+    font-size: 16px;
+    font-weight: 400;
+    padding: 0;
+}
+
+.stage2Menu input{
+    height: 40px;
+    outline: none;
+    padding: 1%;
+}
+
+/* Stage 3 */
+
+.SpaceQuoteStage3{
+    position: relative;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.stage3Image{
+    width: 100%;
+    height: 70vh;
+    object-fit: cover;
+}
+
+.stage3Content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    display: flex;
+    flex-direction: column;
+    color: #fff;
+    text-align: center;
+    gap: 20px;
+    z-index: 3;
+}
+
+.stage3Content h1{
+    font-size: 30px;
+    font-weight: 500;
+}
+
+.overlay{
+    position: absolute;
+    background-color: #0000003e;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 2;
+}
+
+/* Media query */
+
+@media (max-width: 1000px) {
+    .SpaceQuoteBottom{
+        grid-template-columns: 50% 50%;
+    }
+    .stage3Content h1{
+        font-size: 24px;
+        font-weight: 500;
+    }
+}
+
+@media (max-width: 550px) {
+    .SpaceQuoteBottom{
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .stage3Content h1{
+        font-size: 18px;
+        font-weight: 500;
+    }
+}

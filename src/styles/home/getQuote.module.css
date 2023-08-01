@@ -62,8 +62,7 @@
 }
 
 /* .quoteForm button:hover{
-    background-color: #fff;
-    color:  #ff7004;
+    scale: 1.01;
 } */
 
 @media (max-width: 750px) {

@@ -50,3 +50,9 @@
         font-size: 16px;
     }
 }
+
+@media (max-width: 750px) {
+    .bannerTextImage{
+        height: 25vh;
+    }
+}

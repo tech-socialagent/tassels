@@ -5,7 +5,6 @@
     gap: 5%;
     row-gap: 20px;
     margin: 5% 0%;
-
 }
 
 .singleIcon {
@@ -44,15 +43,36 @@
 }
 
 .icon {
+    display: block;
     width: 50px;
     height: 50px;
     object-fit: contain;
 }
 
+.icon1 {
+    width: 50px;
+    height: 50px;
+    object-fit: contain;
+    display: none;
+}
+
+/* .singleIcon:hover .icon{
+    display: none;
+}
+.singleIcon:hover .icon1{
+    display: block;
+} */
+
 .singleIcon span {
+    color: #000;
     font-size: 12px;
     font-weight: 500;
+    transition: all 0.1s ease-in-out;
 }
+
+/* .singleIcon:hover span{
+    color: var(--secondary-color);
+} */
 
 @media (max-width: 800px) {
     .singleIcon{
@@ -64,4 +84,69 @@
         height: 40px;
         object-fit: contain;
     }
+}
+
+/* Curtain Type */
+
+.iconWrapperCurtain {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5%;
+    row-gap: 20px;
+    margin: 2% 0%;
+}
+
+.CurtainTypeContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: .5rem;
+}
+
+.CurtainTypeContainer span {
+    font-size: 13px;
+    /* padding: 0% 5%; */
+}
+
+.iconWrapperCurtain h2{
+    margin: 4% 0% 0%;
+    font-style: italic;
+    text-transform: capitalize;
+    text-align: center;
+    font-size: 15px;
+    font-weight: 600;
+    padding-bottom: 5px;
+    border-bottom: 1.3px solid var(--secondary-color);
+}
+
+.CurtainIconborder{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: transparent !important;
+    border: 1.2px solid black;
+    border-radius: 100%;
+}
+
+.CurtainTypeImg{
+    display: block;
+    width: 125px;
+    height: 125px;
+    object-fit: cover;
+    border-radius: 100%;
+}
+
+.titleContainer{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    margin-top: 2%;
+}
+
+.titleContainer span{
+    display: flex;
+    font-size: 15px;
+    color: var(--primary-color);
 }

@@ -59,15 +59,13 @@ function Navbar() {
                 ))}
             </div>
             <div className={isFixed ? styles.fixedNavbar : styles.NavbarBottom}>
-                <Image src={logo} alt="logo image" className={styles.logo} onClick={() => router.push('/')}/>
+                <Image src={logo} alt="logo image" className={styles.logo} onClick={() => router.push('/')} />
                 <div className={styles.Menus}>
                     <li onClick={(e) => handleNavigate(e, '')}>Home</li>
                     <Link href="/#products" style={{ textDecoration: 'none' }}>
                         <li>Products</li>
                     </Link>
-                    <Link href="/#offers" style={{ textDecoration: 'none' }}>
-                        <li>Offers</li>
-                    </Link>
+                    <li onClick={(e) => handleNavigate(e, 'offers')}>Offers</li>
                     <Link href="/#faq" style={{ textDecoration: 'none' }}>
                         <li>FAQ's</li>
                     </Link>
@@ -80,9 +78,7 @@ function Navbar() {
                     <Link href="/#products" onClick={() => setMenuBar(false)} style={{ textDecoration: 'none' }}>
                         <li>Products</li>
                     </Link>
-                    <Link href="/#offers" onClick={() => setMenuBar(false)} style={{ textDecoration: 'none' }}>
-                        <li>Offers</li>
-                    </Link>
+                    <li onClick={(e) => handleNavigate(e, 'offers')}>Offers</li>
                     <Link href="/#faq" onClick={() => setMenuBar(false)} style={{ textDecoration: 'none' }}>
                         <li>FAQ's</li>
                     </Link>

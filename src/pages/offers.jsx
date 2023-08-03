@@ -16,7 +16,6 @@ function Offers() {
         <>
             <Navbar />
             <OffersMain />
-            <Exclusive offerPage={true}/>
             <Featured />
             <Story />
             <GetQuote />

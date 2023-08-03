@@ -31,13 +31,13 @@ function TasselsFooter() {
                             <Link href="https://www.facebook.com/tasselsdecor/" target='_blank' style={{ textDecoration: 'none', color: '#ffffff' }}>
                                 <li><FaFacebookSquare /></li>
                             </Link>
-                            <Link href='https://twitter.com/TasselsHD'  target='_blank' style={{ textDecoration: 'none', color: '#ffffff' }}>
+                            <Link href='https://twitter.com/TasselsHD' target='_blank' style={{ textDecoration: 'none', color: '#ffffff' }}>
                                 <li><FaTwitterSquare /></li>
                             </Link>
                             <Link href="https://www.instagram.com/tasselsinterior/?hl=en" target='_blank' style={{ textDecoration: 'none', color: '#ffffff' }}>
                                 <li><FaInstagramSquare /></li>
                             </Link>
-                            <Link href='https://www.linkedin.com/company/tassels-interiors/'  target='_blank' style={{ textDecoration: 'none', color: '#ffffff' }}>
+                            <Link href='https://www.linkedin.com/company/tassels-interiors/' target='_blank' style={{ textDecoration: 'none', color: '#ffffff' }}>
                                 <li><FaLinkedin /></li>
                             </Link>
                         </div>
@@ -54,9 +54,7 @@ function TasselsFooter() {
                                     <Link href="/#products" style={{ textDecoration: 'none' }}>
                                         <li>Products</li>
                                     </Link>
-                                    <Link href="/#offers" style={{ textDecoration: 'none' }}>
-                                        <li>Offers</li>
-                                    </Link>
+                                    <li onClick={() => router.push('/offers')}>Offers</li>
                                     <li onClick={() => router.push('/ContactUs')}>Contact Us</li>
                                 </ul>
                             </div>

@@ -1,9 +1,9 @@
 import React from 'react';
 import styles from "@/styles/home/exclusive.module.css";
 import Image from 'next/image';
-import { Slide } from 'react-slideshow-image';
+import SliderComponent from '../slider';
 
-function Exclusive({offerPage}) {
+function Exclusive() {
 
     const slideImage = [
         '/Assets/banner/offer1.webp',
@@ -13,17 +13,8 @@ function Exclusive({offerPage}) {
 
     return (
         <div className={styles.ExclusiveWrapper}>
-            <Slide
-                autoplay
-                duration={3000}
-                transitionDuration={1000}
-                arrows={false}
-            >
-                {slideImage.map((item) => (
-                    <Image src={item} width={2000} height={1000} className={styles.bannerTextImage} />
-                ))}
-            </Slide>
-            { !offerPage && <div className={styles.ExclusiveContent} id='products'>
+            <SliderComponent slideImage={slideImage} />
+            <div className={styles.ExclusiveContent} id='products'>
                 <div className={styles.EachExclusive}>
                     Hassle Free Installation
                 </div>
@@ -33,7 +24,7 @@ function Exclusive({offerPage}) {
                 <div className={styles.EachExclusive}>
                     Exclusive Deals
                 </div>
-            </div>}
+            </div>
         </div>
     );
 }

@@ -353,62 +353,62 @@ export const ProductImages = [
         img: '/Assets/productImg/Wallpaper/Wallpaper8.webp',
     },
     //Rods
-    {
-        title: 'Rods and Tracks',
-        img: '/Assets/productImg/Rods/RodsM1.webp',
-    },
-    {
-        title: 'Rods and Tracks',
-        img: '/Assets/productImg/Rods/RodsM2.webp',
-    },
-    {
-        title: 'Rods and Tracks',
-        img: '/Assets/productImg/Rods/RodsM3.webp',
-    },
-    {
-        title: 'Rods and Tracks',
-        img: '/Assets/productImg/Rods/RodsM4.webp',
-    },
-    {
-        title: 'Rods and Tracks',
-        img: '/Assets/productImg/Rods/RodsM5.webp',
-    },
-    {
-        title: 'Rods and Tracks',
-        img: '/Assets/productImg/Rods/Rods.webp',
-    },
-    {
-        title: 'Rods and Tracks',
-        img: '/Assets/productImg/Rods/Rods1.webp',
-    },
-    {
-        title: 'Rods and Tracks',
-        img: '/Assets/productImg/Rods/Rods2.webp',
-    },
-    {
-        title: 'Rods and Tracks',
-        img: '/Assets/productImg/Rods/Rods3.webp',
-    },
-    {
-        title: 'Rods and Tracks',
-        img: '/Assets/productImg/Rods/Rods4.webp',
-    },
-    {
-        title: 'Rods and Tracks',
-        img: '/Assets/productImg/Rods/Rods5.webp',
-    },
-    {
-        title: 'Rods and Tracks',
-        img: '/Assets/productImg/Rods/Rods6.webp',
-    },
-    {
-        title: 'Rods and Tracks',
-        img: '/Assets/productImg/Rods/Rods7.webp',
-    },
-    {
-        title: 'Rods and Tracks',
-        img: '/Assets/productImg/Rods/Rods8.webp',
-    },
+    // {
+    //     title: 'Rods and Tracks',
+    //     img: '/Assets/productImg/Rods/RodsM1.webp',
+    // },
+    // {
+    //     title: 'Rods and Tracks',
+    //     img: '/Assets/productImg/Rods/RodsM2.webp',
+    // },
+    // {
+    //     title: 'Rods and Tracks',
+    //     img: '/Assets/productImg/Rods/RodsM3.webp',
+    // },
+    // {
+    //     title: 'Rods and Tracks',
+    //     img: '/Assets/productImg/Rods/RodsM4.webp',
+    // },
+    // {
+    //     title: 'Rods and Tracks',
+    //     img: '/Assets/productImg/Rods/RodsM5.webp',
+    // },
+    // {
+    //     title: 'Rods and Tracks',
+    //     img: '/Assets/productImg/Rods/Rods.webp',
+    // },
+    // {
+    //     title: 'Rods and Tracks',
+    //     img: '/Assets/productImg/Rods/Rods1.webp',
+    // },
+    // {
+    //     title: 'Rods and Tracks',
+    //     img: '/Assets/productImg/Rods/Rods2.webp',
+    // },
+    // {
+    //     title: 'Rods and Tracks',
+    //     img: '/Assets/productImg/Rods/Rods3.webp',
+    // },
+    // {
+    //     title: 'Rods and Tracks',
+    //     img: '/Assets/productImg/Rods/Rods4.webp',
+    // },
+    // {
+    //     title: 'Rods and Tracks',
+    //     img: '/Assets/productImg/Rods/Rods5.webp',
+    // },
+    // {
+    //     title: 'Rods and Tracks',
+    //     img: '/Assets/productImg/Rods/Rods6.webp',
+    // },
+    // {
+    //     title: 'Rods and Tracks',
+    //     img: '/Assets/productImg/Rods/Rods7.webp',
+    // },
+    // {
+    //     title: 'Rods and Tracks',
+    //     img: '/Assets/productImg/Rods/Rods8.webp',
+    // },
     //Flooring
     {
         title: 'Flooring',
@@ -559,5 +559,51 @@ export const sheerImages = [
     {
         title: 'Curtains',
         img: '/Assets/productImg/Curtains/Curtain9.webp',
+    },
+]
+
+export const rodImages = [
+    {
+        title: 'single',
+        img:'/Assets/productImg/Rods/RodsM2.webp'
+    },
+    {
+        title: 'double',
+        img:'/Assets/productImg/Rods/RodsM1.webp'
+    },
+    {
+        title: 'tracks',
+        img:'/Assets/productImg/Rods/RodsM3.webp'
+    },
+    {
+        title: 'tracks',
+        img:'/Assets/productImg/Rods/RodsM4.webp'
+    },
+    {
+        title: 'tracks',
+        img:'/Assets/productImg/Rods/RodsM5.webp'
+    },
+]
+
+export const grassImages = [
+    {
+        title:'Grass',
+        img:'/Assets/productImg/Flooring/Grass1.webp'
+    },
+    {
+        title:'Grass',
+        img:'/Assets/productImg/Flooring/Grass2.webp'
+    },
+    {
+        title:'Grass',
+        img:'/Assets/productImg/Flooring/Grass3.webp'
+    },
+    {
+        title:'Grass',
+        img:'/Assets/productImg/Flooring/Grass4.webp'
+    },
+    {
+        title:'Grass',
+        img:'/Assets/productImg/Flooring/Grass5.webp'
     },
 ]

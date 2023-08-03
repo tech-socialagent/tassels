@@ -3,7 +3,7 @@ import styles from "@/styles/home/exclusive.module.css";
 import Image from 'next/image';
 import { Slide } from 'react-slideshow-image';
 
-function Exclusive() {
+function Exclusive({offerPage}) {
 
     const slideImage = [
         '/Assets/banner/offer1.webp',
@@ -23,7 +23,7 @@ function Exclusive() {
                     <Image src={item} width={2000} height={1000} className={styles.bannerTextImage} />
                 ))}
             </Slide>
-            <div className={styles.ExclusiveContent} id='products'>
+            { !offerPage && <div className={styles.ExclusiveContent} id='products'>
                 <div className={styles.EachExclusive}>
                     Hassle Free Installation
                 </div>
@@ -33,7 +33,7 @@ function Exclusive() {
                 <div className={styles.EachExclusive}>
                     Exclusive Deals
                 </div>
-            </div>
+            </div>}
         </div>
     );
 }

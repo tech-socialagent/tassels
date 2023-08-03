@@ -1,0 +1,11 @@
+.bannerTextImage{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.offerContainer{
+    display: flex;
+    flex-direction: column;
+    margin: 2% 0%;
+}

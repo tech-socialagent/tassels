@@ -8,6 +8,7 @@ import { useRouter } from 'next/router';
 import { IoIosArrowDroprightCircle, IoIosArrowDropleftCircle } from 'react-icons/io';
 import { OurProductData } from './content';
 import { TiTick } from 'react-icons/ti';
+import axios from 'axios';
 
 function GetQuoteMain() {
 
@@ -46,6 +47,25 @@ function GetQuoteMain() {
         if(selectedProducts.length > 0) {
             console.log(formData)
             console.log(selectedProducts);
+
+            const leadData = {
+                data: [
+                  {
+                    Last_Name: formData.name,
+                    Email: formData.email,
+                    Phone: formData.phone,
+                  },
+                ],
+              };
+    
+            axios.post('/api/zohoapi',leadData)
+            .then((response) => {
+              console.log(response.data);
+            })
+            .catch((error) => {
+              console.error('Error sending data:', error);
+            });
+
             setGetQuote('stage4')
         }
     }
@@ -108,11 +128,11 @@ function GetQuoteMain() {
                         </div>
                         <div className={styles.quoteMenu}>
                             <label>Email Address</label>
-                            <input type="text" placeholder='Enter Your Email Address' required name='email' value={formData.email} onChange={handleInputChange} />
+                            <input type="email" placeholder='Enter Your Email Address' required name='email' value={formData.email} onChange={handleInputChange} />
                         </div>
                         <div className={styles.quoteMenu}>
                             <label>Phone Number</label>
-                            <input type="text" placeholder='Enter Your Phone Number' required name='phone' value={formData.phone} onChange={handleInputChange} />
+                            <input type="tel" placeholder='Enter Your Phone Number' required name='phone' value={formData.phone} onChange={handleInputChange} />
                         </div>
                         <button className={styles.quoteBtn} type='submit' style={{ marginTop: '3%' }}>Get Quote</button>
                     </form>

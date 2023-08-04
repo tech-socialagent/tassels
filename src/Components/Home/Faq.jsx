@@ -94,7 +94,7 @@ function Faq() {
     }
 
     return (
-        <div style={{marginTop: '2rem'}}> 
+        <div style={{marginTop: '2rem'}}>
             <SectionHeader title='FAQ”s' desc="Delve into our FAQ section, where you'll discover insightful responses that offer clarity and guidance for a seamless interior decor journey."/>
             <FaqContainer>
                 {items.map((item, index) => (

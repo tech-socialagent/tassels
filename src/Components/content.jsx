@@ -7,9 +7,9 @@ export const OurProductData = [
     },
     {
         title: 'Blinds',
-        desc: 'Sleek window coverings offer privacy, light control, and effortless elegance with clean lines, supreme functionality, and a touch of sophistication.',
+        desc: 'Our exquisite blinds collection turns your home into a resplendent abode. Discover Roman, Roller, Wooden Venetian, Vertical, PVC options, and more.',
         img: '/Assets/product/OurProduct2.webp',
-        content: `Sleek window coverings offer privacy, light control, and effortless elegance with clean lines, supreme functionality, and a touch of sophistication. Embrace the perfect blend of style and practicality as these chic window treatments effortlessly transform any space. Crafted with precision, they exude modernity and add a touch of refined luxury to your home or office. Whether you desire a sunlit ambiance or a cozy retreat, these window coverings cater to your every need. Their smooth operation allows you to control natural light and maintain your desired level of privacy with ease. Elevate your interiors with these stunning window solutions, where beauty meets functionality harmoniously.`,
+        content: `Our exquisite collection of blinds aims to make your home a resplendent and glorious abode. With an array of smart light control and motorized blinds, accompanied by world-class innovative designs and functions, we bring a touch of elegance to your living spaces. Our range features Roman, Roller, Wooden Venetian, Vertical, and PVC blinds, each meticulously crafted to elevate your interior aesthetics. The seamless blend of form and function enhances your comfort and convenience. Discover the allure of automated luxury as many of our blinds can be easily motorized, providing a perfect harmony of style and modernity to your surroundings.`,
     },
     {
         title: 'Curtains',

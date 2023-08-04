@@ -10,6 +10,7 @@ function SliderComponent({ slideImage }) {
             duration={3000}
             transitionDuration={1000}
             arrows={false}
+            pauseOnHover={false}
         >
             {slideImage.map((item) => (
                 <Image src={item} width={2000} height={1000} className={styles.bannerTextImage} />

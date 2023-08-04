@@ -26,7 +26,7 @@ export const OurProductData = [
             <br />
 
             We have two main types of main and sheer curtain fabrics.<b> Curtains fabrics can be made to
-            stitch differently as per taste and need of the customers.</b> Curtain fabrics come
+                stitch differently as per taste and need of the customers.</b> Curtain fabrics come
             in varied composition few of which are polyester, cotton, linen, poly-cotton,
             poly-linen, silk etc.
 
@@ -35,7 +35,7 @@ export const OurProductData = [
 
             We also provide options for blackout, dim out curtains. In addition, we offer customizations based on customers' preferences and designs, as long as they are feasible.
 
-            <ul style={{margin: '1.5%',display:'flex',flexDirection:'column',gap:'.5rem',fontWeight:'600'}}>
+            <ul style={{ margin: '1.5%', display: 'flex', flexDirection: 'column', gap: '.5rem', fontWeight: '600' }}>
                 <li>Eyelet</li>
                 <li>American pleats</li>
                 <li>Ripple Stitching</li>
@@ -565,45 +565,89 @@ export const sheerImages = [
 export const rodImages = [
     {
         title: 'single',
-        img:'/Assets/productImg/Rods/RodsM2.webp'
+        img: '/Assets/productImg/Rods/RodsM2.webp',
+    },
+    {
+        title: 'single',
+        img: '/Assets/productImg/Rods/Rods3.webp',
+    },
+    {
+        title: 'single',
+        img: '/Assets/productImg/Rods/Rods2.webp'
     },
     {
         title: 'double',
-        img:'/Assets/productImg/Rods/RodsM1.webp'
+        img: '/Assets/productImg/Rods/RodsM1.webp'
+    },
+    {
+        title: 'double',
+        img: '/Assets/productImg/Rods/RodsC1.webp'
+    },
+    {
+        title: 'double',
+        img: '/Assets/productImg/Rods/RodsC3.webp'
     },
     {
         title: 'tracks',
-        img:'/Assets/productImg/Rods/RodsM3.webp'
+        img: '/Assets/productImg/Rods/RodsM3.webp'
     },
     {
         title: 'tracks',
-        img:'/Assets/productImg/Rods/RodsM4.webp'
+        img: '/Assets/productImg/Rods/RodsM4.webp'
     },
     {
         title: 'tracks',
-        img:'/Assets/productImg/Rods/RodsM5.webp'
+        img: '/Assets/productImg/Rods/RodsM5.webp'
+    },
+    //accessories
+    {
+        title: 'accessories',
+        img: '/Assets/productImg/Rods/Rods5.webp'
+    },
+    {
+        title: 'accessories',
+        img: '/Assets/productImg/Rods/RodsC7.webp'
+    },
+    {
+        title: 'accessories',
+        img: '/Assets/productImg/Rods/RodsC8.webp'
     },
 ]
 
 export const grassImages = [
     {
-        title:'Grass',
-        img:'/Assets/productImg/Flooring/Grass1.webp'
+        title: 'Grass',
+        img: '/Assets/productImg/Flooring/Grass1.webp'
     },
     {
-        title:'Grass',
-        img:'/Assets/productImg/Flooring/Grass2.webp'
+        title: 'Grass',
+        img: '/Assets/productImg/Flooring/Grass2.webp'
     },
     {
-        title:'Grass',
-        img:'/Assets/productImg/Flooring/Grass3.webp'
+        title: 'Grass',
+        img: '/Assets/productImg/Flooring/Grass3.webp'
     },
     {
-        title:'Grass',
-        img:'/Assets/productImg/Flooring/Grass4.webp'
+        title: 'Grass',
+        img: '/Assets/productImg/Flooring/Grass4.webp'
     },
     {
-        title:'Grass',
-        img:'/Assets/productImg/Flooring/Grass5.webp'
+        title: 'Grass',
+        img: '/Assets/productImg/Flooring/Grass5.webp'
+    },
+]
+
+export const carpetImages = [
+    {
+        title: 'Carpets',
+        img: '/Assets/productImg/Flooring/carpet1.webp',
+    },
+    {
+        title: 'Carpets',
+        img: '/Assets/productImg/Flooring/carpet2.webp',
+    },
+    {
+        title: 'Carpets',
+        img: '/Assets/productImg/Flooring/carpet3.webp',
     },
 ]

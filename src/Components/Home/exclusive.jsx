@@ -1,9 +1,11 @@
 import React from 'react';
 import styles from "@/styles/home/exclusive.module.css";
-import Image from 'next/image';
 import SliderComponent from '../slider';
+import { useRouter } from 'next/router';
 
 function Exclusive() {
+
+    const router = useRouter();
 
     const slideImage = [
         '/Assets/banner/offer1.webp',
@@ -13,7 +15,9 @@ function Exclusive() {
 
     return (
         <div className={styles.ExclusiveWrapper}>
-            <SliderComponent slideImage={slideImage} />
+            <div  onClick={() => router.push('/offers')} style={{cursor:'pointer'}}>
+                <SliderComponent slideImage={slideImage}/>
+            </div>
             <div className={styles.ExclusiveContent} id='products'>
                 <div className={styles.EachExclusive}>
                     Hassle Free Installation

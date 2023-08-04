@@ -8,9 +8,10 @@ function Exclusive() {
     const router = useRouter();
 
     const slideImage = [
-        '/Assets/banner/offer1.webp',
-        '/Assets/banner/offer2.webp',
-        '/Assets/banner/offer3.webp',
+        '/Assets/offers/banner1.webp',
+        '/Assets/offers/banner3.webp',
+        '/Assets/offers/banner2.webp',
+        '/Assets/offers/banner4.webp',
     ]
 
     return (

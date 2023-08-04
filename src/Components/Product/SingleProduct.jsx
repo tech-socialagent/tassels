@@ -3,7 +3,7 @@ import styles from '@/styles/Product/singleProduct.module.css';
 import { ProductContext } from '../../Context.js';
 import { AiOutlineArrowRight, AiOutlineLeft } from 'react-icons/ai';
 import { OurProductData } from '@/Components/content';
-import { ProductImages, CushionImages, sheerImages } from '@/Components/content';
+import { ProductImages, CushionImages, sheerImages, rodImages, grassImages, carpetImages } from '@/Components/content';
 import Image from 'next/image';
 import { useRouter } from 'next/router.js';
 // import CurtainType from './CurtainTypes.jsx';
@@ -48,6 +48,9 @@ function SingleProduct() {
                 {product === 'Curtains' &&
                     <h3 style={{ margin: '2% 0' }}><li>Main Curtains</li></h3>
                 }
+                {product === 'Flooring' &&
+                    <h3 style={{ margin: '2% 0' }}><li>Wooden Flooring</li></h3>
+                }
                 <div className={styles.ImageContainer}>
                     {
                         DisplayImage.map((item, index) => (
@@ -85,6 +88,99 @@ function SingleProduct() {
                     <div className={styles.ImageContainer}>
                         {
                             sheerImages.map((item, index) => (
+                                <div className={styles.singleImageContainer} key={index} onClick={() => router.push('/getQuote')}>
+                                    <Image src={item.img} width={1000} height={1000} className={styles.singleImage} alt="Image" />
+                                    <div className={styles.guoteBtn}>Get Quote <span><AiOutlineArrowRight /></span></div>
+                                    <div className={styles.overlay}></div>
+                                </div>
+                            ))
+                        }
+                    </div>
+                    {/*<CurtainType />*/}
+                </div>
+            }
+            {product === "Rods and Tracks" &&
+                <div className={styles.pageContent}>
+                    <h3 style={{ margin: '2% 0' }}><li>Single</li></h3>
+                    <div className={styles.ImageContainer}>
+                        {
+                            rodImages.map((item, index) => {
+                                if (item.title === 'single') {
+                                    return <div className={styles.singleImageContainer} key={index} onClick={() => router.push('/getQuote')}>
+                                        <Image src={item.img} width={1000} height={1000} className={styles.singleImage} alt="Image" />
+                                        <div className={styles.guoteBtn}>Get Quote <span><AiOutlineArrowRight /></span></div>
+                                        <div className={styles.overlay}></div>
+                                    </div>
+                                }
+                                return null;
+                            })
+                        }
+                    </div>
+                    <h3 style={{ margin: '2% 0' }}><li>Double</li></h3>
+                    <div className={styles.ImageContainer}>
+                        {
+                            rodImages.map((item, index) => {
+                                if (item.title === 'double') {
+                                    return <div className={styles.singleImageContainer} key={index} onClick={() => router.push('/getQuote')}>
+                                        <Image src={item.img} width={1000} height={1000} className={styles.singleImage} alt="Image" />
+                                        <div className={styles.guoteBtn}>Get Quote <span><AiOutlineArrowRight /></span></div>
+                                        <div className={styles.overlay}></div>
+                                    </div>
+                                }
+                                return null;
+                            })
+                        }
+                    </div>
+                    <h3 style={{ margin: '2% 0' }}><li>Tracks</li></h3>
+                    <div className={styles.ImageContainer}>
+                        {
+                            rodImages.map((item, index) => {
+                                if (item.title === 'tracks') {
+                                    return <div className={styles.singleImageContainer} key={index} onClick={() => router.push('/getQuote')}>
+                                        <Image src={item.img} width={1000} height={1000} className={styles.singleImage} alt="Image" />
+                                        <div className={styles.guoteBtn}>Get Quote <span><AiOutlineArrowRight /></span></div>
+                                        <div className={styles.overlay}></div>
+                                    </div>
+                                }
+                                return null;
+                            })
+                        }
+                    </div>
+                    <h3 style={{ margin: '2% 0' }}><li>Accessories</li></h3>
+                    <div className={styles.ImageContainer}>
+                        {
+                            rodImages.map((item, index) => {
+                                if (item.title === 'accessories') {
+                                    return <div className={styles.singleImageContainer} key={index} onClick={() => router.push('/getQuote')}>
+                                        <Image src={item.img} width={1000} height={1000} className={styles.singleImage} alt="Image" />
+                                        <div className={styles.guoteBtn}>Get Quote <span><AiOutlineArrowRight /></span></div>
+                                        <div className={styles.overlay}></div>
+                                    </div>
+                                }
+                                return null;
+                            })
+                        }
+                    </div>
+                </div>
+            }
+            {product === "Flooring" &&
+                <div className={styles.pageContent}>
+                <h3 style={{ margin: '2% 0' }}><li>Carpets</li></h3>
+                    <div className={styles.ImageContainer}>
+                        {
+                            carpetImages.map((item, index) => (
+                                <div className={styles.singleImageContainer} key={index} onClick={() => router.push('/getQuote')}>
+                                    <Image src={item.img} width={1000} height={1000} className={styles.singleImage} alt="Image" />
+                                    <div className={styles.guoteBtn}>Get Quote <span><AiOutlineArrowRight /></span></div>
+                                    <div className={styles.overlay}></div>
+                                </div>
+                            ))
+                        }
+                    </div>
+                    <h3 style={{ margin: '2% 0' }}><li>Artificial Grass</li></h3>
+                    <div className={styles.ImageContainer}>
+                        {
+                            grassImages.map((item, index) => (
                                 <div className={styles.singleImageContainer} key={index} onClick={() => router.push('/getQuote')}>
                                     <Image src={item.img} width={1000} height={1000} className={styles.singleImage} alt="Image" />
                                     <div className={styles.guoteBtn}>Get Quote <span><AiOutlineArrowRight /></span></div>

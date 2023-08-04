@@ -2,13 +2,13 @@
     display: flex;
     flex-direction: column;
     gap: 3rem;
-    margin: 3% 0%;
+    margin:0% 0% 3%;
 }
 
 .bannerTextImage{
     width: 100%;
-    height: 60vh;
-    object-fit: fill;
+    height: 100%;
+    object-fit: contain;
 }
 
 .ExclusiveContent {
@@ -42,17 +42,18 @@
 }
 
 @media (max-width: 750px) {
-    .bannerTextImage{
+    /* .bannerTextImage{
         height: 30vh;
         object-fit: fill;
-    }
+    } */
     .EachExclusive{
         font-size: 16px;
     }
 }
-
+/* 
 @media (max-width: 750px) {
     .bannerTextImage{
-        height: 25vh;
+        height: 100%;
+        object-fit: contain;
     }
-}
+} */

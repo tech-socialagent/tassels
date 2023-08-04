@@ -1,10 +1,31 @@
+.iconMain{
+    display: grid;
+    grid-template-columns: 6% auto 6%;
+}
+
 .iconWrapper {
+    width: 100%;
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
     gap: 5%;
-    row-gap: 20px;
     margin: 5% 0%;
+    overflow: scroll;
+}
+
+.iconLeft, .iconRight {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.iconLeft span, .iconRight span{
+    color: var(--secondary-color);
+    font-size: 24px;
+    cursor: pointer;
+}
+
+
+.iconWrapper::-webkit-scrollbar{
+    display: none;
 }
 
 .singleIcon {
@@ -75,6 +96,9 @@
 } */
 
 @media (max-width: 800px) {
+    .iconWrapper{
+        padding: 0%;
+    }
     .singleIcon{
         min-height: 100px;
         min-width: 100px;

@@ -4,26 +4,33 @@ import { AiOutlineArrowRight } from "react-icons/ai";
 import Image from 'next/image';
 import bannerImage from '../../../public/Assets/offers/offerPageBanner.webp';
 import { useRouter } from 'next/router';
-import Slider from "react-slick";
-import 'slick-carousel/slick/slick.css';
-import 'slick-carousel/slick/slick-theme.css';
 
 function OffersMain() {
 
-    const settings = {
-        dots: true,
-        infinite: true,
-        speed: 1000,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        className: styles.offerMainSlider,
-        centerMode: false,
-        prevArrow: null,
-        nextArrow: null,
-        autoplay: true,
-        autoplaySpeed: 3000,
-        
-    };
+
+    const [index, setIndex] = React.useState(0);
+    const timeoutRef = React.useRef(null);
+
+    function resetTimeout() {
+        if (timeoutRef.current) {
+            clearTimeout(timeoutRef.current);
+        }
+    }
+
+    React.useEffect(() => {
+        resetTimeout();
+        timeoutRef.current = setTimeout(
+            () =>
+                setIndex((prevIndex) =>
+                    prevIndex === slideImage.length - 1 ? 0 : prevIndex + 1
+                ),
+            5000
+        );
+
+        return () => {
+            resetTimeout();
+        };
+    }, [index]);
 
     const router = useRouter();
 
@@ -60,11 +67,34 @@ function OffersMain() {
 
     return (
         <div className={styles.offerContainer} style={{ marginTop: isFixed ? '73.5px' : '0px' }}>
-            <Slider {...settings} className={styles.offerMainSlider}>
-                {slideImage.map((item) => (
-                    <Image src={item} width={1000} height={1000} className={styles.offerMainImage} />
-                ))}
-            </Slider>
+            <div className={styles.slideshow}>
+                <div
+                    className={styles.slideshowSlider}
+                    style={{ transform: `translate3d(${-index * 100}%, 0, 0)` }}
+                >
+                    {slideImage.map((img, index) => (
+                        <div
+                            className={styles.slide}
+                            key={index}
+                        >
+                            <Image src={img} width={1000} height={1000} className={styles.slideImage} />
+                        </div>
+                    ))}
+                </div>
+
+                <div className={styles.slideshowDots}>
+                    {slideImage.map((_, idx) => (
+                        <div
+                            key={idx}
+                            className={styles.slideshowDot}
+                            style={{ backgroundColor : index === idx ? 'var(--secondary-color)' :'#c4c4c4' , scale : index === idx ? '1.5' : '1'}}
+                            onClick={() => {
+                                setIndex(idx);
+                            }}
+                        ></div>
+                    ))}
+                </div>
+            </div>
             <div className={styles.ImageContainer}>
                 {
                     DisplayImage.map((item, index) => (

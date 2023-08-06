@@ -4,9 +4,26 @@ import { AiOutlineArrowRight } from "react-icons/ai";
 import Image from 'next/image';
 import bannerImage from '../../../public/Assets/offers/offerPageBanner.webp';
 import { useRouter } from 'next/router';
-import SliderComponent from '../slider';
+import Slider from "react-slick";
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
 
 function OffersMain() {
+
+    const settings = {
+        dots: true,
+        infinite: true,
+        speed: 1000,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        className: styles.offerMainSlider,
+        centerMode: false,
+        prevArrow: null,
+        nextArrow: null,
+        autoplay: true,
+        autoplaySpeed: 3000,
+        
+    };
 
     const router = useRouter();
 
@@ -43,7 +60,11 @@ function OffersMain() {
 
     return (
         <div className={styles.offerContainer} style={{ marginTop: isFixed ? '73.5px' : '0px' }}>
-            <SliderComponent slideImage={slideImage} />
+            <Slider {...settings} className={styles.offerMainSlider}>
+                {slideImage.map((item) => (
+                    <Image src={item} width={1000} height={1000} className={styles.offerMainImage} />
+                ))}
+            </Slider>
             <div className={styles.ImageContainer}>
                 {
                     DisplayImage.map((item, index) => (

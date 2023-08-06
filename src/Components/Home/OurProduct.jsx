@@ -24,7 +24,7 @@ function OurProducts() {
                 {OurProductData.map((item) => (
                     <div className={styles.SingleProduct}>
                         <div className={styles.ProductTitle}>
-                            <h3><li>{item.title}</li></h3>
+                            <h3>{item.title}</h3>
                             <p>{item.desc}</p>
                         </div>
                         <div className={styles.SingleProductImageContainer} onClick={(e) => handleClick(e, item.title)}>

@@ -124,6 +124,14 @@ export const ProductImages = [
     //Blinds
     {
         title: 'Blinds',
+        img: '/Assets/productImg/Blinds/BlindsM11.webp',
+    },
+    {
+        title: 'Blinds',
+        img: '/Assets/productImg/Blinds/BlindsM12.webp',
+    },
+    {
+        title: 'Blinds',
         img: '/Assets/productImg/Blinds/BlindsM1.webp',
     },
     {
@@ -193,10 +201,6 @@ export const ProductImages = [
     {
         title: 'Blinds',
         img: '/Assets/productImg/Blinds/Blinds7.webp',
-    },
-    {
-        title: 'Blinds',
-        img: '/Assets/productImg/Blinds/Blinds8.webp',
     },
     //Curtains
     {

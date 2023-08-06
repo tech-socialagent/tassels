@@ -16,6 +16,9 @@
     flex-direction: column;
     justify-content: space-between;
     gap: 2%;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+    padding: 4%;
+    border-radius: 10px;
 }
 
 .ProductTitle h3 {
@@ -36,6 +39,8 @@
     overflow: hidden;
     height: 300px;
     cursor: pointer;
+    border-radius: 5px;
+    overflow: hidden;
 }
 
 .SingleProductImage {

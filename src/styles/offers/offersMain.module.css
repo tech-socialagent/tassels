@@ -3,6 +3,26 @@
     flex-direction: column;
 }
 
+.offerMainSlider{
+    margin-bottom: 3%;
+}
+
+/* Changing the inactive dots' color */
+.offerMainSlider li button:before {
+    color: var(--secondary-color);
+    font-size: 7px;
+  }
+  
+  /* Changing the active dot color */
+  .offerMainSlider li.slick-active button:before {
+    color: var(--secondary-color) !important;
+  }
+
+.offerMainImage{
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
 
 .ImageContainer {
     display: grid;
@@ -124,6 +144,10 @@
     .ImageContainer {
         grid-template-columns: 1fr;
         gap: 1rem;
+    }
+
+    .offerMainSlider{
+        margin-bottom: 7%;
     }
 
     .offerSection{

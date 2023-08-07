@@ -7,7 +7,6 @@ import Navbar from '@/Components/Home/navbar';
 import Featured from '@/Components/Product/Featured';
 import Menu from '@/Components/Product/Menu';
 import SingleProduct from '@/Components/Product/SingleProduct';
-import Story from '@/Components/Product/Story';
 import TasselsFooter from '@/Components/footer';
 import React from 'react';
 
@@ -23,7 +22,6 @@ function product1() {
                 <Menu />
                 <SingleProduct/>
                 <Featured />
-                <Story />
                 <GetQuote />
                 <Franchises />
                 <FollowUs />

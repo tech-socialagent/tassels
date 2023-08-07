@@ -39,7 +39,7 @@ function SingleProduct() {
     return (
         <div className={styles.singleProductWrap}>
             <div className={styles.pageTitle}>
-                <span><AiOutlineLeft onClick={() => router.back()} /></span>
+                <span><AiOutlineLeft onClick={() => router.push('/#products')} /></span>
                 <h2>Our Products</h2>
             </div>
             <div className={styles.pageContent}>

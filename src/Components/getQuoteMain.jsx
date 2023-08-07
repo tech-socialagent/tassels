@@ -38,7 +38,7 @@ function GetQuoteMain() {
     const handleSubmit = (event) => {
         event.preventDefault();
         if(formData.name !== '' && formData.email !== '' && formData.phone !== '') {
-            setGetQuote('stage3')
+            setGetQuote('stage2')
         }
     }
 
@@ -66,7 +66,7 @@ function GetQuoteMain() {
               console.error('Error sending data:', error);
             });
 
-            setGetQuote('stage4')
+            setGetQuote('stage3')
         }
     }
     
@@ -97,14 +97,14 @@ function GetQuoteMain() {
 
     const handleClose = (e) => {
         e.preventDefault();
-        setGetQuote('stage1');
         router.back();
+        setGetQuote('stage1');
     }
 
     const handleFinish = (e) => {
         e.preventDefault();
-        setGetQuote('stage1');
         router.push("/");
+        setGetQuote('stage1');
     }
 
     return (
@@ -112,7 +112,7 @@ function GetQuoteMain() {
             <div className={styles.GetQuoteMainContainer}>
                 <span className={styles.CloseIcon} onClick={handleClose}><AiOutlineClose/></span>
                 {
-                    getQuote === 'stage1' &&
+                    getQuote === 'stage0' &&
                     <div className={styles.GetQuoteStage1}>
                         <Image src={QuoteBG} className={styles.GetQuoteBackgroundImage} width={1000} height={1000} />
                         <h1>Thank you for Showing interest in Tassels. we’re excited to serve you.</h1>
@@ -120,7 +120,7 @@ function GetQuoteMain() {
                     </div>
                 }
                 {
-                    getQuote === 'stage2' &&
+                    getQuote === 'stage1' &&
                     <form className={styles.quoteForm} onSubmit={handleSubmit}>
                         <div className={styles.quoteMenu}>
                             <label>Name</label>
@@ -138,7 +138,7 @@ function GetQuoteMain() {
                     </form>
                 }
                 {
-                    getQuote === 'stage3' &&
+                    getQuote === 'stage2' &&
                     <div className={styles.GetQuoteStage3Wrap}>
                         <div className={styles.GetQuoteStage3Content}>
                             <h3>Which product of ours are you looking for?</h3>
@@ -160,10 +160,10 @@ function GetQuoteMain() {
                     </div>
                 }
                 {
-                    getQuote === 'stage4' &&
+                    getQuote === 'stage3' &&
                     <div className={styles.GetQuoteStage1}>
                         <Image src={QuoteBG} className={styles.GetQuoteBackgroundImage} width={1000} height={1000} />
-                        <h1>Thank you for All the inputs please check your email for the quotation.</h1>
+                        <h1>Thank you for all the inputs please check your email for the quotation.</h1>
                         <button className={styles.quoteBtn} onClick={handleFinish}>Home</button>
                     </div>
                 }

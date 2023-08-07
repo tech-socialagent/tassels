@@ -63,6 +63,7 @@ function SpaceQuote() {
             </div>
             <div className={styles.SpaceQuoteBottomContainer}>
                 <h2>Lets get Started</h2>
+                <p>inviting spaces for your dream home interior</p>
                 {stage === 'stage1' && <div className={styles.SpaceQuoteBottom}>
                     <form onSubmit={handleStage1} className={styles.QuoteForm}>
                         <label>Home Type</label>

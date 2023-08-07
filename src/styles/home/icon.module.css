@@ -6,7 +6,7 @@
 .iconWrapper {
     width: 100%;
     display: flex;
-    gap: 5%;
+    gap: 3.5%;
     margin: 5% 0%;
     overflow: scroll;
 }
@@ -18,7 +18,7 @@
 }
 
 .iconLeft span, .iconRight span{
-    color: var(--secondary-color);
+    color: #000;
     font-size: 24px;
     cursor: pointer;
 }

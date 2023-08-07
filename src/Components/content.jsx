@@ -569,7 +569,7 @@ export const rodImages = [
     },
     {
         title: 'double',
-        img: '/Assets/productImg/Rods/rodsM1.webp'
+        img: '/Assets/productImg/Rods/RodsM1.webp'
     },
     {
         title: 'double',

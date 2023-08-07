@@ -50,7 +50,7 @@ function Featured() {
                         <Image src={item.img} width={1000} height={1000} alt='Image' className={styles.featuredImage}/>
                         <div className={styles.featuredText}>
                             <h4>{item.title}</h4>
-                            <p id="AboutUs">Explore Now</p>
+                            <p>Explore Now</p>
                         </div>
                     </div>
                 ))}

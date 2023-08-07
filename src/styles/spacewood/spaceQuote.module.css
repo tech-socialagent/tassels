@@ -19,7 +19,7 @@
 
 .SpaceQuoteBottom{
     display: grid;
-    grid-template-columns: auto 470px;
+    grid-template-columns: auto 520px;
     border-radius: 20px;
     overflow: hidden;
 }
@@ -30,21 +30,33 @@
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
 }
 
-.QuoteForm h2{
+.SpaceQuoteBottomContainer h2{
     font-size: 20px;
-    font-weight: 600;
-    padding-bottom: 3%;
+    text-align: center;
+    text-transform: uppercase;  
+    font-weight: 700;
+    margin-bottom: 0.5%;
+}
+
+.SpaceQuoteBottomContainer p{
+    text-transform: capitalize;
+    text-align: center;
+    font-size: 14px;
+    color: var(--font-size-desc);
+    margin-bottom: 3%;
 }
 
 .QuoteForm label{
     padding: 2% 0%;
-    font-size: 18px;
-    font-weight: 600;
+    font-size: 16px;
+    font-weight: 500;
 }
 
 .QuoteForm select{
+    width: 95%;
     padding: 1.5% 0.5%;
     outline: none;
     cursor: pointer;
@@ -84,10 +96,31 @@
     gap: 10px;
     padding: 0% 1%;
     transform: all  0.4s ease;
+    background-color: #fff;
+    transition: all 0.2s ease-in-out;
 }
 
-.menu label{
+.menu:hover{
+    background-color: #eff6ff;
+}
+
+.menuSelected{
+    display: flex;
+    gap: 10px;
+    padding: 0% 1%;
+    transform: all  0.4s ease;
+    background-color: #eff6ff;
+}
+
+.menu label, .menuSelected label{
+    width: 100%;
     padding: 1% 0%;
+    font-size: 14px;
+    font-weight: 400;
+    cursor: pointer;    
+}
+
+.menu input, .menuSelected input{
     font-size: 14px;
     font-weight: 400;
     cursor: pointer;    
@@ -158,6 +191,9 @@
 /* Media query */
 
 @media (max-width: 1000px) {
+    .LogoImage{
+        height: 70px;
+    }
     .SpaceQuoteBottom{
         grid-template-columns: 50% 50%;
     }
@@ -168,6 +204,9 @@
 }
 
 @media (max-width: 550px) {
+    .LogoImage{
+        height: 50px;
+    }
     .SpaceQuoteBottom{
         display: flex;
         flex-direction: column-reverse;
@@ -175,5 +214,11 @@
     .stage3Content h1{
         font-size: 18px;
         font-weight: 500;
+    }
+    .SpaceQuoteBottomContainer h2{
+        font-size: 18px;
+    }
+    .SpaceQuoteBottomContainer p{
+        font-size: 12px;
     }
 }

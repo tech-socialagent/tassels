@@ -48,7 +48,7 @@ function TasselsFooter() {
                                 <div className={styles.footerTitle}>Quick Links</div>
                                 <ul>
                                     <li onClick={() => router.push('/')}>Homepage</li>
-                                    <Link href="/product#AboutUs" style={{ textDecoration: 'none' }}>
+                                    <Link href="/#AboutUs" style={{ textDecoration: 'none' }}>
                                         <li>About Us</li>
                                     </Link>
                                     <Link href="/#products" style={{ textDecoration: 'none' }}>

@@ -46,7 +46,7 @@ function SpaceQuote() {
     const handleStage1 = (e) => {
         e.preventDefault();
 
-        if( selectedOption !== '' && selectedProducts.length > 0 ) {
+        if (selectedOption !== '' && selectedProducts.length > 0) {
             setStage('stage2');
         }
     }
@@ -62,9 +62,10 @@ function SpaceQuote() {
                 <Image src={spaceLogo} alt='img' width={1000} height={1000} className={styles.LogoImage} />
             </div>
             <div className={styles.SpaceQuoteBottomContainer}>
+                <h2>Lets get Started</h2>
+                <p>inviting spaces for your dream home interior</p>
                 {stage === 'stage1' && <div className={styles.SpaceQuoteBottom}>
                     <form onSubmit={handleStage1} className={styles.QuoteForm}>
-                        <h2>Lets get Started</h2>
                         <label>Home Type</label>
                         <select value={selectedOption} onChange={(event) => setSelectedOption(event.target.value)}>
                             <option value="" disabled selected>Select an option</option>
@@ -75,7 +76,7 @@ function SpaceQuote() {
                         </select>
                         <label>Your Requirements</label>
                         {requirements.map((item) => (
-                            <div className={styles.menu} style={{backgroundColor: selectedProducts.includes(item) ? '#eff6ff' : '#fff'}}>
+                            <div className={selectedProducts.includes(item) ? styles.menuSelected : styles.menu}>
                                 <input type="checkbox" checked={selectedProducts.includes(item) ? true : false} id={item} value={item} onChange={(event) => handleClick(event.target.value)} />
                                 <label htmlFor={item}>{item}</label>
                             </div>
@@ -89,18 +90,18 @@ function SpaceQuote() {
                 {stage === 'stage2' && <div className={styles.SpaceQuoteBottom}>
                     <form onSubmit={handleStage2} className={styles.QuoteForm}>
                         <h2>Lets get Started</h2>
-                            <div className={styles.stage2Menu}>
-                                <label>Name</label>
-                                <input type="text" placeholder='Enter Your Name' required/>
-                            </div>
-                            <div className={styles.stage2Menu}>
-                                <label>Email Address</label>
-                                <input type="email" placeholder='Enter Your Email' required/>
-                            </div>
-                            <div className={styles.stage2Menu}>
-                                <label>Phone Number</label>
-                                <input type="tel" placeholder='Enter Your phone number' required/>
-                            </div>
+                        <div className={styles.stage2Menu}>
+                            <label>Name</label>
+                            <input type="text" placeholder='Enter Your Name' required />
+                        </div>
+                        <div className={styles.stage2Menu}>
+                            <label>Email Address</label>
+                            <input type="email" placeholder='Enter Your Email' required />
+                        </div>
+                        <div className={styles.stage2Menu}>
+                            <label>Phone Number</label>
+                            <input type="tel" placeholder='Enter Your phone number' required />
+                        </div>
                         <button type='submit'>Get Quote</button>
                     </form>
                     <div className={styles.formImageContainer}>
@@ -108,10 +109,10 @@ function SpaceQuote() {
                     </div>
                 </div>}
                 {stage === 'stage3' && <div className={styles.SpaceQuoteStage3}>
-                    <Image src={stage3BG} alt='image' width={1000} height={1000} className={styles.stage3Image}/>
+                    <Image src={stage3BG} alt='image' width={1000} height={1000} className={styles.stage3Image} />
                     <div className={styles.stage3Content}>
-                            <h1>We appreciate the inputs, and our team will be in contact with you soon</h1>
-                            <button className={styles.stage3Button} onClick={() => router.push('/')}>HOME</button>
+                        <h1>We appreciate the inputs, and our team will be in contact with you soon</h1>
+                        <button className={styles.stage3Button} onClick={() => router.push('/')}>HOME</button>
                     </div>
                     <div className={styles.overlay}></div>
                 </div>}

@@ -6,7 +6,7 @@
 .iconWrapper {
     width: 100%;
     display: flex;
-    gap: 5%;
+    gap: 3.5%;
     margin: 5% 0%;
     overflow: scroll;
 }
@@ -18,7 +18,7 @@
 }
 
 .iconLeft span, .iconRight span{
-    color: var(--secondary-color);
+    color: #000;
     font-size: 24px;
     cursor: pointer;
 }
@@ -107,6 +107,21 @@
         width: 40px;
         height: 40px;
         object-fit: contain;
+    }
+}
+
+@media (max-width: 550px) {
+    .iconMain{
+        grid-template-columns: 100%;
+    }
+    .iconLeft, .iconRight{
+        display: none;
+    }
+    .iconWrapper {
+        flex-wrap: wrap;
+        row-gap: 20px;
+        padding: 0% 5%;
+        justify-content: space-around;
     }
 }
 

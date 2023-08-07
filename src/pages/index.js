@@ -8,6 +8,7 @@ import GetQuote from '@/Components/Home/getQuote'
 import Header from '@/Components/Home/header'
 import Icon from '@/Components/Home/icon'
 import Navbar from '@/Components/Home/navbar'
+import Story from '@/Components/Product/Story'
 import TasselsFooter from '@/Components/footer'
 import Head from 'next/head'
 
@@ -26,6 +27,7 @@ export default function Home() {
       <Icon />
       <Exclusive />
       <OurProducts />
+      <Story />
       <GetQuote />
       <Franchises />
       <FollowUs />

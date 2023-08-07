@@ -35,6 +35,7 @@ function OurProducts() {
                     </div>
                 ))}
             </div>
+            <span id="AboutUs"></span>
         </div>
     );
 }

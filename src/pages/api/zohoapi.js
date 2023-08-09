@@ -5,9 +5,9 @@ export default async function handler(req, res) {
 
   const leadData = req.body
 
-  const refreshToken = process.env.REFRESH_TOKEN;
-  const clientId = process.env.CLIENT_ID;
-  const clientSecret = process.env.CLIENT_SECRET;
+  const refreshToken = "1000.b814eed404ed485d33f6e3d437d9edeb.ebdd2fa9681e12726959363be733fa8a";
+  const clientId = "1000.ABP7HPCOLYSUCT4KIYSRUWAN92AZPD";
+  const clientSecret = "01455cf49f7d7540d80995d27692e1b958a4dadf5f";
   const scope = 'ZohoCRM.modules.ALL';
 
   // Request a new access token

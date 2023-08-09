@@ -45,19 +45,13 @@ function GetQuoteMain() {
     const handleDataSend = (event) => {
         event.preventDefault();
         if(selectedProducts.length > 0) {
-            console.log(formData)
-            console.log(selectedProducts);
-
             const leadData = {
-                data: [
-                  {
-                    Last_Name: formData.name,
-                    Email: formData.email,
-                    Phone: formData.phone,
-                  },
-                ],
-              };
-    
+                name: formData.name,
+                email: formData.email,
+                phone: formData.phone,
+                products: JSON.stringify(selectedProducts),
+            }
+
             axios.post('/api/zohoapi',leadData)
             .then((response) => {
               console.log(response.data);

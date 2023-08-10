@@ -60,28 +60,21 @@ function GetQuote() {
 
     const handleDataSend = (event) => {
         event.preventDefault();
-        if (selectedProducts.length > 0) {
-            setFormData({
-                ...formData,
-                selected: selectedProducts
-            })
+        if(selectedProducts.length > 0) {
             const leadData = {
-                data: [
-                    {
-                        Last_Name: formData.name,
-                        Email: formData.email,
-                        Phone: formData.phone,
-                    },
-                ],
-            };
+                name: formData.name,
+                email: formData.email,
+                phone: formData.phone,
+                products: JSON.stringify(selectedProducts),
+            }
 
-            axios.post('/api/zohoapi', leadData)
-                .then((response) => {
-                    console.log(response.data);
-                })
-                .catch((error) => {
-                    console.error('Error sending data:', error);
-                });
+            axios.post('/api/zohoapi',leadData)
+            .then((response) => {
+              console.log(response.data);
+            })
+            .catch((error) => {
+              console.error('Error sending data:', error);
+            });
             setStage('stage3')
         }
     }

@@ -21,7 +21,7 @@ function SingleProduct() {
     const handleClick = (e) => {
         e.preventDefault();
         if (Btn == 'SEE MORE') {
-            setToShow(ElementImages.length);
+            setToShow(ElementImages.length + 1);
             setBtn("SEE LESS");
         } else {
             setToShow(9);
@@ -68,7 +68,7 @@ function SingleProduct() {
             </div>
             {product === "Upholstery" &&
                 <div className={styles.pageContent}>
-                    <h3 style={{ margin: '2% 0' }}><li>Cushions</li></h3>
+                    <h3 style={{ margin: '4% 0 1%' }}><li>Cushions</li></h3>
                     <div className={styles.ImageContainer}>
                         {
                             CushionImages.map((item, index) => (
@@ -84,7 +84,7 @@ function SingleProduct() {
             }
             {product === "Curtains" &&
                 <div className={styles.pageContent}>
-                    <h3 style={{ margin: '2% 0' }}><li>Sheer Curtains</li></h3>
+                    <h3 style={{ margin: '4% 0 1%' }}><li>Sheer Curtains</li></h3>
                     <div className={styles.ImageContainer}>
                         {
                             sheerImages.map((item, index) => (
@@ -101,7 +101,7 @@ function SingleProduct() {
             }
             {product === "Rods and Tracks" &&
                 <div className={styles.pageContent}>
-                    <h3 style={{ margin: '2% 0' }}><li>Single</li></h3>
+                    <h3 style={{ margin: '0% 0 1%' }}><li>Single Rods</li></h3>
                     <div className={styles.ImageContainer}>
                         {
                             rodImages.map((item, index) => {
@@ -116,7 +116,7 @@ function SingleProduct() {
                             })
                         }
                     </div>
-                    <h3 style={{ margin: '2% 0' }}><li>Double</li></h3>
+                    <h3 style={{ margin: '4% 0 1%' }}><li>Double Rods</li></h3>
                     <div className={styles.ImageContainer}>
                         {
                             rodImages.map((item, index) => {
@@ -131,12 +131,13 @@ function SingleProduct() {
                             })
                         }
                     </div>
-                    <h3 style={{ margin: '2% 0' }}><li>Tracks</li></h3>
+                    <h3 style={{ margin: '4% 0 1%' }}><li>Tracks</li></h3>
                     <div className={styles.ImageContainer}>
                         {
                             rodImages.map((item, index) => {
                                 if (item.title === 'tracks') {
                                     return <div className={styles.singleImageContainer} key={index} onClick={() => router.push('/getQuote')}>
+                                        <p>{item.name}</p>
                                         <Image src={item.img} width={1000} height={1000} className={styles.singleImage} alt="Image" />
                                         <div className={styles.guoteBtn}>Get Quote <span><AiOutlineArrowRight /></span></div>
                                         <div className={styles.overlay}></div>
@@ -146,7 +147,7 @@ function SingleProduct() {
                             })
                         }
                     </div>
-                    <h3 style={{ margin: '2% 0' }}><li>Accessories</li></h3>
+                    <h3 style={{ margin: '4% 0 1%' }}><li>Accessories  (Borders and Laces)</li></h3>
                     <div className={styles.ImageContainer}>
                         {
                             rodImages.map((item, index) => {
@@ -165,7 +166,7 @@ function SingleProduct() {
             }
             {product === "Flooring" &&
                 <div className={styles.pageContent}>
-                <h3 style={{ margin: '2% 0' }}><li>Carpets</li></h3>
+                    <h3 style={{ margin: '4% 0 1%' }}><li>Carpets</li></h3>
                     <div className={styles.ImageContainer}>
                         {
                             carpetImages.map((item, index) => (
@@ -177,7 +178,7 @@ function SingleProduct() {
                             ))
                         }
                     </div>
-                    <h3 style={{ margin: '2% 0' }}><li>Artificial Grass</li></h3>
+                    <h3 style={{ margin: '4% 0 1%' }}><li>Artificial Grass</li></h3>
                     <div className={styles.ImageContainer}>
                         {
                             grassImages.map((item, index) => (

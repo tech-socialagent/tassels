@@ -3,6 +3,7 @@ import styles from "@/styles/home/followUs.module.css";
 import SectionHeader from '../SectionHeader';
 import Image from 'next/image';
 import { AiFillInstagram } from 'react-icons/ai';
+import Link from 'next/link';
 
 function FollowUs() {
 
@@ -26,15 +27,19 @@ function FollowUs() {
                 <div className={styles.stripW}>
                     {Images.map((image) => (
                         <div className={styles.stripItem}>
-                            <Image src={image} className={styles.CarouselImage} alt='Image' width={1000} height={1000} />
+                            <Link href="https://www.instagram.com/tasselsinterior/?hl=en" target='_blank' style={{ textDecoration: 'none' }}>
+                                <Image src={image} className={styles.CarouselImage} alt='Image' width={1000} height={1000} />
+                            </Link>
                         </div>
                     ))}
                 </div>
                 <div className={styles.bottomOval}>
+                    <Link href="https://www.instagram.com/tasselsinterior/?hl=en" target='_blank' style={{ textDecoration: 'none' }}>
                         <div className={styles.instaContent}>
                             <span><AiFillInstagram /></span>
                             <p>@tasselsinterior</p>
                         </div>
+                    </Link>
                 </div>
             </div>
         </div>

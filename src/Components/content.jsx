@@ -58,9 +58,9 @@ export const OurProductData = [
     },
     {
         title: 'Rods and Tracks',
-        desc: 'Elegant and stylish hardware, seamlessly blending with any decor, allowing curtains to gracefully glide, while adding a touch of modernity.',
+        desc: 'Transform your living space with customized Rods and Tracks to match function and aesthetics. Our expert technicians ensure the perfect fit for you.',
         img: '/Assets/product/OurProduct6.webp',
-        content: `Elegant and stylish hardware, seamlessly blending with any decor, allowing curtains to gracefully glide, while adding a touch of modernity. This is the essence of our exceptional curtain accessories collection. Crafted with meticulous attention to detail, our hardware showcases a perfect fusion of aesthetics and functionality. Each piece is thoughtfully designed to complement various interior styles, be it contemporary, classic, or minimalist. Embrace the art of effortless curtain management as our sophisticated hardware effortlessly harmonizes with your living spaces.Enhance your home ambiance with the seamless interplay of beauty and utility, as you witness the transformative power of our curtain hardware collection.`,
+        content: `Transform your living space with customized Rods and Tracks, carefully curated to match your unique functional needs and elevate the aesthetics of your home. Whether you desire a touch of elegance, a cozy ambiance, or optimal space utilization, our versatile selection has the perfect solution for you. Our team of expert technicians is dedicated to providing top-notch guidance and support throughout the process. From understanding your specific requirements to recommending the most suitable options, they ensure a perfect fit for your living space. Experience the seamless integration of style and functionality as you explore our wide array of Rods and Tracks, designed for curtains, blinds, or drapes, offering flexibility to enhance any room's atmosphere. With confidence, revamp your home, knowing our technicians are ready to assist you in creating an exquisite haven that reflects your taste and lifestyle, elevating your living experience with personalized Rods and Tracks`,
     },
     {
         title: 'Flooring',
@@ -231,34 +231,6 @@ export const ProductImages = [
         title: 'Curtains',
         img: '/Assets/productImg/Curtains/CurtainM9.webp',
     },
-    {
-        title: 'Curtains',
-        img: '/Assets/productImg/Curtains/CurtainM10.webp',
-    },
-    {
-        title: 'Curtains',
-        img: '/Assets/productImg/Curtains/CurtainM11.webp',
-    },
-    {
-        title: 'Curtains',
-        img: '/Assets/productImg/Curtains/CurtainM12.webp',
-    },
-    {
-        title: 'Curtains',
-        img: '/Assets/productImg/Curtains/CurtainM13.webp',
-    },
-    {
-        title: 'Curtains',
-        img: '/Assets/productImg/Curtains/CurtainM14.webp',
-    },
-    {
-        title: 'Curtains',
-        img: '/Assets/productImg/Curtains/CurtainM15.webp',
-    },
-    {
-        title: 'Curtains',
-        img: '/Assets/productImg/Curtains/CurtainM16.webp',
-    },
     // {
     //     title: 'Curtains',
     //     img: '/Assets/productImg/Curtains/Curtain.webp',
@@ -319,6 +291,22 @@ export const ProductImages = [
     {
         title: 'Wallpaper',
         img: '/Assets/productImg/Wallpaper/WallpaperM6.webp',
+    },
+    {
+        title: 'Wallpaper',
+        img: '/Assets/productImg/Wallpaper/WallpaperM7.webp',
+    },
+    {
+        title: 'Wallpaper',
+        img: '/Assets/productImg/Wallpaper/WallpaperM8.webp',
+    },
+    {
+        title: 'Wallpaper',
+        img: '/Assets/productImg/Wallpaper/WallpaperM9.webp',
+    },
+    {
+        title: 'Wallpaper',
+        img: '/Assets/productImg/Wallpaper/WallpaperM10.webp',
     },
     {
         title: 'Wallpaper',
@@ -585,36 +573,47 @@ export const rodImages = [
     },
     {
         title: 'double',
-        img: '/Assets/productImg/Rods/RodsC1.webp'
+        img: '/Assets/productImg/Rods/rodsC1.webp'
     },
     {
         title: 'double',
-        img: '/Assets/productImg/Rods/RodsC3.webp'
+        img: '/Assets/productImg/Rods/rodsC3.webp'
     },
     {
-        title: 'tracks',
-        img: '/Assets/productImg/Rods/RodsM3.webp'
-    },
-    {
+        name:'Single',
         title: 'tracks',
         img: '/Assets/productImg/Rods/RodsM4.webp'
     },
     {
+        name:'Double',
+        title: 'tracks',
+        img: '/Assets/productImg/Rods/Tracks.jpg'
+    },
+    {
+        name:'Ripple',
         title: 'tracks',
         img: '/Assets/productImg/Rods/RodsM5.webp'
     },
     //accessories
     {
         title: 'accessories',
-        img: '/Assets/productImg/Rods/Rods5.webp'
+        img: '/Assets/productImg/Curtains/CurtainM5.webp',
     },
     {
         title: 'accessories',
-        img: '/Assets/productImg/Rods/RodsC7.webp'
+        img: '/Assets/productImg/Curtains/CurtainM10.webp',
     },
     {
         title: 'accessories',
-        img: '/Assets/productImg/Rods/RodsC8.webp'
+        img: '/Assets/productImg/Curtains/CurtainM11.webp',
+    },
+    {
+        title: 'accessories',
+        img: '/Assets/productImg/Curtains/CurtainM12.webp',
+    },
+    {
+        title: 'accessories',
+        img: '/Assets/productImg/Curtains/CurtainM13.webp',
     },
 ]
 

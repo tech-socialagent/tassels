@@ -1,9 +1,12 @@
 import { FormDataContext, GetQuoteContext, ProductContext, ActivePageContext } from '../Context.js';
 import '@/styles/globals.css'
 import Script from 'next/script.js';
-import { useState } from 'react';
+import { useEffect, useState } from 'react';
+import { useRouter } from 'next/router.js';
 
 export default function App({ Component, pageProps }) {
+
+  const router = useRouter();
 
   const [activePage, setActivePage] = useState("Home");
   const [product, setProduct] = useState('Interiors');
@@ -15,6 +18,14 @@ export default function App({ Component, pageProps }) {
       phone: '',
     }
   )
+
+
+  const currentPath = router.pathname;
+  const isOpenProductPage = currentPath === '/product';
+
+  useEffect(() => {
+    setActivePage(isOpenProductPage ? 'Products' : activePage);
+  }, [currentPath])
 
   return (
     <>

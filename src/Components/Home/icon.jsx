@@ -47,12 +47,12 @@ function Icon() {
             desc: 'Upholstery',
         },
         {
-            img: '/Assets/images/icon7.png',
+            img: '/Assets/images/icon13.png',
             desc: 'Rods & tracks',
         },
         {
-            img: '/Assets/images/icon8.png',
-            desc: 'Carpets',
+            img: '/Assets/images/icon12.png',
+            desc: 'Wallpaper',
         },
         {
             img: '/Assets/images/icon9.png',
@@ -62,12 +62,20 @@ function Icon() {
             img: '/Assets/images/icon10.png',
             desc: 'Flooring',
         },
+        {
+            img: '/Assets/images/icon11.png',
+            desc: 'Accessories',
+        },
     ]
 
     const handleClick = (e, title) => {
         e.preventDefault();
 
-        setProduct(title);
+        if(title === 'Rods & tracks'){
+            setProduct('Rods and Tracks');
+        }else{
+            setProduct(title);
+        }
         router.push('/product');
     }
 

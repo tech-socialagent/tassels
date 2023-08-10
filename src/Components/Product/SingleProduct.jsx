@@ -147,21 +147,6 @@ function SingleProduct() {
                             })
                         }
                     </div>
-                    <h3 style={{ margin: '4% 0 1%' }}><li>Accessories  (Borders and Laces)</li></h3>
-                    <div className={styles.ImageContainer}>
-                        {
-                            rodImages.map((item, index) => {
-                                if (item.title === 'accessories') {
-                                    return <div className={styles.singleImageContainer} key={index} onClick={() => router.push('/getQuote')}>
-                                        <Image src={item.img} width={1000} height={1000} className={styles.singleImage} alt="Image" />
-                                        <div className={styles.guoteBtn}>Get Quote <span><AiOutlineArrowRight /></span></div>
-                                        <div className={styles.overlay}></div>
-                                    </div>
-                                }
-                                return null;
-                            })
-                        }
-                    </div>
                 </div>
             }
             {product === "Flooring" &&

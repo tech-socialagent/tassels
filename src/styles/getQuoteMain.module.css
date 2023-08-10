@@ -2,7 +2,7 @@
     display: flex;
     width: 100%;
     justify-content: center;
-    height: 90vh;
+    height: 100vh;
     background: url('../../public/Assets/qouteBackground.webp');
     background-size: cover;
 }

@@ -22,10 +22,15 @@ export default function App({ Component, pageProps }) {
 
   const currentPath = router.pathname;
   const isOpenProductPage = currentPath === '/product';
+  const isOpenOfferPage = currentPath === '/offers';
 
   useEffect(() => {
     setActivePage(isOpenProductPage ? 'Products' : activePage);
-  }, [currentPath])
+  }, [isOpenProductPage])
+
+  useEffect(() => {
+    setActivePage(isOpenOfferPage ? 'offers' : activePage);
+  }, [isOpenOfferPage])
 
   return (
     <>

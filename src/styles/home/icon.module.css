@@ -92,9 +92,9 @@
     transition: all 0.1s ease-in-out;
 }
 
-.singleIcon:hover span{
+/* .singleIcon:hover span{
     color: var(--secondary-color);
-}
+} */
 
 @media (max-width: 800px) {
     .iconWrapper{

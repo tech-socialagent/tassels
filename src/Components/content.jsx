@@ -80,6 +80,12 @@ export const OurProductData = [
         img: '/Assets/productImg/Rugs/rugs3.webp',
         content: `We have a wide variety of affordable and creative collection of ready-made with exceptional quality; available in a assortment of styles, influences and sizes. From evocative florals and graphic geometrics to stripes and elegant ombre in a multitude of shades and finishes - our gorgeous collections of decorative bedroom rugs and living room rugs add instant style and easy glamour to any room.`,
     },
+    {
+        title: "Accessories",
+        desc: 'Explore a curated collection of accessories, intricate borders, and delicate laces, enhancing creations with timeless elegance.',
+        img:'/Assets/productImg/Curtains/CurtainM5.webp',
+        content: 'Discover an array of accessories that transcend the ordinary, each piece narrating a tale of personal expression. Embrace the transformative power of intricate borders, meticulously designed to encapsulate and exalt your creations. Delve into the realm of delicate laces, their ethereal patterns weaving an aura of vintage charm and enduring grace. From fashion ensembles to artistic crafts, our collection embodies limitless innovation, empowering you to craft with distinction. Elevate your artistic endeavors with the everlasting allure of our accessories, borders, and laces selection.',
+    },
 ]
 
 
@@ -120,6 +126,27 @@ export const ProductImages = [
     {
         title: 'Interiors',
         img: '/Assets/productImg/Interiors/Interior8.webp',
+    },
+    //Accessories
+    {
+        title: 'Accessories',
+        img: '/Assets/productImg/Curtains/CurtainM5.webp',
+    },
+    {
+        title: 'Accessories',
+        img: '/Assets/productImg/Curtains/CurtainM10.webp',
+    },
+    {
+        title: 'Accessories',
+        img: '/Assets/productImg/Curtains/CurtainM11.webp',
+    },
+    {
+        title: 'Accessories',
+        img: '/Assets/productImg/Curtains/CurtainM12.webp',
+    },
+    {
+        title: 'Accessories',
+        img: '/Assets/productImg/Curtains/CurtainM13.webp',
     },
     //Blinds
     {
@@ -593,27 +620,6 @@ export const rodImages = [
         name:'Ripple',
         title: 'tracks',
         img: '/Assets/productImg/Rods/RodsM5.webp'
-    },
-    //accessories
-    {
-        title: 'accessories',
-        img: '/Assets/productImg/Curtains/CurtainM5.webp',
-    },
-    {
-        title: 'accessories',
-        img: '/Assets/productImg/Curtains/CurtainM10.webp',
-    },
-    {
-        title: 'accessories',
-        img: '/Assets/productImg/Curtains/CurtainM11.webp',
-    },
-    {
-        title: 'accessories',
-        img: '/Assets/productImg/Curtains/CurtainM12.webp',
-    },
-    {
-        title: 'accessories',
-        img: '/Assets/productImg/Curtains/CurtainM13.webp',
     },
 ]
 

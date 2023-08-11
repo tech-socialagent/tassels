@@ -38,6 +38,7 @@
     justify-content: center;
     gap: 10px;
     cursor: pointer;
+    overflow: hidden;
 }
 
 .Iconborder {

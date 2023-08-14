@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect, useRef } from 'react';
 import styles from "@/styles/home/followUs.module.css";
 import SectionHeader from '../SectionHeader';
 import Image from 'next/image';
@@ -19,12 +19,35 @@ function FollowUs() {
         "/Assets/Insta/img5.webp",
     ]
 
+    //Scrolling
+
+    let scrl = useRef(null);
+
+    const slide = () => {
+        const scrollOptions = {
+            left: scrl.current.scrollLeft < 1311 ? scrl.current.scrollLeft + 400 : scrl.current.scrollLeft - 1908, 
+            behavior: 'smooth'
+          };
+
+          console.log(scrl.current.scrollLeft)
+
+          scrl.current.scrollTo(scrollOptions);
+    };
+
+    useEffect(() => {
+        const intervalId = setInterval(slide, 3000);
+    
+        return () => {
+          clearInterval(intervalId); // Clean up the interval when component unmounts
+        };
+      }, []);
+
     return (
         <div className={styles.followUsWrap}>
             <SectionHeader title='Follow Us On Instagram' desc='Stay connected and inspired! Follow us on Instagram for the latest trends, design inspiration, and exclusive offers. Join us today!' />
             <div className={styles.wrapper}>
                 <div className={styles.topOval}></div>
-                <div className={styles.stripW}>
+                <div className={styles.stripW} ref={scrl}>
                     {Images.map((image) => (
                         <div className={styles.stripItem}>
                             <Link href="https://www.instagram.com/tasselsinterior/?hl=en" target='_blank' style={{ textDecoration: 'none' }}>

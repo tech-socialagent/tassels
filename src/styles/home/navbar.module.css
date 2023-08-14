@@ -52,6 +52,18 @@
     cursor: pointer;
 }
 
+.MenusContainer{
+    display: grid;
+    grid-template-columns: auto 3%;
+    align-items: center;
+}
+
+.MenusContainer span{
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+}
+
 .Menus{
     display: flex;
     align-items: center;
@@ -60,16 +72,17 @@
 
 
 .Menus li, .PhoneMenus li{
+    transform: scale(1);
     color: #fff;
     font-size: 15.5px;
     list-style: none;
     font-weight: 400;
     cursor: pointer;
-    transition: color 0.3s ease-in-out;
+    transition: color 0.7 ease-in-out;
 }
 
 .Menus li:hover, .PhoneMenus li:hover{
-    color: var(--secondary-color);
+    transform: scale(1.07);
 }
 
 .PhoneMenus{
@@ -118,7 +131,7 @@
     .NavbarTop{
         display: none;
     }
-    .Menus{
+    .MenusContainer{
         display: none;
     }
 }

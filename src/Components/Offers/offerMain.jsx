@@ -8,17 +8,23 @@ import { useRouter } from 'next/router';
 function OffersMain() {
 
     const slideImage = [
-        '/Assets/offers/banner1.webp',
-        '/Assets/offers/banner3.webp',
-        '/Assets/offers/banner2.webp',
-        '/Assets/offers/banner4.webp',
+        '/Assets/offers/bannerNew/bannerImg1.webp',
+        '/Assets/offers/bannerNew/bannerImg3.webp',
+        '/Assets/offers/bannerNew/bannerImg2.webp',
+        '/Assets/offers/bannerNew/bannerImg4.webp',
+        '/Assets/offers/bannerNew/bannerImg5.webp',
+        '/Assets/offers/bannerNew/bannerImg6.webp',
+        '/Assets/offers/bannerNew/bannerImg7.webp',
     ]
 
     const slideImagePhone = [
         '/Assets/offers/Artboard1.webp',
         '/Assets/offers/Artboard2.webp',
-        '/Assets/offers/Artboard3.webp',
         '/Assets/offers/Artboard4.webp',
+        '/Assets/offers/mobview1.webp',
+        '/Assets/offers/mobview2.webp',
+        '/Assets/offers/mobview3.webp',
+        '/Assets/offers/mobview4.webp',
     ]
 
 

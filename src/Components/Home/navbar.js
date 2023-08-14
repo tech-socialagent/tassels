@@ -6,6 +6,7 @@ import { useRouter } from 'next/router';
 import { AiOutlineMenu, AiFillCloseCircle } from 'react-icons/ai';
 import Link from 'next/link';
 import { ActivePageContext } from '@/Context';
+import { BsTelephoneFill } from 'react-icons/bs';
 
 function Navbar() {
 
@@ -36,6 +37,13 @@ function Navbar() {
         router.push(`/${page}`)
     }
 
+    const handleLogoClick = (e) => {
+        e.preventDefault();
+        setMenuBar(false);
+        setActivePage('Home');
+        router.push('/');
+    }
+
     const data = [
         {
             type: "WhatsApp",
@@ -62,18 +70,23 @@ function Navbar() {
                 ))}
             </div>
             <div className={isFixed ? styles.fixedNavbar : styles.NavbarBottom}>
-                <Image src={logo} alt="logo image" className={styles.logo} onClick={() => router.push('/')} />
-                <div className={styles.Menus}>
-                    <li onClick={(e) => handleNavigate(e, '')} style={{ borderBottom: activePage === "Home" ? '2px solid #fff' : '' }}>Home</li>
-                    <Link href="/#products" style={{ textDecoration: 'none' }}>
-                        <li onClick={() => setActivePage("Products")} style={{ borderBottom: activePage === "Products" ? '2px solid #fff' : '' }}>Products</li>
+                <Image src={logo} alt="logo image" className={styles.logo} onClick={handleLogoClick} />
+                <div className={styles.MenusContainer}>
+                    <div className={styles.Menus}>
+                        <li onClick={(e) => handleNavigate(e, '')} style={{ borderBottom: activePage === "Home" ? '2px solid #fff' : '' }}>Home</li>
+                        <Link href="/#products" style={{ textDecoration: 'none' }}>
+                            <li onClick={() => setActivePage("Products")} style={{ borderBottom: activePage === "Products" ? '2px solid #fff' : '' }}>Products</li>
+                        </Link>
+                        <li onClick={(e) => handleNavigate(e, 'offers')} style={{ borderBottom: activePage === "offers" ? '2px solid #fff' : '' }}>Offers</li>
+                        <Link href="/#faq" style={{ textDecoration: 'none' }}>
+                            <li onClick={() => setActivePage("faq")} style={{ borderBottom: activePage === "faq" ? '2px solid #fff' : '' }}>FAQ's</li>
+                        </Link>
+                        <li onClick={(e) => handleNavigate(e, "ContactUs")} style={{ borderBottom: activePage === "ContactUs" ? '2px solid #fff' : '' }}>Contact Us</li>
+                        <li onClick={(e) => handleNavigate(e, "Spacewood")} style={{ borderBottom: activePage === "Spacewood" ? '2px solid #fff' : '' }}>Spacewood</li>
+                    </div>
+                    <Link href='tel: +918049757757' style={{textDecoration: 'none', color: '#fff'}}>
+                            <span><BsTelephoneFill /></span>
                     </Link>
-                    <li onClick={(e) => handleNavigate(e, 'offers')} style={{ borderBottom: activePage === "offers" ? '2px solid #fff' : '' }}>Offers</li>
-                    <Link href="/#faq" style={{ textDecoration: 'none' }}>
-                        <li onClick={() => setActivePage("faq")} style={{ borderBottom: activePage === "faq" ? '2px solid #fff' : '' }}>FAQ's</li>
-                    </Link>
-                    <li onClick={(e) => handleNavigate(e, "ContactUs")} style={{ borderBottom: activePage === "ContactUs" ? '2px solid #fff' : '' }}>Contact Us</li>
-                    <li onClick={(e) => handleNavigate(e, "Spacewood")} style={{ borderBottom: activePage === "Spacewood" ? '2px solid #fff' : '' }}>Spacewood</li>
                 </div>
                 <div className={styles.toggleBar}><span onClick={handleClick}><AiOutlineMenu /></span></div>
                 <div className={styles.PhoneMenus} style={{ right: menuBar ? '0vh' : '-30vh' }}>
@@ -83,7 +96,7 @@ function Navbar() {
                     </Link>
                     <li onClick={(e) => handleNavigate(e, 'offers')} style={{ borderBottom: activePage === "offers" ? '2px solid #fff' : '' }}>Offers</li>
                     <Link href="/#faq" onClick={() => setMenuBar(false)} style={{ textDecoration: 'none' }}>
-                        <li onClick={() => setActivePage("faq")} style={{ borderBottom: activePage === "faq" ? '2px solid #fff' : '' }}>FAQ's</li> 
+                        <li onClick={() => setActivePage("faq")} style={{ borderBottom: activePage === "faq" ? '2px solid #fff' : '' }}>FAQ's</li>
                     </Link>
                     <li onClick={(e) => handleNavigate(e, "ContactUs")} style={{ borderBottom: activePage === "ContactUs" ? '2px solid #fff' : '' }}>Contact Us</li>
                     <li onClick={(e) => handleNavigate(e, "Spacewood")} style={{ borderBottom: activePage === "Spacewood" ? '2px solid #fff' : '' }}>Spacewood</li>

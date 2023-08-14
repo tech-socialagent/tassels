@@ -5,6 +5,7 @@ import { useRouter } from 'next/router';
 import spaceLogo from '../../../public/Assets/spacewood/spacewoodLogo.webp'
 import squareImage from '../../../public/Assets/spacewood/squarebanner.webp'
 import stage3BG from '../../../public/Assets/spacewood/stage3BG.webp'
+import { AiOutlineLeft } from 'react-icons/ai';
 
 function SpaceQuote() {
 
@@ -88,22 +89,24 @@ function SpaceQuote() {
                     </div>
                 </div>}
                 {stage === 'stage2' && <div className={styles.SpaceQuoteBottom}>
-                    <form onSubmit={handleStage2} className={styles.QuoteForm}>
-                        <h2>Lets get Started</h2>
-                        <div className={styles.stage2Menu}>
-                            <label>Name</label>
-                            <input type="text" placeholder='Enter Your Name' required />
-                        </div>
-                        <div className={styles.stage2Menu}>
-                            <label>Email Address</label>
-                            <input type="email" placeholder='Enter Your Email' required />
-                        </div>
-                        <div className={styles.stage2Menu}>
-                            <label>Phone Number</label>
-                            <input type="tel" placeholder='Enter Your phone number' required />
-                        </div>
-                        <button type='submit'>Get Quote</button>
-                    </form>
+                    <div className={styles.backButtonContainer}>
+                        <span onClick={() => setStage('stage1')}><AiOutlineLeft/></span>
+                        <form onSubmit={handleStage2} className={styles.QuoteForm}>
+                            <div className={styles.stage2Menu}>
+                                <label>Name</label>
+                                <input type="text" placeholder='Enter Your Name' required />
+                            </div>
+                            <div className={styles.stage2Menu}>
+                                <label>Email Address</label>
+                                <input type="email" placeholder='Enter Your Email' required />
+                            </div>
+                            <div className={styles.stage2Menu}>
+                                <label>Phone Number</label>
+                                <input type="tel" placeholder='Enter Your phone number' required />
+                            </div>
+                            <button type='submit'>Get Quote</button>
+                        </form>
+                    </div>
                     <div className={styles.formImageContainer}>
                         <Image src={squareImage} alt='img' width={500} height={500} className={styles.FormImage} />
                     </div>

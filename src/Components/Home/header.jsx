@@ -24,7 +24,7 @@ function Header() {
     const bannerContent = [
         {
             title: `FLOORINGS`,
-            desc: `Upgrade Your Home's Aesthetics with an Array of Gorgeous Flooring Options to Suit Your Style and Budget`,
+            desc: `Upgrade your home's aesthetics with an array of gorgeous flooring options to suit your style and budget`,
             img: '/Assets/banner/banner1.webp',
         },
         {

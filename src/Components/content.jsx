@@ -76,7 +76,7 @@ export const OurProductData = [
     },
     {
         title: 'Rugs',
-        desc: 'Timeless Elegance and Lasting Durability. Elevate Your Space to Extraordinary Levels. Indulge in Luxury Underfoot.',
+        desc: 'Timeless elegance and lasting durability. Elevate your space to extraordinary levels. Indulge in luxury underfoot.',
         img: '/Assets/productImg/Rugs/rugs3.webp',
         content: `We have a wide variety of affordable and creative collection of ready-made with exceptional quality; available in a assortment of styles, influences and sizes. From evocative florals and graphic geometrics to stripes and elegant ombre in a multitude of shades and finishes - our gorgeous collections of decorative bedroom rugs and living room rugs add instant style and easy glamour to any room.`,
     },
@@ -658,5 +658,20 @@ export const carpetImages = [
     {
         title: 'Carpets',
         img: '/Assets/productImg/Flooring/carpet3.webp',
+    },
+]
+
+export const tassels = [
+    {
+        title: 'Curtains',
+        img: '/Assets/productImg/Curtains/CurtainM6.webp',
+    },
+    {
+        title: 'Curtains',
+        img: '/Assets/productImg/Curtains/CurtainM7.webp',
+    },
+    {
+        title: 'Curtains',
+        img: '/Assets/productImg/Curtains/CurtainM8.webp',
     },
 ]

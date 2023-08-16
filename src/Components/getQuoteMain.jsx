@@ -45,8 +45,6 @@ function GetQuoteMain() {
     const handleDataSend = (event) => {
         event.preventDefault();
 
-        console.log(process.env.NEXT_PUBLIC_DEMO_KEY);
-
         if(selectedProducts.length > 0) {
             const leadData = {
                 name: formData.name,

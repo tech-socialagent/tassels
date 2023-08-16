@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react';
+import React, { useContext, useEffect, useState } from 'react';
 import styles from '@/styles/spacewood/spaceQuote.module.css';
 import Image from 'next/image';
 import { useRouter } from 'next/router';
@@ -6,6 +6,8 @@ import spaceLogo from '../../../public/Assets/spacewood/spacewoodLogo.webp'
 import squareImage from '../../../public/Assets/spacewood/squarebanner.webp'
 import stage3BG from '../../../public/Assets/spacewood/stage3BG.webp'
 import { AiOutlineLeft } from 'react-icons/ai';
+import { FormDataContext } from '@/Context';
+import axios from 'axios';
 
 function SpaceQuote() {
 
@@ -52,9 +54,33 @@ function SpaceQuote() {
         }
     }
 
+    const {formData, setFormData} = useContext(FormDataContext);
+
+    const handleInputChange = (event) => {
+        const { name, value } = event.target;
+        setFormData({ ...formData, [name]: value });
+    };
+
     const handleStage2 = (e) => {
         e.preventDefault();
+        const leadData = {
+            name: formData.name,
+            email: formData.email,
+            phone: formData.phone,
+            products: `Home Type : ${selectedOption}, Requirements :${JSON.stringify(selectedProducts)}`,
+        }
+
+        console.log(leadData);
+
+        axios.post('/api/zohoapi', leadData)
+            .then((response) => {
+                console.log(response.data);
+            })
+            .catch((error) => {
+                console.error('Error sending data:', error);
+            });
         setStage('stage3');
+
     }
 
     return (
@@ -90,19 +116,19 @@ function SpaceQuote() {
                 </div>}
                 {stage === 'stage2' && <div className={styles.SpaceQuoteBottom}>
                     <div className={styles.backButtonContainer}>
-                        <span onClick={() => setStage('stage1')}><AiOutlineLeft/></span>
+                        <span onClick={() => setStage('stage1')}><AiOutlineLeft /></span>
                         <form onSubmit={handleStage2} className={styles.QuoteForm}>
                             <div className={styles.stage2Menu}>
                                 <label>Name</label>
-                                <input type="text" placeholder='Enter Your Name' required />
+                                <input type="text" placeholder='Enter Your Name' required  name='name' value={formData.name} onChange={handleInputChange} />
                             </div>
                             <div className={styles.stage2Menu}>
                                 <label>Email Address</label>
-                                <input type="email" placeholder='Enter Your Email' required />
+                                <input type="email" placeholder='Enter Your Email' required  name='email' value={formData.email} onChange={handleInputChange} />
                             </div>
                             <div className={styles.stage2Menu}>
                                 <label>Phone Number</label>
-                                <input type="tel" placeholder='Enter Your phone number' required />
+                                <input type="tel" placeholder='Enter Your phone number' required  name='phone' value={formData.phone} onChange={handleInputChange} />
                             </div>
                             <button type='submit'>Get Quote</button>
                         </form>

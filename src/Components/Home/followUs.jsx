@@ -28,9 +28,6 @@ function FollowUs() {
             left: scrl.current.scrollLeft < 1311 ? scrl.current.scrollLeft + 400 : scrl.current.scrollLeft - 1908, 
             behavior: 'smooth'
           };
-
-          console.log(scrl.current.scrollLeft)
-
           scrl.current.scrollTo(scrollOptions);
     };
 

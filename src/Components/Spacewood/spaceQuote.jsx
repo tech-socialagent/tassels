@@ -116,7 +116,7 @@ function SpaceQuote() {
                 </div>}
                 {stage === 'stage2' && <div className={styles.SpaceQuoteBottom}>
                     <div className={styles.backButtonContainer}>
-                        <span onClick={() => setStage('stage1')}><AiOutlineLeft /></span>
+                        <h3><span onClick={() => setStage('stage1')}><AiOutlineLeft /></span>Enter Your Details</h3>
                         <form onSubmit={handleStage2} className={styles.QuoteForm}>
                             <div className={styles.stage2Menu}>
                                 <label>Name</label>

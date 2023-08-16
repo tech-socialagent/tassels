@@ -36,6 +36,7 @@ export default async function handler(req, res) {
     const newLead = {
       "data": [
         {
+          "Lead_Source":"Website",
           "Last_Name": leadData.name,
           "Email": leadData.email,
           "Phone": leadData.phone,

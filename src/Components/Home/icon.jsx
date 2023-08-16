@@ -56,7 +56,7 @@ function Icon() {
         },
         {
             img: '/Assets/images/icon9.png',
-            desc: 'Interior',
+            desc: 'Interiors',
         },
         {
             img: '/Assets/images/icon10.png',
